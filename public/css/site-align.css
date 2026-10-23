@@ -70,3 +70,14 @@
     --glowth-page-gutter: 16px;
   }
 }
+
+/* Inline icon lists (e.g. AI booking bot stats) use negative side margins and
+   pushed the page wider than the phone screen; let them wrap inside the column */
+@media (max-width: 767px) {
+  .elementor-icon-list-items.elementor-inline-items {
+    flex-wrap: wrap;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100%;
+  }
+}

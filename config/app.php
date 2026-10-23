@@ -56,6 +56,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Canonical Site URL
+    |--------------------------------------------------------------------------
+    |
+    | The public domain search engines should index. Canonical tags, Open
+    | Graph URLs and schema.org URLs in the mirrored pages are made absolute
+    | with this value, whatever host the app is actually running on.
+    |
+    */
+
+    'canonical_url' => rtrim(env('CANONICAL_URL', 'https://glowthdot.com'), '/'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |

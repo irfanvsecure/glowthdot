@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    // Website form enquiries are always saved to storage/app/private/leads; also emailed
+    // (comma-separated list) and, for the audit funnel, posted to a Google Sheet when set
+    'leads' => [
+        'to' => env('LEADS_EMAIL'),
+        'reply_to' => env('LEADS_REPLY_TO', 'sales@glowthdot.com'),
+        'sheet_url' => env('LEADS_SHEET_URL'),
+    ],
+
 ];

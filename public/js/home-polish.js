@@ -95,6 +95,97 @@
       if (!t) return;
       e.preventDefault();
       t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      if (id === '#free-audit') {
+        t.classList.remove('gp-pulse');
+        setTimeout(function () {
+          t.classList.add('gp-pulse');
+          var first = t.querySelector('.elementor-form input:not([type=hidden])');
+          if (first && window.matchMedia('(min-width: 768px)').matches) first.focus({ preventScroll: true });
+        }, reduce ? 0 : 700);
+      }
+    });
+  }
+
+  // Phones: a bottom bar with the page's own closing CTAs, shown once the hero is gone
+  // and hidden while the audit form or the closing CTA band is already on screen.
+  function setupStickyCta() {
+    var finale = document.querySelector('[data-id="8c7c125"]');
+    var form = document.getElementById('free-audit');
+    var hero = document.getElementById('bg');
+    if (!finale || !form || !hero) return;
+
+    var audit = null;
+    var wa = null;
+    finale.querySelectorAll('a.elementor-button').forEach(function (a) {
+      var href = a.getAttribute('href') || '';
+      if (href.indexOf('get-a-free-audit') !== -1) audit = a;
+      else if (href.indexOf('wa.me') !== -1) wa = a;
+    });
+    if (!audit || !wa) return;
+
+    var bar = document.createElement('div');
+    bar.className = 'gp-sticky-cta';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('aria-label', 'Quick contact');
+    [[audit, 'gp-sticky-audit'], [wa, 'gp-sticky-wa']].forEach(function (pair) {
+      var a = document.createElement('a');
+      a.href = pair[0].getAttribute('href');
+      a.className = pair[1];
+      a.textContent = pair[0].textContent.trim();
+      if (pair[0].target) {
+        a.target = pair[0].target;
+        a.rel = 'noopener';
+      }
+      bar.appendChild(a);
+    });
+    document.body.appendChild(bar);
+    document.body.classList.add('gp-has-sticky');
+
+    var heroGone = false;
+    var blockers = new Set();
+    function update() {
+      document.body.classList.toggle('gp-sticky-on', heroGone && blockers.size === 0);
+    }
+    new IntersectionObserver(function (entries) {
+      heroGone = !entries[0].isIntersecting;
+      update();
+    }).observe(hero);
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) blockers.add(e.target);
+        else blockers.delete(e.target);
+      });
+      update();
+    }, { threshold: 0.15 });
+    io.observe(form);
+    io.observe(finale);
+  }
+
+  // Phones: position dots under the sideways-swiping card rows
+  function setupSwipeDots() {
+    ['.elementor-element-ba68542', '.elementor-element-d3862d9'].forEach(function (sel) {
+      var row = document.querySelector(sel);
+      if (!row) return;
+      var cards = Array.prototype.filter.call(row.children, function (c) {
+        return c.classList.contains('e-con');
+      });
+      if (cards.length < 2) return;
+      var dots = document.createElement('div');
+      dots.className = 'gp-swipe-dots';
+      dots.setAttribute('aria-hidden', 'true');
+      cards.forEach(function (_, i) {
+        var d = document.createElement('span');
+        if (i === 0) d.className = 'is-on';
+        dots.appendChild(d);
+      });
+      row.parentNode.insertBefore(dots, row.nextSibling);
+      row.addEventListener('scroll', function () {
+        var step = cards[1].offsetLeft - cards[0].offsetLeft || 1;
+        var idx = Math.min(cards.length - 1, Math.round(row.scrollLeft / step));
+        Array.prototype.forEach.call(dots.children, function (d, i) {
+          d.classList.toggle('is-on', i === idx);
+        });
+      }, { passive: true });
     });
   }
 
@@ -104,5 +195,7 @@
     setupHero();
     setupReveals();
     setupSmoothAnchors();
+    if ('IntersectionObserver' in window) setupStickyCta();
+    setupSwipeDots();
   });
 })();

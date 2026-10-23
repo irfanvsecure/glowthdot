@@ -5,6 +5,18 @@
 
     RewriteEngine On
 
+    # Live domain only: one canonical origin, https://glowthdot.com (localhost is untouched).
+    # X-Forwarded-Proto covers hosts that terminate HTTPS at a proxy or CDN.
+    RewriteCond %{HTTP_HOST} ^www\.glowthdot\.com$ [NC]
+    RewriteRule ^ https://glowthdot.com%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP_HOST} ^glowthdot\.com$ [NC]
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^ https://glowthdot.com%{REQUEST_URI} [L,R=301]
+
+    # Old WordPress upload URLs (still in Google and in shared links) live under /images/ now
+    RewriteRule ^wp-content/uploads/(.+)$ /images/$1 [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -13,13 +25,52 @@
     RewriteCond %{HTTP:x-xsrf-token} .
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
-    # Redirect Trailing Slashes If Not A Folder...
+    # Serve the .webp copy of a JPG/PNG when the browser supports it (made by scripts/make-webp.php)
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    RewriteCond %{REQUEST_URI} \.(jpe?g|png)$ [NC]
+    RewriteCond %{REQUEST_FILENAME}.webp -f
+    RewriteRule ^ %{REQUEST_URI}.webp [L,T=image/webp,E=WEBP:1]
+
+    # Page URLs end in a slash, matching canonicals, sitemaps and internal links
+    RewriteCond %{REQUEST_METHOD} =GET [OR]
+    RewriteCond %{REQUEST_METHOD} =HEAD
+    RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    RewriteCond %{REQUEST_URI} !/$
+    RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,5}$
+    RewriteRule ^ %{REQUEST_URI}/ [L,R=301]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Caches must keep the WebP and original versions apart
+    <FilesMatch "\.(jpe?g|png)$">
+        Header append Vary Accept
+    </FilesMatch>
+    Header append Vary Accept env=REDIRECT_WEBP
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType image/webp .webp
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
 </IfModule>

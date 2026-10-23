@@ -222,3 +222,301 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
     transform: none !important;
   }
 }
+
+/* =====================================================================
+ * UX / CRO pass: layout, rhythm and conversion paths (copy unchanged)
+ * ===================================================================== */
+
+/* Content shows at once: the Elementor entrance animations kept whole
+   sections blank until they finished, on top of the reveal above */
+.elementor-8 .elementor-invisible {
+  visibility: visible !important;
+}
+.elementor-8 .animated {
+  animation: none !important;
+}
+.gp-reveal {
+  transform: translateY(14px);
+  transition-duration: 0.5s;
+}
+
+/* Even vertical rhythm: sections sat 160-240px apart */
+.elementor-8 > .e-con.e-parent:not(#bg):not([data-id="beef483"]):not([data-id="b76aac1"]):not([data-id="eeda67b"]) > .e-con-inner {
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+}
+@media (max-width: 767px) {
+  .elementor-8 > .e-con.e-parent:not(#bg):not([data-id="beef483"]):not([data-id="b76aac1"]):not([data-id="eeda67b"]) > .e-con-inner {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+  }
+}
+
+/* In-page jumps land below the sticky header */
+#free-audit,
+#how-it-works {
+  scroll-margin-top: 90px;
+}
+
+/* Keyboard users can see where they are */
+.elementor-8 a:focus-visible,
+.elementor-8 button:focus-visible,
+.gp-sticky-cta a:focus-visible {
+  outline: 3px solid var(--gp-pink);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ----- Industry cards: the whole card is the link, content starts at the top ----- */
+.elementor-element-d3862d9 > .e-con {
+  position: relative;
+  justify-content: flex-start !important;
+}
+.elementor-element-d3862d9 .elementor-widget-icon-box,
+.elementor-element-d3862d9 .elementor-icon-box-wrapper {
+  position: static !important;
+}
+.elementor-element-d3862d9 a.glowth-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+/* ----- How it works: steps start on one line ----- */
+.elementor-element-a0e3781 {
+  position: relative;
+  align-items: stretch !important;
+}
+.elementor-element-a0e3781 > .e-con {
+  justify-content: flex-start !important;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s var(--gp-ease), box-shadow 0.3s var(--gp-ease), border-color 0.3s var(--gp-ease);
+}
+.elementor-element-a0e3781 > .e-con:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(14, 13, 18, 0.08);
+  border-color: rgba(255, 46, 126, 0.35) !important;
+}
+
+/* ----- Comparison table: easier to scan ----- */
+.elementor-element-64ef0a0 table td,
+.elementor-element-64ef0a0 table th {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  vertical-align: middle;
+}
+.elementor-element-64ef0a0 table tbody tr td:first-child {
+  font-weight: 600;
+  color: var(--gp-ink);
+}
+.elementor-element-64ef0a0 table tbody tr td:nth-child(2) {
+  background: rgba(198, 244, 50, 0.1);
+  font-weight: 700;
+}
+.elementor-element-64ef0a0 table tbody tr:hover td {
+  background-color: rgba(255, 46, 126, 0.04);
+}
+@media (max-width: 767px) {
+  .elementor-element-64ef0a0 table {
+    font-size: 13px;
+  }
+  .elementor-element-64ef0a0 table td,
+  .elementor-element-64ef0a0 table th {
+    padding: 12px 8px !important;
+  }
+}
+
+/* ----- Packages: the middle plan stands forward ----- */
+@media (min-width: 1025px) {
+  .elementor-element-9178254 {
+    align-items: center !important;
+  }
+  .elementor-element-9178254 > .e-con:nth-child(2) {
+    transform: scale(1.04);
+    box-shadow: 0 24px 60px rgba(14, 13, 18, 0.28), 0 0 0 2px var(--gp-lime);
+    z-index: 2;
+  }
+}
+.elementor-element-9178254 > .e-con {
+  transition: transform 0.3s var(--gp-ease), box-shadow 0.3s var(--gp-ease);
+}
+.elementor-element-9178254 > .e-con:not(:nth-child(2)):hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(14, 13, 18, 0.1);
+}
+
+/* ----- Audit form: bigger touch targets, clear focus ----- */
+#free-audit .elementor-field-group .elementor-field,
+#free-audit .elementor-field-group select {
+  min-height: 46px;
+  border-radius: 10px !important;
+  font-size: 15px !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#free-audit .elementor-field-group .elementor-field:focus,
+#free-audit .elementor-field-group select:focus {
+  border-color: var(--gp-pink) !important;
+  box-shadow: 0 0 0 4px rgba(255, 46, 126, 0.15);
+  outline: none;
+}
+#free-audit .elementor-field-type-submit .elementor-button {
+  min-height: 50px;
+  font-size: 16px !important;
+  font-weight: 700;
+  box-shadow: 0 10px 28px rgba(255, 46, 126, 0.35);
+}
+#free-audit .elementor-message {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+#free-audit .elementor-message-success {
+  background: rgba(198, 244, 50, 0.2);
+  color: var(--gp-ink);
+}
+/* Arriving from a CTA: draw the eye to the form */
+#free-audit.gp-pulse .elementor-form {
+  border-radius: 12px;
+  animation: gpPulse 1.4s var(--gp-ease) 1;
+}
+@keyframes gpPulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 46, 126, 0.45); }
+  100% { box-shadow: 0 0 0 22px rgba(255, 46, 126, 0); }
+}
+
+/* ----- Phones ----- */
+@media (max-width: 767px) {
+  /* Hero: full-width, thumb-friendly CTAs */
+  #bg .elementor-widget-button,
+  #bg .elementor-widget-button .elementor-button {
+    width: 100%;
+  }
+  #bg .elementor-widget-button .elementor-button {
+    justify-content: center;
+    min-height: 50px;
+  }
+
+  /* "Who we serve" and industry cards swipe sideways instead of a very long stack */
+  .elementor-element-ba68542,
+  .elementor-element-d3862d9 {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px !important;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+  .elementor-element-ba68542::-webkit-scrollbar,
+  .elementor-element-d3862d9::-webkit-scrollbar {
+    display: none;
+  }
+  .elementor-element-ba68542 > .e-con,
+  .elementor-element-d3862d9 > .e-con {
+    flex: 0 0 78% !important;
+    max-width: 78% !important;
+    scroll-snap-align: start;
+  }
+  .gp-swipe-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .gp-swipe-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(14, 13, 18, 0.2);
+    transition: width 0.25s var(--gp-ease), background-color 0.25s var(--gp-ease);
+  }
+  .gp-swipe-dots span.is-on {
+    width: 18px;
+    background: var(--gp-pink);
+  }
+
+  /* Leave room for the sticky CTA bar */
+  body.gp-has-sticky {
+    padding-bottom: 76px;
+  }
+  body.gp-has-sticky .ast-scroll-top {
+    bottom: 88px !important;
+  }
+  /* The bar already offers WhatsApp; the floating bubble covered the hero and content */
+  body.gp-has-sticky .qlwapp__container {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.gp-swipe-dots {
+  display: none;
+}
+@media (max-width: 767px) {
+  .gp-swipe-dots {
+    display: flex;
+  }
+}
+
+/* ----- Sticky conversion bar (phones) ----- */
+.gp-sticky-cta {
+  display: none;
+}
+@media (max-width: 767px) {
+  .gp-sticky-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9990;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(14, 13, 18, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(110%);
+    transition: transform 0.35s var(--gp-ease);
+  }
+  body.gp-sticky-on .gp-sticky-cta {
+    transform: translateY(0);
+  }
+  .gp-sticky-cta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .gp-sticky-cta .gp-sticky-audit {
+    background: linear-gradient(90deg, var(--gp-pink), #8b3dff);
+    color: #fff;
+  }
+  .gp-sticky-cta .gp-sticky-wa {
+    background: var(--gp-lime);
+    color: var(--gp-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gp-sticky-cta,
+  .elementor-element-a0e3781 > .e-con,
+  .elementor-element-9178254 > .e-con {
+    transition: none !important;
+  }
+  #free-audit.gp-pulse .elementor-form {
+    animation: none !important;
+  }
+}

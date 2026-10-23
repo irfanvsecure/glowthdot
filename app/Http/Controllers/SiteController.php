@@ -34,19 +34,21 @@ class SiteController extends Controller
         $injectHead = '';
         // Site-wide: align sections with header left/right gutters
         if (! str_contains($html, 'site-align.css')) {
-            $injectHead .= '<link rel="stylesheet" href="/css/site-align.css" />';
+            $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/site-align.css').'" />';
         }
         // Home only: richer UI polish (content unchanged)
         if ($slug === 'home' && ! str_contains($html, 'home-polish.css')) {
-            $injectHead .= '<link rel="stylesheet" href="/css/home-polish.css" />';
+            $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/home-polish.css').'" />';
         }
         if ($injectHead !== '') {
             $html = preg_replace('/<\/head>/i', $injectHead.'</head>', $html, 1) ?? $html;
         }
+        $html = $this->absoluteSeoUrls($html);
+
         if ($slug === 'home' && ! str_contains($html, 'home-polish.js')) {
             $html = preg_replace(
                 '/<\/body>/i',
-                '<script src="/js/home-polish.js" defer></script></body>',
+                '<script src="'.$this->asset('/js/home-polish.js').'" defer></script></body>',
                 $html,
                 1
             ) ?? $html;
@@ -55,5 +57,39 @@ class SiteController extends Controller
         return response($html, 200, [
             'Content-Type' => 'text/html; charset=UTF-8',
         ]);
+    }
+
+    /**
+     * Versioned URL, so the long browser cache in public/.htaccess never serves an old copy.
+     */
+    private function asset(string $path): string
+    {
+        $mtime = @filemtime(public_path($path));
+
+        return $mtime ? $path.'?v='.$mtime : $path;
+    }
+
+    /**
+     * Search engines and social previews need full URLs; the mirror stores them site-relative.
+     */
+    private function absoluteSeoUrls(string $html): string
+    {
+        $site = config('app.canonical_url');
+
+        // canonical, prev/next, og:url, og:image, twitter:image
+        $html = preg_replace(
+            '#(<link\s+rel=["\'](?:canonical|prev|next)["\']\s+href=["\']|<meta\s+(?:property|name)=["\'](?:og:url|og:image|twitter:image)["\']\s+content=["\'])/(?!/)#i',
+            '$1'.$site.'/',
+            $html
+        ) ?? $html;
+
+        // schema.org JSON-LD stores URLs with escaped slashes: "url":"\/about-us\/"
+        $jsonSite = str_replace('/', '\/', $site);
+
+        return preg_replace_callback(
+            '#(<script type="application/ld\+json"[^>]*>)(.*?)(</script>)#s',
+            fn ($m) => $m[1].preg_replace('#"(\\\\/)(?!\\\\/)#', '"'.$jsonSite.'$1', $m[2]).$m[3],
+            $html
+        ) ?? $html;
     }
 }
