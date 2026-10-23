@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://glowthdot.com/post-sitemap.xml</loc>
+		<lastmod>2026-10-22T09:14:35+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://glowthdot.com/page-sitemap.xml</loc>
+		<lastmod>2026-10-22T09:14:35+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://glowthdot.com/category-sitemap.xml</loc>
+		<lastmod>2026-10-22T09:14:35+00:00</lastmod>
+	</sitemap>
+</sitemapindex>

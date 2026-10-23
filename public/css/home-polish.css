@@ -1,0 +1,224 @@
+/**
+ * Glowth home — richer UI polish (content unchanged)
+ * Brand: lime #c6f432 · pink #ff2e7e · ink #0e0d12
+ */
+:root {
+  --gp-lime: #c6f432;
+  --gp-pink: #ff2e7e;
+  --gp-ink: #0e0d12;
+  --gp-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ----- Header: glass + depth after scroll ----- */
+body.gp-scrolled .ast-primary-header-bar {
+  background-color: rgba(250, 250, 252, 0.92) !important;
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  box-shadow: 0 10px 40px rgba(14, 13, 18, 0.1);
+  transition: box-shadow 0.35s var(--gp-ease), background-color 0.35s var(--gp-ease);
+}
+
+.ast-header-button-1 .ast-custom-button {
+  transition: transform 0.25s var(--gp-ease), box-shadow 0.25s var(--gp-ease), filter 0.25s var(--gp-ease);
+  box-shadow: 0 4px 14px rgba(255, 46, 126, 0.35);
+}
+.ast-header-button-1 .ast-custom-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 46, 126, 0.45);
+  filter: brightness(1.05);
+}
+
+/* ----- Hero: deeper atmosphere + readable type ----- */
+#bg.elementor-element-d2ed37a,
+#bg.bg {
+  position: relative;
+}
+#bg.elementor-element-d2ed37a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(255, 46, 126, 0.18), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 15% 80%, rgba(198, 244, 50, 0.08), transparent 50%),
+    linear-gradient(180deg, rgba(14, 13, 18, 0.35) 0%, rgba(14, 13, 18, 0.55) 45%, rgba(14, 13, 18, 0.75) 100%);
+}
+#bg > .e-con-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero badge / heading pop */
+#bg .elementor-heading-title {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+  letter-spacing: -0.02em;
+}
+#bg .elementor-widget-text-editor,
+#bg .elementor-icon-list-text {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Hero CTAs */
+#bg .btn-lime .elementor-button,
+#bg .elementor-element-55fe249 .elementor-button {
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 12px 32px rgba(198, 244, 50, 0.25);
+  transition: transform 0.25s var(--gp-ease), box-shadow 0.25s var(--gp-ease), filter 0.25s var(--gp-ease);
+}
+#bg .btn-lime .elementor-button:hover,
+#bg .elementor-element-55fe249 .elementor-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.18), 0 18px 40px rgba(198, 244, 50, 0.35);
+  filter: brightness(1.04);
+}
+#bg .elementor-element-389b14c .elementor-button {
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s var(--gp-ease), background-color 0.25s var(--gp-ease), border-color 0.25s var(--gp-ease);
+}
+#bg .elementor-element-389b14c .elementor-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Hero entrance */
+#bg.gp-hero-ready .gp-hero-step {
+  opacity: 0;
+  transform: translateY(22px);
+  animation: gpHeroIn 0.75s var(--gp-ease) forwards;
+}
+#bg.gp-hero-ready .gp-hero-step:nth-of-type(1) { animation-delay: 0.06s; }
+#bg.gp-hero-ready .gp-hero-step:nth-of-type(2) { animation-delay: 0.16s; }
+#bg.gp-hero-ready .gp-hero-step:nth-of-type(3) { animation-delay: 0.28s; }
+#bg.gp-hero-ready .gp-hero-step:nth-of-type(4) { animation-delay: 0.4s; }
+#bg.gp-hero-ready .gp-hero-step:nth-of-type(5) { animation-delay: 0.5s; }
+
+@keyframes gpHeroIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----- Trust strip ----- */
+.gp-trust.is-visible .elementor-icon-list-item {
+  transition: transform 0.35s var(--gp-ease), opacity 0.35s var(--gp-ease);
+}
+.gp-trust .elementor-icon-list-icon svg {
+  transition: transform 0.35s var(--gp-ease), fill 0.35s var(--gp-ease);
+}
+.gp-trust .elementor-icon-list-item:hover .elementor-icon-list-icon svg {
+  transform: scale(1.12);
+  fill: var(--gp-pink);
+}
+
+/* ----- Niche ticker: punchier ----- */
+.nichebar {
+  border-top: 1px solid rgba(198, 244, 50, 0.25);
+  border-bottom: 1px solid rgba(198, 244, 50, 0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.nichebar .ticker span:not(.separator) {
+  opacity: 0.92;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+.nichebar:hover .ticker span:not(.separator) {
+  opacity: 1;
+}
+.nichebar .separator {
+  color: var(--gp-lime) !important;
+  text-shadow: 0 0 12px rgba(198, 244, 50, 0.55);
+  font-size: 13px !important;
+}
+
+/* ----- Section atmosphere ----- */
+.elementor-8 .e-con.e-parent:not(#bg):not(.bg) {
+  position: relative;
+}
+
+/* Soft paper grain on light sections */
+.gp-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s var(--gp-ease), transform 0.7s var(--gp-ease);
+  will-change: opacity, transform;
+}
+.gp-reveal.is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Industry / icon cards */
+a.glowth-card-link,
+.elementor-8 .elementor-widget-icon-box {
+  transition: transform 0.35s var(--gp-ease);
+}
+a.glowth-card-link:hover {
+  transform: translateY(-5px);
+}
+a.glowth-card-link:hover .elementor-icon-box-title {
+  color: var(--gp-pink);
+}
+.elementor-8 .elementor-widget-icon-box .elementor-icon-box-wrapper {
+  border-radius: 8px;
+  transition: background-color 0.35s var(--gp-ease), box-shadow 0.35s var(--gp-ease);
+}
+a.glowth-card-link:hover .elementor-icon-box-wrapper,
+.elementor-8 .elementor-widget-icon-box:hover .elementor-icon-box-wrapper {
+  background-color: rgba(255, 46, 126, 0.04);
+  box-shadow: 0 12px 32px rgba(14, 13, 18, 0.06);
+}
+
+/* Service / content cards with images */
+.elementor-8 .elementor-widget-image img,
+.elementor-8 .elementor-widget-image picture {
+  transition: transform 0.55s var(--gp-ease), filter 0.55s var(--gp-ease);
+}
+.elementor-8 .elementor-widget-image:hover img {
+  transform: scale(1.03);
+  filter: contrast(1.04) saturate(1.06);
+}
+
+/* Buttons sitewide on home */
+.elementor-8 .elementor-button {
+  transition: transform 0.25s var(--gp-ease), box-shadow 0.25s var(--gp-ease), filter 0.25s var(--gp-ease);
+}
+.elementor-8 .elementor-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Comparison / tables feel sharper */
+.elementor-8 table {
+  box-shadow: 0 16px 48px rgba(14, 13, 18, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* FAQ accordion hint */
+.elementor-8 .e-n-accordion-item,
+.elementor-8 .elementor-accordion-item {
+  transition: box-shadow 0.3s var(--gp-ease), transform 0.3s var(--gp-ease);
+}
+.elementor-8 .e-n-accordion-item:hover,
+.elementor-8 .elementor-accordion-item:hover {
+  box-shadow: 0 8px 28px rgba(14, 13, 18, 0.06);
+}
+
+/* Audit / CTA band emphasis */
+#audit,
+[id="audit"] {
+  scroll-margin-top: 100px;
+}
+
+/* Slightly richer body text contrast on light bg */
+.elementor-8 .elementor-widget-text-editor p {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #bg.gp-hero-ready .gp-hero-step,
+  .gp-reveal,
+  a.glowth-card-link,
+  .elementor-8 .elementor-button,
+  .elementor-8 .elementor-widget-image img {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
