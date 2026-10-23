@@ -1,0 +1,20 @@
+# Used only when the domain's document root is this project folder instead of public/
+# (for example a cPanel domain pointed at ~/glowthdot.com). Pointing the document root
+# at public/ is better; this file then does nothing.
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Links that spell out /public/ drop it
+    RewriteCond %{THE_REQUEST} \s/public/(\S*) [NC]
+    RewriteRule ^ /%1 [L,R=301]
+
+    # Serve everything from public/: the code, .env, composer files and any
+    # other folder next to them (old sites, backups) are never reachable
+    RewriteRule ^(?!public/)(.*)$ public/$1 [L]
+</IfModule>
+
+# Without mod_rewrite, refuse everything rather than expose the project files
+<IfModule !mod_rewrite.c>
+    Require all denied
+</IfModule>

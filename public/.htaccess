@@ -5,14 +5,20 @@
 
     RewriteEngine On
 
+    # Redirects below build the address from %1 instead of REQUEST_URI: when the project
+    # root is the document root, the root .htaccess routes requests in here and
+    # REQUEST_URI gains a /public prefix that visitors must never see.
+
     # Live domain only: one canonical origin, https://glowthdot.com (localhost is untouched).
     # X-Forwarded-Proto covers hosts that terminate HTTPS at a proxy or CDN.
     RewriteCond %{HTTP_HOST} ^www\.glowthdot\.com$ [NC]
-    RewriteRule ^ https://glowthdot.com%{REQUEST_URI} [L,R=301]
+    RewriteCond %{REQUEST_URI} ^(?:/public(?=/))?(.*)$
+    RewriteRule ^ https://glowthdot.com%1 [L,R=301]
     RewriteCond %{HTTP_HOST} ^glowthdot\.com$ [NC]
     RewriteCond %{HTTPS} off
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
-    RewriteRule ^ https://glowthdot.com%{REQUEST_URI} [L,R=301]
+    RewriteCond %{REQUEST_URI} ^(?:/public(?=/))?(.*)$
+    RewriteRule ^ https://glowthdot.com%1 [L,R=301]
 
     # Old WordPress upload URLs (still in Google and in shared links) live under /images/ now
     RewriteRule ^wp-content/uploads/(.+)$ /images/$1 [L,R=301]
@@ -38,7 +44,8 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} !/$
     RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,5}$
-    RewriteRule ^ %{REQUEST_URI}/ [L,R=301]
+    RewriteCond %{REQUEST_URI} ^(?:/public(?=/))?(.*)$
+    RewriteRule ^ %1/ [L,R=301]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
