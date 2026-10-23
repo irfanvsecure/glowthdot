@@ -2,12 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class SiteController extends Controller
 {
-    public function show(?string $path = null): Response
+    public function show(Request $request, ?string $path = null): Response|RedirectResponse
     {
+        // When the domain serves the project folder, /public/... and /public/index.php also
+        // reach the app; send them to the one real address of the page.
+        if (preg_match('#^/public(/index\.php)?$#', $request->getBaseUrl())) {
+            $target = preg_replace('#^/index\.php(?=/|$)#', '', $request->getPathInfo()) ?: '/';
+            $query = $request->getQueryString();
+
+            return redirect()->away($request->getSchemeAndHttpHost().$target.($query ? '?'.$query : ''), 301);
+        }
+
         $path = trim((string) $path, '/');
         $path = str_replace('\\', '/', $path);
 
@@ -57,6 +68,15 @@ class SiteController extends Controller
         return response($html, 200, [
             'Content-Type' => 'text/html; charset=UTF-8',
         ]);
+    }
+
+    /**
+     * Permanent redirect for an old URL; the route passes the new page's path as "to".
+     */
+    public function moved(string $to): RedirectResponse
+    {
+        // url() drops trailing slashes; pages live at the slash form
+        return redirect()->away(url($to).'/', 301);
     }
 
     /**

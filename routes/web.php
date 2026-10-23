@@ -18,16 +18,14 @@ Route::withoutMiddleware([
     EncryptCookies::class,
     AddQueuedCookiesToResponse::class,
 ])->group(function () {
-    // Laravel matches these with or without the trailing slash. url() strips trailing
-    // slashes, so add it back to land on the canonical URL in a single hop.
-    $to = fn (string $path) => fn () => redirect()->away(url($path).'/', 301);
-
-    Route::get('/privacy-policy', $to('privacy-policy-2'));
+    // Old URLs. A controller action rather than closures, because `php artisan route:cache`
+    // loses the variables a closure captures.
+    Route::get('/privacy-policy', [SiteController::class, 'moved'])->defaults('to', 'privacy-policy-2');
     // The audit funnel lives at /get-a-free-audit/ (storage/app/live-html/get-a-free-audit.html)
-    Route::get('/free-audit', $to('get-a-free-audit'));
-    Route::get('/our-services', $to('services'));
+    Route::get('/free-audit', [SiteController::class, 'moved'])->defaults('to', 'get-a-free-audit');
+    Route::get('/our-services', [SiteController::class, 'moved'])->defaults('to', 'services');
     // Stale WordPress author archive (was a copy of the home page)
-    Route::get('/author/abu-bakar', $to('about-us'));
+    Route::get('/author/abu-bakar', [SiteController::class, 'moved'])->defaults('to', 'about-us');
 
     // Elementor form submissions (the page scripts still use the WordPress endpoint)
     Route::post('/wp-admin/admin-ajax.php', [LeadController::class, 'store'])->middleware('throttle:10,1');
