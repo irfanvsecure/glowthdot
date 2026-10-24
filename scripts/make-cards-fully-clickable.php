@@ -55,7 +55,8 @@ function wrapBoxes(string $html): array
                 $innerClean
             ) ?? $innerClean;
 
-            return $m[1].'<a class="glowth-card-link" href="'.$href.'" style="display:block;color:inherit;text-decoration:none;">'.$innerClean.'</a>'.$m[3];
+            // $m[3] starts with the content div's </div>: close it inside the link, or browsers split the link
+            return $m[1].'<a class="glowth-card-link" href="'.$href.'" style="display:block;color:inherit;text-decoration:none;">'.$innerClean.'</div></a>'.preg_replace('#^</div>#', '', $m[3]);
         },
         $html
     );
@@ -70,7 +71,7 @@ foreach ($files as $slug) {
     [$html, $n] = wrapBoxes($html);
     // inject tiny CSS once
     if ($n > 0 && stripos($html, 'glowth-card-link') !== false && stripos($html, '/* glowth-card-link */') === false) {
-        $css = '<style>/* glowth-card-link */a.glowth-card-link{display:block;color:inherit;text-decoration:none;}a.glowth-card-link:hover .elementor-icon-box-title{text-decoration:underline;}</style>';
+        $css = '<style>/* glowth-card-link */a.glowth-card-link>.elementor-icon-box-content{margin-top:15px;}a.glowth-card-link{display:block;color:inherit;text-decoration:none;}a.glowth-card-link:hover .elementor-icon-box-title{text-decoration:underline;}</style>';
         $html = preg_replace('/<\/head>/i', $css.'</head>', $html, 1) ?? $html;
     }
     file_put_contents($file, $html);
