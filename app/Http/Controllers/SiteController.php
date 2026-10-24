@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\PageSpeed;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class SiteController extends Controller
 {
-    public function show(Request $request, ?string $path = null): Response|RedirectResponse
+    public function show(Request $request, PageSpeed $speed, ?string $path = null): Response|RedirectResponse
     {
         // When the domain serves the project folder, /public/... and /public/index.php also
         // reach the app; send them to the one real address of the page.
@@ -64,6 +65,8 @@ class SiteController extends Controller
                 1
             ) ?? $html;
         }
+
+        $html = $speed->optimize($html);
 
         return response($html, 200, [
             'Content-Type' => 'text/html; charset=UTF-8',
