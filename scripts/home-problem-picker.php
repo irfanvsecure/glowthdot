@@ -91,7 +91,7 @@ $section = <<<HTML
 <section class="gl-fix" id="find-your-fix" aria-labelledby="gl-fix-title">
   <div class="gl-fix__in">
     <div class="gl-fix__head">
-      <span class="gl-fix__kicker">— Find your fix</span>
+      <span class="gl-fix__kicker">Find your fix</span>
       <h2 class="gl-fix__title" id="gl-fix-title">Tell us what's hurting. <span>We'll show you what fixes it.</span></h2>
       <p class="gl-fix__intro">No packages to decode, no "custom quote" guessing. Pick the problem that costs you the most bookings and start there.</p>
     </div>

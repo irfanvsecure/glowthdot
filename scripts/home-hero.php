@@ -26,8 +26,13 @@ $h = str_replace(
     $h
 );
 
+// The card sits on a 3D stage with three floating, decorative notifications (public/js/home-v2.js)
 $card = <<<'HTML'
-<aside class="gh-audit" aria-labelledby="gh-audit-title">
+<div class="gh-stage" data-v2-stage>
+<div class="gh-float gh-float--a" aria-hidden="true" data-depth="1.6"><span class="gh-float__ic">📅</span><span><b>New booking</b><small>Hydrafacial · Sat 11:00 AM</small></span></div>
+<div class="gh-float gh-float--b" aria-hidden="true" data-depth="2.2"><span class="gh-float__ic">⭐</span><span><b>New 5-star review</b><small>Google Maps</small></span></div>
+<div class="gh-float gh-float--c" aria-hidden="true" data-depth="1.2"><span class="gh-float__ic gh-float__ic--wa">💬</span><span><b>WhatsApp answered</b><small>by your AI receptionist</small></span></div>
+<aside class="gh-audit" aria-labelledby="gh-audit-title" data-v2-tilt>
   <div class="gh-audit__top">
     <span class="gh-audit__badge">Free · worth AED 2,000</span>
     <span class="gh-audit__step">Step 1 of 7</span>
@@ -52,10 +57,11 @@ $card = <<<'HTML'
   <p class="gh-audit__note"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>90 seconds · Results on WhatsApp in 48 hrs · No obligation</p>
   <a class="gh-audit__alt" href="/get-a-free-audit/?site=none">No website yet? Start here →</a>
 </aside>
+</div>
 HTML;
 
-// An older version of the card is swapped for this one
-$h = preg_replace('#<aside class="gh-audit".*?</aside>#s', $card, $h, 1);
+// An older version of the card (with or without its stage) is swapped for this one
+$h = preg_replace('#<div class="gh-stage".*?</aside>\s*</div>|<aside class="gh-audit".*?</aside>#s', $card, $h, 1);
 
 if (! str_contains($h, 'class="gh-audit"')) {
     // Last child of the hero slide's .e-con-inner, next to the copy column

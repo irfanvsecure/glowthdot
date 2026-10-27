@@ -68,6 +68,8 @@ class SiteController extends Controller
         // Home only: richer UI polish (content unchanged)
         if ($slug === 'home' && ! str_contains($html, 'home-polish.css')) {
             $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/home-polish.css').'" />';
+            // v2 design layer: depth, section rhythm, 3D motion (after polish, so it wins ties)
+            $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/home-v2.css').'" />';
         }
         $hidden = in_array($slug, self::HIDDEN_PAGES, true);
         if (self::HIDDEN_PAGES !== []) {
@@ -85,7 +87,8 @@ class SiteController extends Controller
         if ($slug === 'home' && ! str_contains($html, 'home-polish.js')) {
             $html = preg_replace(
                 '/<\/body>/i',
-                '<script src="'.$this->asset('/js/home-polish.js').'" defer></script></body>',
+                '<script src="'.$this->asset('/js/home-polish.js').'" defer></script>'
+                .'<script src="'.$this->asset('/js/home-v2.js').'" defer></script></body>',
                 $html,
                 1
             ) ?? $html;
