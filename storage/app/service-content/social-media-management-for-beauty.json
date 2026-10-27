@@ -1,0 +1,526 @@
+{
+    "docId": "540",
+    "hero": {
+        "anchors": [],
+        "pill": "Social Media Management · Beauty feeds only",
+        "title": "Social media management for salons &amp; clinics that turns <span class=\"hl\">followers into clients.</span>",
+        "intro": "<p>In the UAE, your Instagram is your storefront window — clients judge your salon by your grid before they ever call. We run beauty feeds end to end: content shot at your location, reels that reach, captions that book, and DMs that never go cold.</p>",
+        "ctas": [
+            {
+                "href": "/get-a-free-audit/",
+                "label": "Get My Free Profile Audit"
+            },
+            {
+                "href": "/get-a-free-audit/",
+                "label": "See The Grid Makeover"
+            }
+        ],
+        "chips": [
+            {
+                "title": "<span> 20+ </span>",
+                "text": "posts &amp; reels produced monthly"
+            },
+            {
+                "title": "<span> 7× </span>",
+                "text": "average reach growth in 90 days*"
+            },
+            {
+                "title": "<span> 96 </span>",
+                "text": "booking enquiries/month from DMs*"
+            }
+        ],
+        "extra": [],
+        "visual": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-1d0ca8a e-con-full e-flex e-con e-child\" data-id=\"1d0ca8a\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-2f2c926 elementor-widget elementor-widget-html\" data-id=\"2f2c926\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t\n<style>\n  :root {\n    --card-bg: #ffffff;\n    --page-bg: #f2f0f5;\n    --ink: #17131f;\n    --ink-soft: #6f6a7c;\n    --messy: #d8d4de;\n    --messy-text: #8a8494;\n    --pink-a: #ff3d81;\n    --pink-b: #ff5f9e;\n    --violet-a: #7c3aed;\n    --violet-b: #a78bfa;\n    --dark: #100d16;\n    --lime: #c6f542;\n    --pill-bg: #f6f2fb;\n    --radius: 16px;\n    --tile-radius: 12px;\n  }\n\n  * { margin: 0; padding: 0; box-sizing: border-box; }\n\n  body {\n    font-family: \"Segoe UI\", system-ui, -apple-system, sans-serif;\n    background: var(--page-bg);\n    min-height: 100vh;\n  }\n\n  /* ---------- Card ---------- */\n  .grid-card {\n    background: var(--card-bg);\n    border-radius: 24px;\n    padding: 24px;\n    width: 100%;\n    max-width: 440px;\n    box-shadow: 0 20px 50px rgba(23, 19, 31, 0.10);\n  }\n\n  /* ---------- Header ---------- */\n  .card-head {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n    margin-bottom: 18px;\n  }\n\n  .avatar {\n    width: 44px;\n    height: 44px;\n    border-radius: 50%;\n    display: grid;\n    place-items: center;\n    color: #fff;\n    font-weight: 700;\n    font-size: 18px;\n    background: linear-gradient(135deg, var(--pink-a), var(--violet-a));\n    flex-shrink: 0;\n  }\n\n  .card-head b { display: block; font-size: 15px; color: var(--ink); }\n\n  .card-head small {\n    display: block;\n    font-size: 12.5px;\n    color: var(--ink-soft);\n    margin-top: 2px;\n    transition: color .3s ease;\n  }\n\n  .grid-card.is-on .card-head small { color: var(--violet-a); }\n\n  /* ---------- 3x3 Grid ---------- */\n  .grid9 {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 10px;\n  }\n\n  .tile {\n    aspect-ratio: 1 / 1;\n    border-radius: var(--tile-radius);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    padding: 10px;\n    font-size: 12px;\n    font-weight: 600;\n    line-height: 1.35;\n    background: var(--messy);\n    color: var(--messy-text);\n    transition:\n      background .45s ease,\n      color .45s ease,\n      transform .45s cubic-bezier(.34, 1.56, .64, 1);\n    will-change: transform;\n  }\n\n  /* Flip pulse when content swaps */\n  .tile.swapping { transform: scale(.86) rotateY(12deg); }\n\n  /* After-state tile themes */\n  .grid-card.is-on .tile.t-pink {\n    background: linear-gradient(140deg, var(--pink-a), var(--pink-b));\n    color: #fff;\n  }\n  .grid-card.is-on .tile.t-violet {\n    background: linear-gradient(140deg, var(--violet-a), var(--violet-b));\n    color: #fff;\n  }\n  .grid-card.is-on .tile.t-dark {\n    background: var(--dark);\n    color: var(--lime);\n    display: block;\n  }\n\n  /* ---------- Stats ---------- */\n  .stats {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    gap: 10px;\n    margin: 18px 0 16px;\n  }\n\n  .stat-pill {\n    background: var(--pill-bg);\n    border: 1px solid #e9e3f3;\n    color: var(--ink);\n    font-size: 13px;\n    font-weight: 700;\n    padding: 9px 16px;\n    border-radius: 999px;\n    transition: transform .35s cubic-bezier(.34, 1.56, .64, 1),\n                border-color .35s ease, box-shadow .35s ease;\n  }\n\n  .grid-card.is-on .stat-pill {\n    border-color: #dccdf7;\n    box-shadow: 0 4px 14px rgba(124, 58, 237, .12);\n  }\n\n  .stat-pill.bump { transform: scale(1.12); }\n\n  /* ---------- Toggle ---------- */\n  .toggle-row {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: 12px;\n  }\n\n  .sw-lbl {\n    font-size: 14px;\n    font-weight: 700;\n    color: var(--ink-soft);\n    transition: color .3s ease;\n    cursor: pointer;\n    user-select: none;\n  }\n  .sw-lbl.act { color: var(--ink); }\n\n  .switch {\n    width: 56px;\n    height: 30px;\n    border-radius: 999px;\n    border: none;\n    background: var(--messy);\n    position: relative;\n    cursor: pointer;\n    transition: background .35s ease;\n    flex-shrink: 0;\n  }\n  .switch::after {\n    content: \"\";\n    position: absolute;\n    top: 3px;\n    left: 3px;\n    width: 24px;\n    height: 24px;\n    border-radius: 50%;\n    background: #fff;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);\n    transition: transform .35s cubic-bezier(.34, 1.56, .64, 1);\n  }\n  .switch[aria-checked=\"true\"] {\n    background: linear-gradient(135deg, var(--pink-a), var(--violet-a));\n  }\n  .switch[aria-checked=\"true\"]::after { transform: translateX(26px); }\n\n  .switch:focus-visible {\n    outline: 3px solid var(--violet-b);\n    outline-offset: 3px;\n  }\n\n  @media (prefers-reduced-motion: reduce) {\n    .tile, .stat-pill, .switch::after { transition: none; }\n  }\n  @media(max-width: 768px){\n     .grid-card{\n         padding: 13px;\n     }\n  }\n</style>\n\n\n\n<div class=\"grid-card\" id=\"gridCard\">\n  <div class=\"card-head\">\n    <span class=\"avatar\">Y</span>\n    <div>\n      <b>yourclinic.ae</b>\n      <small id=\"subline\">Posting \"when we remember\"</small>\n    </div>\n  </div>\n\n  <div class=\"grid9\" id=\"grid9\"><!-- tiles injected by JS --></div>\n\n  <div class=\"stats\" id=\"stats\"><!-- pills injected by JS --></div>\n\n  <div class=\"toggle-row\">\n    <span class=\"sw-lbl act\" id=\"lblBefore\">Before</span>\n    <button class=\"switch\" id=\"gridSwitch\" role=\"switch\" aria-checked=\"false\" aria-label=\"Toggle grid makeover\"></button>\n    <span class=\"sw-lbl\" id=\"lblAfter\">With Glowth</span>\n  </div>\n</div>\n\n<script>\n(function () {\n  \"use strict\";\n\n  /* ---------------- Data ---------------- */\n\n  var BEFORE = {\n    subline: 'Posting \"when we remember\"',\n    tiles: [\n      { text: \"Blurry mirror pic\" },\n      { text: \"Repost #7\" },\n      { text: \"Eid post (last year's)\" },\n      { text: \"Random quote\" },\n      { text: \"Dark room photo\" },\n      { text: \"Price list screenshot\" },\n      { text: \"Blurry mirror pic 2\" },\n      { text: \"\\u201CWe\\u2019re hiring\\u201D\" },\n      { text: \"3-week gap\" }\n    ],\n    stats: [\"Reach: 1.2k/mo\", \"+4 followers\", \"2 DMs\"]\n  };\n\n  var AFTER = {\n    subline: \"Posting daily \\u00B7 managed by Glowth\",\n    tiles: [\n      { text: \"Laser results: 6 sessions\",       theme: \"t-pink\"   },\n      { text: \"THIS MONTH: Hydrafacial AED 450\", theme: \"t-dark\"   },\n      { text: \"POV: your first visit\",           theme: \"t-violet\" },\n      { text: \"Meet your injector\",              theme: \"t-violet\" },\n      { text: \"Bridal glow timeline\",            theme: \"t-pink\"   },\n      { text: \"Real client review \\u2B50\\u2B50\\u2B50\\u2B50\\u2B50\", theme: \"t-dark\" },\n      { text: \"Brows: before / after\",           theme: \"t-pink\"   },\n      { text: \"3 slots left Saturday\",           theme: \"t-violet\" },\n      { text: \"Behind the treatment room\",       theme: \"t-pink\"   }\n    ],\n    stats: [\"Reach: 8.4k/mo\", \"+840 followers\", \"96 booking DMs\"]\n  };\n\n  /* ---------------- Elements ---------------- */\n\n  var card      = document.getElementById(\"gridCard\");\n  var grid      = document.getElementById(\"grid9\");\n  var statsWrap = document.getElementById(\"stats\");\n  var subline   = document.getElementById(\"subline\");\n  var sw        = document.getElementById(\"gridSwitch\");\n  var lblBefore = document.getElementById(\"lblBefore\");\n  var lblAfter  = document.getElementById(\"lblAfter\");\n\n  var isOn = false;\n  var STAGGER = 45; // ms delay between each tile swap\n\n  /* ---------------- Render ---------------- */\n\n  function buildTiles(state) {\n    grid.innerHTML = \"\";\n    state.tiles.forEach(function (t) {\n      var el = document.createElement(\"div\");\n      el.className = \"tile\" + (t.theme ? \" \" + t.theme : \"\");\n      el.textContent = t.text;\n      grid.appendChild(el);\n    });\n  }\n\n  function buildStats(state) {\n    statsWrap.innerHTML = \"\";\n    state.stats.forEach(function (s) {\n      var el = document.createElement(\"span\");\n      el.className = \"stat-pill\";\n      el.textContent = s;\n      statsWrap.appendChild(el);\n    });\n  }\n\n  /* ---------------- Animated swap ---------------- */\n\n  function swapTo(state) {\n    var tiles = grid.querySelectorAll(\".tile\");\n\n    tiles.forEach(function (tile, i) {\n      setTimeout(function () {\n        tile.classList.add(\"swapping\");\n\n        setTimeout(function () {\n          var data = state.tiles[i];\n          tile.textContent = data.text;\n          tile.className = \"tile\" + (data.theme ? \" \" + data.theme : \"\");\n          // force reflow so the un-scale transition plays\n          void tile.offsetWidth;\n        }, 180);\n      }, i * STAGGER);\n    });\n\n    // Stats + subline update after the wave finishes\n    var totalDelay = tiles.length * STAGGER + 200;\n    setTimeout(function () {\n      subline.textContent = state.subline;\n      buildStats(state);\n      statsWrap.querySelectorAll(\".stat-pill\").forEach(function (pill, i) {\n        setTimeout(function () {\n          pill.classList.add(\"bump\");\n          setTimeout(function () { pill.classList.remove(\"bump\"); }, 300);\n        }, i * 90);\n      });\n    }, totalDelay);\n  }\n\n  /* ---------------- Toggle logic ---------------- */\n\n  function setState(on) {\n    if (on === isOn) return;\n    isOn = on;\n\n    sw.setAttribute(\"aria-checked\", String(on));\n    card.classList.toggle(\"is-on\", on);\n    lblBefore.classList.toggle(\"act\", !on);\n    lblAfter.classList.toggle(\"act\", on);\n\n    swapTo(on ? AFTER : BEFORE);\n  }\n\n  sw.addEventListener(\"click\", function () { setState(!isOn); });\n  lblBefore.addEventListener(\"click\", function () { setState(false); });\n  lblAfter.addEventListener(\"click\",  function () { setState(true);  });\n\n  /* ---------------- Init ---------------- */\n\n  buildTiles(BEFORE);\n  buildStats(BEFORE);\n})();\n</script>\n\n\n</div></div></div>"
+    },
+    "sections": [
+        {
+            "anchors": [],
+            "kicker": "The storefront problem",
+            "title": "Instagram management for beauty — <span style=\"color:#c6f432\">because your grid is your shopfront</span>",
+            "intro": "<p>Before a new client trusts you with her face, she checks your feed. Here’s what most salon accounts are silently telling her.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">80% </span>",
+                    "icon": "",
+                    "title": "<span> Of clients check Instagram before booking </span>",
+                    "href": "",
+                    "text": "An inconsistent grid reads as an inconsistent salon — fair or not, that's the judgement.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">11 days </span>",
+                    "icon": "",
+                    "title": "<span> Average gap between salon posts </span>",
+                    "href": "",
+                    "text": "The algorithm forgets you, and so does the client who almost followed.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">90% </span>",
+                    "icon": "",
+                    "title": "<span> Of salon content shows no prices, no CTA </span>",
+                    "href": "",
+                    "text": "Pretty pictures with no path to booking — window shopping with the door locked.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">48% </span>",
+                    "icon": "",
+                    "title": "<span> Of DMs and comments go unanswered </span>",
+                    "href": "",
+                    "text": "Every ignored \"how much?\" is a client someone else will answer.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "What's included",
+            "title": "Beauty social media management, <span class=\"hl\">end to end</span>",
+            "intro": "<p>Not “posting services” — a content engine, a community desk and a booking funnel, run as one system.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-video\" viewbox=\"0 0 576 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z\"></path></svg>",
+                    "title": "<span> Content creation &amp; monthly shoots </span>",
+                    "href": "",
+                    "text": "A planned shoot day at your location each month feeds the whole calendar: treatment reels, results content, team moments and offer creatives — edited, captioned and scheduled by us.",
+                    "list": [
+                        {
+                            "html": "Monthly on-location content day",
+                            "href": ""
+                        },
+                        {
+                            "html": "20+ posts, reels &amp; story sets per month",
+                            "href": ""
+                        },
+                        {
+                            "html": "Beauty-fluent captions with booking CTAs",
+                            "href": ""
+                        },
+                        {
+                            "html": "Compliant results &amp; treatment content",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-play\" viewbox=\"0 0 448 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z\"></path></svg>",
+                    "title": "<span> Reels strategy that actually reaches </span>",
+                    "href": "",
+                    "text": "Reels are where new clients discover you — and no, nobody on your team has to dance. Hook-first treatment content, POV formats and satisfying process videos do the reaching; your results do the convincing.",
+                    "list": [
+                        {
+                            "html": "Hook bank tested per treatment",
+                            "href": ""
+                        },
+                        {
+                            "html": "Trend adaptation — beauty-relevant only",
+                            "href": ""
+                        },
+                        {
+                            "html": "POV, process &amp; transformation formats",
+                            "href": ""
+                        },
+                        {
+                            "html": "Owner-on-camera optional, never required",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-far-comment\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z\"></path></svg>",
+                    "title": "<span> Community &amp; DM management </span>",
+                    "href": "",
+                    "text": "Comments answered in your tone, story replies handled, and every \"price?\" turned into a conversation. Pair with the AI booking bot and enquiries get answered in seconds — at 2 PM or 2 AM.",
+                    "list": [
+                        {
+                            "html": "Daily comment &amp; DM coverage",
+                            "href": ""
+                        },
+                        {
+                            "html": "Saved-reply library in your voice",
+                            "href": ""
+                        },
+                        {
+                            "html": "AI bot pairing for instant answers",
+                            "href": ""
+                        },
+                        {
+                            "html": "Escalation to your team when needed",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-chart-line\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z\"></path></svg>",
+                    "title": "<span> Booking-focused reporting </span>",
+                    "href": "",
+                    "text": "The monthly report counts what matters: profile visits, booking-link taps, DM enquiries and appointments attributed to social — with reach and followers as context, not the headline.",
+                    "list": [
+                        {
+                            "html": "Enquiries &amp; bookings from social, counted",
+                            "href": ""
+                        },
+                        {
+                            "html": "Content leaderboard — what converted",
+                            "href": ""
+                        },
+                        {
+                            "html": "Follower quality, not just quantity",
+                            "href": ""
+                        },
+                        {
+                            "html": "Next month's plan, adjusted by data",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "How the engine works",
+            "title": "Content marketing for beauty clinics, <span class=\"hl\">explained honestly</span>",
+            "intro": "",
+            "layout": "features",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "feature",
+                    "kicker": "The engine",
+                    "title": "One shoot day, a month of content",
+                    "body": "<p>The reason most salon accounts starve isn’t laziness — it’s that nobody has time to create content between clients. Our model fixes the supply problem: one planned shoot day per month at your location captures everything the calendar needs.</p><p>We arrive with a shot list built from what’s working across UAE beauty feeds: this month’s offers, two treatments in full, quick team moments, before-and-afters done compliantly, and five reels’ worth of hooks — then we handle every edit, caption and post time.</p>",
+                    "ctas": [
+                        {
+                            "href": "#",
+                            "label": "Read more +"
+                        }
+                    ],
+                    "visual": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-e0cea3e e-con-full e-flex e-con e-child\" data-id=\"e0cea3e\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-b561932 elementor-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"b561932\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Treatment reels filmed <b>5</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Results sets captured <b>8</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Offer creatives produced <b>4</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Story assets banked <b>30+</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Your team's time used <b>One afternoon</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "",
+            "title": "",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-ae0b2a7 e-con-full e-flex e-con e-child\" data-id=\"ae0b2a7\" data-element_type=\"container\" data-e-type=\"container\"><div class=\"elementor-element elementor-element-6ab31ce e-con-full e-flex e-con e-child\" data-id=\"6ab31ce\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-02f81d9 elementor-widget__width-initial elementor-widget elementor-widget-heading\" data-id=\"02f81d9\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">The proof layer\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-28ead3e elementor-widget elementor-widget-heading\" data-id=\"28ead3e\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">Followers don't pay rent — bookings do</h3>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-166733d elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"166733d\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"_animation\":\"fadeIn\"}' data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tFollower count is the vanity metric of the beauty industry. The accounts that fill calendars do three unglamorous things well: they post proof (results content converts harder than anything aesthetic), they make booking frictionless (link, price, CTA in every relevant caption), and they answer fast.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-9eda055 elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"9eda055\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"_animation\":\"fadeIn\"}' data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tThat’s why our content mix is weighted toward proof and offers, why every caption ends with a next step, and why community management is included rather than sold separately — the DM is where the follower becomes a client.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-dcddaf3 elementor-widget elementor-widget-button\" data-id=\"dcddaf3\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"#\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Read more +</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"elementor-element elementor-element-971682d e-con-full e-flex e-con e-child\" data-id=\"971682d\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t<div class=\"elementor-element elementor-element-b246685 e-con-full e-flex e-con e-child\" data-id=\"b246685\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-1862d5c elementor-view-stacked elementor-shape-rounded elementor-position-inline-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box\" data-id=\"1862d5c\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\t\t\t<div class=\"elementor-icon-box-icon\">\n\t\t\t\t<span class=\"elementor-icon\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-play\" viewbox=\"0 0 448 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z\"></path></svg>\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\tLaser results reel — \"6 sessions later\"\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-description\">\n\t\t\t\t\t\tProof content · 48.2k reach\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-1291199 elementor-widget elementor-widget-icon-box\" data-id=\"1291199\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t<i>31 DMs</i>\t\t\t\t\t\t</span>\n\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-2e29cbe e-con-full e-flex e-con e-child\" data-id=\"2e29cbe\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-9f4612b elementor-view-stacked elementor-shape-rounded elementor-position-inline-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box\" data-id=\"9f4612b\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\t\t\t<div class=\"elementor-icon-box-icon\">\n\t\t\t\t<span class=\"elementor-icon\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-play\" viewbox=\"0 0 448 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z\"></path></svg>\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t\"Last 3 Saturday slots\" story alert\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-description\">\n\t\t\t\t\t\tScarcity story · 900 views\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-7a515ee elementor-widget elementor-widget-icon-box\" data-id=\"7a515ee\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t<i>Filled in 2h</i>\t\t\t\t\t\t</span>\n\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-b5a5de4 e-con-full e-flex e-con e-child\" data-id=\"b5a5de4\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-9498e0a elementor-view-stacked elementor-shape-rounded elementor-position-inline-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box\" data-id=\"9498e0a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\t\t\t<div class=\"elementor-icon-box-icon\">\n\t\t\t\t<span class=\"elementor-icon\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-play\" viewbox=\"0 0 448 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z\"></path></svg>\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\tBridal package carousel\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-description\">\n\t\t\t\t\t\tSeasonal offer · saved 214 times\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-cc159bc elementor-widget elementor-widget-icon-box\" data-id=\"cc159bc\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t<i>23 enquiries</i>\t\t\t\t\t\t</span>\n\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div></div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Improvements, month by month",
+            "title": "Your first 90 days of <span class=\"hl\">managed social</span>",
+            "intro": "",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "WEEK 1–2",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Foundation </span>",
+                    "href": "",
+                    "text": "Profile rebuild, visual system, saved-reply library, first shoot day booked.",
+                    "list": [],
+                    "foot": "Grid system live",
+                    "extra": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-63937d9 elementor-widget elementor-widget-html\" data-id=\"63937d9\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "MONTH 1",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Consistency </span>",
+                    "href": "",
+                    "text": "Full calendar running: 20+ posts, near-daily stories, every DM answered.",
+                    "list": [],
+                    "foot": "Posting gap: 0 days",
+                    "extra": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-c74e87f elementor-widget elementor-widget-html\" data-id=\"c74e87f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "MONTH 2",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Reach compounds </span>",
+                    "href": "",
+                    "text": "Winning reel formats identified and doubled down; profile visits climb.",
+                    "list": [],
+                    "foot": "Reach up 4–7×",
+                    "extra": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-44207ab elementor-widget elementor-widget-html\" data-id=\"44207ab\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "MONTH 3",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Bookings flow </span>",
+                    "href": "",
+                    "text": "DM enquiries become a weekly rhythm; best organic content graduates into paid ads.",
+                    "list": [],
+                    "foot": "Social = booking channel",
+                    "extra": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-eab7fca elementor-widget elementor-widget-html\" data-id=\"eab7fca\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Before → after",
+            "title": "The improvements, <span style=\"color:#c6f432\">measured</span>",
+            "intro": "<p>Typical 90-day movement when Glowth takes over a salon’s social.*</p>",
+            "layout": "embed",
+            "footnote": "<p>*Illustrative figures representative of niche engagements; your audit includes your real baseline.</p>",
+            "embed": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-86dbcb5 e-con-full e-flex e-con e-child\" data-id=\"86dbcb5\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t<div class=\"elementor-element elementor-element-d124fe3 e-con-full e-flex e-con e-child\" data-id=\"d124fe3\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-03b5e4d e-con-full e-flex e-con e-child\" data-id=\"03b5e4d\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-1ddf046 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"1ddf046\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Posting consistency\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-7fe8de9 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"7fe8de9\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">Every Week\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-2bb9b93 elementor-widget elementor-widget-html\" data-id=\"2bb9b93\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack\">\n<i></i>\n</div>\n<b>12%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    width: 120px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.irow b {\n    margin-left: 610px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-08d11a2 elementor-widget elementor-widget-html\" data-id=\"08d11a2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-text\">100%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 720px;\n}\nb.after-text {\n    margin-left: 86px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-3262665 e-con-full e-flex e-con e-child\" data-id=\"3262665\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-8f69ea3 e-con-full e-flex e-con e-child\" data-id=\"8f69ea3\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-10e4d68 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"10e4d68\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Average monthly reach\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-8ac35f1 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"8ac35f1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">7×\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-38847ef elementor-widget elementor-widget-html\" data-id=\"38847ef\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-month\">\n<i></i>\n</div>\n<b class=\"itrack-month-text\">96%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-month {\n    flex: 1;\n    width: 300px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.itrack-month-text {\n    margin-left: 435px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-20f9177 elementor-widget elementor-widget-html\" data-id=\"20f9177\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-month\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-month-text\">168\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-month{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 470px;\n}\nb.after-month-text {\n    margin-left: 270px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-66fe91c e-con-full e-flex e-con e-child\" data-id=\"66fe91c\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-7d8f462 e-con-full e-flex e-con e-child\" data-id=\"7d8f462\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-36eace8 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"36eace8\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Profile visits / month\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-ab85899 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"ab85899\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">7x\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-b16d20f elementor-widget elementor-widget-html\" data-id=\"b16d20f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-before-hours\">\n<i></i>\n</div>\n<b class=\"itrack-before-hour\">0</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 6px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-before-hours {\n    flex: 1;\n    width: 20px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\nb.itrack-before-hour {\n    margin-left: 730px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-b9ebda2 elementor-widget elementor-widget-html\" data-id=\"b9ebda2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-hour\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-hour-text\">17%\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-hour{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 370px;\n}\nb.after-hour-text {\n    margin-left: 370px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-9585e5f e-con-full e-flex e-con e-child\" data-id=\"9585e5f\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-86bafc2 e-con-full e-flex e-con e-child\" data-id=\"86bafc2\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-ed766d9 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"ed766d9\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Booking enquiries from DMs / month\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-6cc5ef1 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"6cc5ef1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">5×\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-b7d3901 elementor-widget elementor-widget-html\" data-id=\"b7d3901\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-show-hours\">\n<i></i>\n</div>\n<b class=\"itrack-before-show\">18</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 6px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-show-hours {\n    flex: 1;\n    width: 420px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\nb.itrack-before-show {\n    margin-left: 430px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-d0e70d5 elementor-widget elementor-widget-html\" data-id=\"d0e70d5\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-show\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-show-text\">96\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-show{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 270px;\n}\nb.after-show-text {\n    margin-left: 470px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div><div class=\"elementor-element elementor-element-11227f6 e-con-full e-flex e-con e-child\" data-id=\"11227f6\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-d7ff55c elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"d7ff55c\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">This month's wins — client dashboard preview\n</p>\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-5273cca e-con-full e-flex e-con e-child\" data-id=\"5273cca\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-425b4c7 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"425b4c7\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Hydrafacial booked — Sara M.</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-42bff20 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"42bff20\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Reels</span>\n<span class=\"pos\">48,200</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-372d10d e-con-full e-flex e-con e-child\" data-id=\"372d10d\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-eec63be elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"eec63be\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Botox consult booked</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-8d2a6f0 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"8d2a6f0\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Stories</span>\n\n<span class=\"pos\">Filled in 2h</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-cd46a83 e-con-full e-flex e-con e-child\" data-id=\"cd46a83\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-d572aff elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"d572aff\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Price list sent — lead captured</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-605e6bf elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"605e6bf\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Feed</span>\n<span class=\"pos\">214</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-904d88d e-con-full e-flex e-con e-child\" data-id=\"904d88d\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-3462331 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"3462331\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Reminder sent — no-show avoided\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-09959c4 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"09959c4\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Community</span>\n<span class=\"pos\"> 96</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-63364ef e-con-full e-flex e-con e-child\" data-id=\"63364ef\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-3a76ba5 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"3a76ba5\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Regular client rebooked next month\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-4801826 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"4801826\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Growth</span>\n<span class=\"pos\"> +840</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Case study · Salon, Jumeirah",
+            "title": "\"Our grid finally looks like the salon we actually are. Reach is up seven times — but the real change is DMs asking to book, every single day.\"",
+            "intro": "<div><cite>Salon Owner — Jumeirah <em>(illustrative placeholder pending live client data)</em></cite></div><div class=\"cb-stats\"><div class=\"cb-stat\"> </div></div>",
+            "layout": "stats",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">7x </span>",
+                    "label": "of revenue now from retail"
+                },
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">96 </span>",
+                    "label": "DM booking enquiries/month"
+                },
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">0 </span>",
+                    "label": "hours of the owner's week spent posting"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Owner's knowledge hub",
+            "title": "Social media questions owners ask, <span class=\"hl\">answered straight</span>",
+            "intro": "",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> How often should a salon post on Instagram? </span>",
+                    "href": "",
+                    "text": "Consistency beats volume: 4–5 feed posts weekly with near-daily stories outperforms sporadic bursts. The algorithm and the audience both reward rhythm — which is exactly what a managed calendar guarantees.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Do reels really matter for a clinic? </span>",
+                    "href": "",
+                    "text": "Reels are where non-followers discover you — they're the top of your funnel. Process videos, transformations and POV formats reach cold audiences that static posts never touch. No dancing required.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Does the owner have to be on camera? </span>",
+                    "href": "",
+                    "text": "Only if you want to. Owner-led content builds connection fast, but treatment content, results and team moments carry accounts perfectly well. We build the format mix around your comfort level.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Organic social or paid ads first? </span>",
+                    "href": "",
+                    "text": "They compound: organic builds the proof and trust that make ads convert; ads scale the reach organic can't. Most clients start with managed organic, then feed the winners into paid — already proven content, cheaper results.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> How do you measure ROI on social media? </span>",
+                    "href": "",
+                    "text": "By counting the things that pay: profile visits, booking-link taps, DM enquiries and appointments attributed to social. Reach and follower charts are context in our reports — never the headline.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> What about TikTok? </span>",
+                    "href": "",
+                    "text": "TikTok is a discovery amplifier for beauty in the UAE — the same reel-first content strategy extends there naturally. We recommend it once Instagram is running consistently, so quality never dilutes.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "The difference, in one table",
+            "title": "Glowth social vs. a <span class=\"hl\">freelancer or typical agency</span>",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-cbd12c2 elementor-widget elementor-widget-html\" data-id=\"cbd12c2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t    \n    \n    \n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Comparison Table</title>\n    \n    <style>\n    \n    \n    .table-wrapper{\n        max-width:1400px;\n        margin:auto;\n        background:#fff;\n        border-radius:24px;\n        overflow:hidden;\n        box-shadow:0 10px 30px rgba(0,0,0,.08);\n    }\n    \n    table{\n        width:100%;\n        border-collapse:collapse;\n    }\n    \n    thead th{\n        background:#0f0f13;\n        color:#fff;\n        padding: 14px 18px;\n        font-size:13.5px;\n        font-weight:700;\n        text-align:center;\n    }\n    \n    thead th:first-child{\n        width:28%;\n    }\n    \n    thead th:nth-child(2){\n        color:#a8ff00;\n    }\n    \n    tbody td{\n        padding: 14px 100px;\n        font-size:13.5px;\n        border-bottom:1px solid #ececec;\n        vertical-align:middle;\n    }\n    \n    tbody tr:last-child td{\n        border-bottom:none;\n    }\n    \n    tbody td:first-child{\n        color:#111;\n        font-weight:500;\n    }\n    \n    tbody td:not(:first-child){\n        text-align:center;\n        font-weight:700;\n    }\n    \n    .green{\n        color:#00a651;\n    }\n    \n    .orange{\n        color:#c97d00;\n    }\n    \n    .red{\n        color:#e23b5b;\n    }\n    \n    @media (max-width:900px){\n    \n        table{\n            display:block;\n            overflow-x:auto;\n            white-space:nowrap;\n        }\n    \n        thead th,\n        tbody td{\n            font-size:16px;\n            padding:16px;\n        }\n    }\n    </style>\n    \n    <body>\n    \n    <div class=\"table-wrapper\">\n   <table>\n\n    <thead>\n        <tr>\n            <th></th>\n            <th>Glowth</th>\n            <th>Freelancer / Typical Agency</th>\n        </tr>\n    </thead>\n\n    <tbody>\n\n        <tr>\n            <td>Content supply</td>\n            <td class=\"green\">Monthly shoot day at your location</td>\n            <td class=\"red\">\"Send us photos when you can\"</td>\n        </tr>\n\n        <tr>\n            <td>Industry fluency</td>\n            <td class=\"green\">Beauty treatments, seasons &amp; compliance</td>\n            <td class=\"red\">Same templates as the car wash client</td>\n        </tr>\n\n        <tr>\n            <td>DMs &amp; comments</td>\n            <td class=\"green\">✓ Managed daily + AI bot pairing</td>\n            <td class=\"red\">✗ Not included</td>\n        </tr>\n\n        <tr>\n            <td>Success metric</td>\n            <td class=\"green\">Enquiries &amp; bookings</td>\n            <td class=\"red\">Followers &amp; likes</td>\n        </tr>\n\n        <tr>\n            <td>Seasonal planning</td>\n            <td class=\"green\">Ramadan, wedding &amp; summer campaigns planned weeks ahead</td>\n            <td class=\"red\">\"Trending audio\" the day of</td>\n        </tr>\n\n        <tr>\n            <td>If they disappear</td>\n            <td class=\"green\">Team redundancy — your marketing never misses</td>\n            <td class=\"red\">Your account goes silent</td>\n        </tr>\n\n    </tbody>\n\n</table>\n    </div>\n    \n    \n    </body></div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Free 15-minute demo",
+            "title": "Find out what your grid says <span style=\"color:#c6f432\">to a new client</span>",
+            "intro": "<p>A human review of your Instagram through a client’s eyes — first impression, content mix, booking friction and DM handling — against the best beauty accounts in your area.</p>",
+            "layout": "form",
+            "footnote": "",
+            "list": [
+                {
+                    "html": "Grid first-impression scorecard",
+                    "href": ""
+                },
+                {
+                    "html": "Content mix vs. what converts",
+                    "href": ""
+                },
+                {
+                    "html": "Booking-path &amp; bio friction check",
+                    "href": ""
+                },
+                {
+                    "html": "Your 30-day content fix list",
+                    "href": ""
+                }
+            ],
+            "form": "<div class=\"lp-raw elementor elementor-540\" data-elementor-id=\"540\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-356c177 e-con-full e-flex e-con e-child\" data-id=\"356c177\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-07f7c79 elementor-widget elementor-widget-icon-box\" data-id=\"07f7c79\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\tBook your live demo\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-description\">\n\t\t\t\t\t\t15 minutes · free · no obligation\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-12dff4d elementor-button-align-stretch elementor-widget elementor-widget-form\" data-id=\"12dff4d\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"step_next_label\":\"Next\",\"step_previous_label\":\"Previous\",\"button_width\":\"100\",\"step_type\":\"number_text\",\"step_icon_shape\":\"circle\"}' data-widget_type=\"form.default\">\n\t\t\t\t\t\t\t<form class=\"elementor-form\" method=\"post\" name=\"New Form\" aria-label=\"New Form\">\n\t\t\t<input type=\"hidden\" name=\"post_id\" value=\"540\">\n\t\t\t<input type=\"hidden\" name=\"form_id\" value=\"12dff4d\">\n\t\t\t<input type=\"hidden\" name=\"referer_title\" value=\"Social Media Management for Beauty UAE | Glowth\">\n\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"queried_id\" value=\"540\">\n\t\t\t\n\t\t\t<div class=\"elementor-form-fields-wrapper elementor-labels-\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-name\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tYour Name\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[name]\" id=\"form-field-name\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"Your Name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_877ea9e elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_877ea9e\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tSalon / clinic name\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[field_877ea9e]\" id=\"form-field-field_877ea9e\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"Salon / clinic name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_9c0ce6b elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_9c0ce6b\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tWhatsApp number (+971…)\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t<input size=\"1\" type=\"tel\" name=\"form_fields[field_9c0ce6b]\" id=\"form-field-field_9c0ce6b\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"WhatsApp number (+971…)\" required=\"required\" pattern=\"[0-9()#&amp;+*-=.]+\" title=\"Only numbers and phone characters (#, -, *, etc) are accepted.\">\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_b5428e6 elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_b5428e6\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tBiggest challenge right now?\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field elementor-select-wrapper remove-before \">\n\t\t\t<div class=\"select-caret-down-wrapper\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-eicon-caret-down\" viewbox=\"0 0 571.4 571.4\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z\"></path></svg>\t\t\t</div>\n\t\t\t<select name=\"form_fields[field_b5428e6]\" id=\"form-field-field_b5428e6\" class=\"elementor-field-textual elementor-size-sm\" required=\"required\">\n\t\t\t\t\t\t\t\t\t<option value=\"Where do most enquiries come from?\">Where do most enquiries come from?</option>\n\t\t\t\t\t\t\t\t\t<option value=\"WhatsApp\">WhatsApp</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Instagram\">Instagram</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Phone calls\">Phone calls</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Website\">Website</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Walk-ins\">Walk-ins</option>\n\t\t\t\t\t\t\t</select>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons\">\n\t\t\t\t\t<button class=\"elementor-button elementor-size-sm\" type=\"submit\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Send</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</form>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-23685d5 elementor-widget elementor-widget-text-editor\" data-id=\"23685d5\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tWe’ll confirm a time on WhatsApp within 2 hours.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "From owners off the posting treadmill",
+            "title": "What managed social <span class=\"hl\">feels like</span>",
+            "intro": "",
+            "layout": "reviews",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "review",
+                    "stars": 5,
+                    "text": "<p>“I got my Sundays back. They shoot one afternoon a month and my feed looks better than salons twice our size.”</p>",
+                    "who": "<div class=\"hd\"><span class=\"av\">N</span><div><b>Salon Owner.</b><small>Beauty Salon · Dubai (placeholder) </small></div></div>"
+                },
+                {
+                    "kind": "review",
+                    "stars": 5,
+                    "text": "<p>“The report shows bookings from Instagram — actual names, actual appointments. No agency ever showed us that before.”</p>",
+                    "who": "<div class=\"hd\"><span class=\"av\">H</span><div><b>Clinic Director </b><small>Aesthetic Clinic · Abu Dhabi (placeholder)</small></div></div>"
+                },
+                {
+                    "kind": "review",
+                    "stars": 5,
+                    "text": "<p>“A story about three open Saturday slots filled them in two hours. That one story paid for the month.”</p>",
+                    "who": "<div class=\"hd\"><span class=\"av\">D</span><div><b>Medspa Owner</b><small> Medspa · Dubai Marina (placeholder)</small></div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "FAQ",
+            "title": "Managed social for beauty — <span class=\"hl\">before you ask </span>",
+            "intro": "",
+            "layout": "faq",
+            "footnote": "",
+            "items": [
+                {
+                    "q": "Who creates the content?",
+                    "a": "<p>We do — a planned monthly shoot day at your location plus all editing, captions and scheduling. Your team’s only job is doing great treatments on camera.</p>"
+                },
+                {
+                    "q": "Will it sound like us?",
+                    "a": "<p>Yes — onboarding builds your voice guide (tone, phrases, things you’d never say), and every caption and reply is written inside it.</p>"
+                },
+                {
+                    "q": "Do you handle DMs and comments?",
+                    "a": "<p>Daily — and paired with the AI booking bot, enquiries get answered in seconds around the clock, then booked straight into your calendar.</p>"
+                },
+                {
+                    "q": "How fast will we see growth?",
+                    "a": "<p>Consistency lands immediately; reach typically compounds through months two and three as winning formats emerge. Booking enquiries usually become a weekly rhythm by month three.</p>"
+                },
+                {
+                    "q": "Do we approve content before it posts?",
+                    "a": "<p>Yes — the monthly calendar arrives in advance for one-tap approval, with room for last-minute slots like cancellation alerts.</p>"
+                },
+                {
+                    "q": "Are there long contracts?",
+                    "a": "<p>Monthly rolling — and everything created (content, templates, voice guide) is yours to keep, whatever you decide later.</p>"
+                }
+            ]
+        }
+    ],
+    "slug": "social-media-management-for-beauty"
+}

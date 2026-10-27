@@ -1,0 +1,526 @@
+{
+    "docId": "446",
+    "hero": {
+        "anchors": [],
+        "pill": "Google Ads & PPC Services · For Beauty, Only",
+        "title": "Google Ads management for UAE beauty salons &amp; clinics that <span class=\"hl\">pay back in bookings.</span>",
+        "intro": "<p>When someone in Dubai searches “laser hair removal near me”, they are not browsing — they are booking today or tomorrow. Glowth runs Google Ads (PPC) management for <a href=\"/beauty-salons/\">beauty salons</a>, <a href=\"/aesthetic-clinics/\">aesthetic clinics</a> and medspas across the UAE — capturing that exact moment, with every dirham tracked all the way to an appointment.</p>",
+        "ctas": [
+            {
+                "href": "/get-a-free-audit/",
+                "label": "Get My Google Ads Audit — Free"
+            },
+            {
+                "href": "/get-a-free-audit/",
+                "label": "Explore My Keywords"
+            }
+        ],
+        "chips": [
+            {
+                "title": "<span> 6.75% </span>",
+                "text": "avg. search-ad CTR, beauty &amp; personal care <small>(Source: LocaliQ 2026 benchmarks)</small>"
+            },
+            {
+                "title": "<span> 25% </span>",
+                "text": "of small-business PPC spend wasted on average <small>(Source: WordStream, 500 accounts)</small>"
+            },
+            {
+                "title": "<span> 2–4 wks </span>",
+                "text": "to first booked leads <small>(Glowth estimate)</small>"
+            }
+        ],
+        "extra": [],
+        "visual": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-f3dc9a0 e-con-full e-flex e-con e-child\" data-id=\"f3dc9a0\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-f6b6344 elementor-widget elementor-widget-html\" data-id=\"f6b6344\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t\n<style>\n  :root{\n    --ink:#1f2430;\n    --grey:#8a90a0;\n    --blue:#2743c9;\n    --blue-dark:#1d33a3;\n    --line:#e6e8f0;\n    --bg:#f6f7fb;\n    --card:#ffffff;\n    --chip-pink:#fbeef4;\n    --chip-cream:#fdf6ee;\n    --chip-ink:#3a3f4e;\n    --radius:14px;\n  }\n\n  *{box-sizing:border-box;margin:0;padding:0}\n\n\n  /* ---------- Card shell ---------- */\n  .adcard{\n    width:100%;\n    max-width:560px;\n    background:var(--card);\n    border:1px solid var(--line);\n    border-radius:20px;\n    padding:24px;\n    box-shadow:0 10px 30px rgba(31,36,48,.06);\n    opacity:0;\n    transform:translateY(8px);\n    transition:opacity .45s ease, transform .45s ease;\n  }\n  .adcard.in{opacity:1;transform:translateY(0)}\n\n  /* ---------- Treatment selector ---------- */\n  #adSel{\n    width:100%;\n    appearance:none;\n    -webkit-appearance:none;\n    font:inherit;\n    font-weight:600;\n    color:var(--ink);\n    background:var(--card) url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231f2430' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\") no-repeat right 16px center;\n    border:1px solid var(--line);\n    border-radius:var(--radius);\n    padding:4px 44px 14px 16px;\n    cursor:pointer;\n    transition:border-color .2s ease, box-shadow .2s ease;\n  }\n  #adSel:hover{border-color:#cdd2e2}\n  #adSel:focus-visible{\n    outline:none;\n    border-color:var(--blue);\n    box-shadow:0 0 0 3px rgba(39,67,201,.15);\n  }\n\n  /* ---------- Search query pill ---------- */\n  .q{\n    display:flex;\n    align-items:center;\n    gap:10px;\n    margin-top:14px;\n    padding:14px 18px;\n    border:1px solid var(--line);\n    border-radius:999px;\n    color:var(--chip-ink);\n    font-size:15px;\n    background:var(--card);\n  }\n  .q .ico{\n    flex:none;\n    stroke:var(--grey);\n    stroke-width:2;\n    fill:none;\n    stroke-linecap:round;\n  }\n\n  /* ---------- Ad box ---------- */\n  .adbox{\n    margin-top:16px;\n    border:1px solid var(--line);\n    border-radius:var(--radius);\n    padding:20px;\n  }\n  .sp{\n    display:block;\n    font-size:12px;\n    font-weight:700;\n    letter-spacing:.02em;\n    margin-bottom:6px;\n  }\n  .url{\n    font-size:13px;\n    color:var(--grey);\n    margin-bottom:8px;\n    word-break:break-all;\n  }\n  .hd{\n    font-size:19px;\n    line-height:1.4;\n    font-weight:700;\n    color:var(--blue);\n    margin-bottom:8px;\n    cursor:pointer;\n  }\n  .hd:hover{text-decoration:underline}\n  .ds{\n    font-size:14px;\n    line-height:1.55;\n    color:#4a5064;\n  }\n\n  /* ---------- Sitelinks ---------- */\n  .sl{\n    display:grid;\n    grid-template-columns:1fr 1fr;\n    gap:10px;\n    margin-top:16px;\n  }\n  .sl a{\n    display:block;\n    text-align:center;\n    padding:11px 12px;\n    font-size:13.5px;\n    font-weight:600;\n    color:var(--blue);\n    text-decoration:none;\n    border:1px solid var(--line);\n    border-radius:10px;\n    transition:background .18s ease, border-color .18s ease, color .18s ease;\n  }\n  .sl a:hover{\n    background:#f3f5ff;\n    border-color:#c9d1f5;\n    color:var(--blue-dark);\n  }\n  .sl a:focus-visible{\n    outline:2px solid var(--blue);\n    outline-offset:2px;\n  }\n\n  /* ---------- Metric chips ---------- */\n  .chiprow{\n    display:flex;\n    flex-wrap:wrap;\n    gap:10px;\n    margin-top:18px;\n  }\n  .chiprow span{\n    font-size:12.5px;\n    font-weight:600;\n    color:var(--chip-ink);\n    padding:9px 14px;\n    border-radius:999px;\n    border:1px solid var(--line);\n  }\n  .chiprow span:nth-child(1){background:var(--chip-cream)}\n  .chiprow span:nth-child(2){background:var(--chip-pink)}\n  .chiprow span:nth-child(3){background:var(--card)}\n\n  .footnote{\n    font-size:11px;\n    color:var(--grey);\n    margin-top:12px;\n    text-align:center;\n  }\n\n  /* ---------- Swap animation ---------- */\n  .swap{animation:swap .35s ease}\n  @keyframes swap{\n    0%{opacity:0;transform:translateY(4px)}\n    100%{opacity:1;transform:translateY(0)}\n  }\n  @media (prefers-reduced-motion:reduce){\n    .adcard,.swap{transition:none;animation:none;opacity:1;transform:none}\n  }\n\n  @media (max-width:420px){\n    .adcard{padding:18px}\n    .sl{grid-template-columns:1fr}\n    .hd{font-size:17px}\n  }\n</style>\n\n\n\n<div class=\"adcard\" id=\"adCard\">\n  <select id=\"adSel\" aria-label=\"Choose treatment\">\n    <option value=\"laser\">Laser Hair Removal</option>\n    <option value=\"botox\" selected>Botox</option>\n    <option value=\"hydra\">Hydrafacial</option>\n    <option value=\"fillers\">Lip Fillers</option>\n  </select>\n\n  <div class=\"q\">\n    <svg class=\"ico\" style=\"width:17px;height:17px\" viewbox=\"0 0 24 24\">\n      <circle cx=\"11\" cy=\"11\" r=\"7\"></circle>\n      <path d=\"M21 21l-4.3-4.3\"></path>\n    </svg>\n    <span id=\"adQ\">botox clinic dubai</span>\n  </div>\n\n  <div class=\"adbox\" id=\"adBox\">\n    <span class=\"sp\">Sponsored</span>\n    <div class=\"url\" id=\"adUrl\">yourclinic.ae/botox-dubai</div>\n    <div class=\"hd\" id=\"adHd\">Botox in Dubai from AED 39/Unit | Licensed Practitioners</div>\n    <div class=\"ds\" id=\"adDs\">Natural results by certified injectors · Free consultation · Transparent pricing. See prices and book your slot online.</div>\n    <div class=\"sl\" id=\"adSl\">\n      <a href=\"#\">Prices &amp; Offers</a>\n      <a href=\"#\">Book Online</a>\n      <a href=\"#\">Before &amp; After</a>\n      <a href=\"#\">Find Us</a>\n    </div>\n  </div>\n\n  <div class=\"chiprow\">\n    <span id=\"adCpc\">Est. CPC AED 18</span>\n    <span id=\"adVol\">~220 searches/day</span>\n    <span id=\"adIntent\">Intent: ready to book</span>\n  </div>\n\n  <p class=\"footnote\">Live ad preview — switch treatments above. Illustrative estimates.</p>\n</div>\n\n<script>\n(function () {\n  \"use strict\";\n\n  // ---------- Data for each treatment ----------\n  var ADS = {\n    laser: {\n      query: \"laser hair removal dubai\",\n      url: \"yourclinic.ae/laser-dubai\",\n      headline: \"Laser Hair Removal Dubai from AED 99 | FDA-Approved Devices\",\n      description: \"Painless sessions for all skin types \\u00b7 Free patch test \\u00b7 Flexible packages. See prices and book your slot online.\",\n      sitelinks: [\"Prices & Offers\", \"Book Online\", \"Before & After\", \"Find Us\"],\n      cpc: \"Est. CPC AED 14\",\n      vol: \"~310 searches/day\",\n      intent: \"Intent: ready to book\"\n    },\n    botox: {\n      query: \"botox clinic dubai\",\n      url: \"yourclinic.ae/botox-dubai\",\n      headline: \"Botox in Dubai from AED 39/Unit | Licensed Practitioners\",\n      description: \"Natural results by certified injectors \\u00b7 Free consultation \\u00b7 Transparent pricing. See prices and book your slot online.\",\n      sitelinks: [\"Prices & Offers\", \"Book Online\", \"Before & After\", \"Find Us\"],\n      cpc: \"Est. CPC AED 18\",\n      vol: \"~220 searches/day\",\n      intent: \"Intent: ready to book\"\n    },\n    hydra: {\n      query: \"hydrafacial dubai offer\",\n      url: \"yourclinic.ae/hydrafacial-dubai\",\n      headline: \"Hydrafacial Dubai from AED 249 | Instant Glow, Zero Downtime\",\n      description: \"Deep cleanse \\u00b7 Extraction \\u00b7 Hydration in one session. Certified therapists. See offers and book your slot online.\",\n      sitelinks: [\"Today's Offers\", \"Book Online\", \"Before & After\", \"Find Us\"],\n      cpc: \"Est. CPC AED 9\",\n      vol: \"~180 searches/day\",\n      intent: \"Intent: ready to book\"\n    },\n    fillers: {\n      query: \"lip fillers dubai price\",\n      url: \"yourclinic.ae/lip-fillers-dubai\",\n      headline: \"Lip Fillers Dubai from AED 799 | Natural, Subtle Volume\",\n      description: \"Premium hyaluronic fillers \\u00b7 Certified aesthetic doctors \\u00b7 Free consultation. See prices and book your slot online.\",\n      sitelinks: [\"Prices & Offers\", \"Book Online\", \"Before & After\", \"Find Us\"],\n      cpc: \"Est. CPC AED 22\",\n      vol: \"~140 searches/day\",\n      intent: \"Intent: ready to book\"\n    }\n  };\n\n  // ---------- Cached elements ----------\n  var el = {\n    card:   document.getElementById(\"adCard\"),\n    sel:    document.getElementById(\"adSel\"),\n    box:    document.getElementById(\"adBox\"),\n    q:      document.getElementById(\"adQ\"),\n    url:    document.getElementById(\"adUrl\"),\n    hd:     document.getElementById(\"adHd\"),\n    ds:     document.getElementById(\"adDs\"),\n    sl:     document.getElementById(\"adSl\"),\n    cpc:    document.getElementById(\"adCpc\"),\n    vol:    document.getElementById(\"adVol\"),\n    intent: document.getElementById(\"adIntent\")\n  };\n\n  // ---------- Render selected treatment ----------\n  function render(key) {\n    var ad = ADS[key];\n    if (!ad) return;\n\n    el.q.textContent      = ad.query;\n    el.url.textContent    = ad.url;\n    el.hd.textContent     = ad.headline;\n    el.ds.textContent     = ad.description;\n    el.cpc.textContent    = ad.cpc;\n    el.vol.textContent    = ad.vol;\n    el.intent.textContent = ad.intent;\n\n    // Rebuild sitelinks safely (textContent, no innerHTML)\n    el.sl.textContent = \"\";\n    ad.sitelinks.forEach(function (label) {\n      var a = document.createElement(\"a\");\n      a.href = \"#\";\n      a.textContent = label;\n      a.addEventListener(\"click\", function (e) { e.preventDefault(); });\n      el.sl.appendChild(a);\n    });\n\n    // Replay swap animation\n    el.box.classList.remove(\"swap\");\n    void el.box.offsetWidth; // force reflow so animation restarts\n    el.box.classList.add(\"swap\");\n  }\n\n  // ---------- Events ----------\n  el.sel.addEventListener(\"change\", function () {\n    render(this.value);\n  });\n\n  // ---------- Init ----------\n  render(el.sel.value);\n\n  // Fade the card in on load\n  requestAnimationFrame(function () {\n    el.card.classList.add(\"in\");\n  });\n})();\n</script>\n\t\t\t\t</div>\n\t\t\t\t</div></div>"
+    },
+    "sections": [
+        {
+            "anchors": [],
+            "kicker": "The problem",
+            "title": "Why salon &amp; clinic ad accounts leak money — <span style=\"color:#c6f432\">without the wasted spend</span>",
+            "intro": "<p>Most beauty ad accounts we audit share the same four leaks. Fixing them is usually worth more than increasing the budget.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">25% </span>",
+                    "icon": "",
+                    "title": "<span> Average wasted ad spend </span>",
+                    "href": "",
+                    "text": "Broad keywords, missing negatives and wrong locations quietly burn budget — WordStream found small advertisers waste about a quarter of PPC spend. <small>Source: WordStream, 500 SMB accounts</small>",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">10.35% </span>",
+                    "icon": "",
+                    "title": "<span> Avg. search-ad conversion rate, beauty </span>",
+                    "href": "",
+                    "text": "That's the benchmark for beauty &amp; personal care search ads. Ads dumped onto slow, generic homepages rarely get close — per-treatment pages are how you do. <small>Source: LocaliQ 2026 search ad benchmarks</small>",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">37%</span>",
+                    "icon": "",
+                    "title": "<span> Calls to salons &amp; spas unanswered </span>",
+                    "href": "/ai-appointment-booking-bot/",
+                    "text": "You paid for the click — then the call or enquiry went unanswered while the client booked elsewhere. An <a href=\"/ai-appointment-booking-bot/\">instant-reply booking assistant</a> closes that gap. <small>Source: Zenoti industry data, 2025</small>",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">? </span>",
+                    "icon": "",
+                    "title": "<span> What did a booking cost? </span>",
+                    "href": "",
+                    "text": "Most accounts we audit report clicks and impressions, but can't say what a booked appointment costs.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "",
+            "title": "",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-e6e967f elementor-widget elementor-widget-html\" data-id=\"e6e967f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"bx rv in\">\n  <span class=\"kicker\">Interactive · Budget planner</span>\n  <h2>Plan your Google Ads budget for <span class=\"lime\">Dubai &amp; the UAE</span></h2>\n  <p class=\"sub\">Move the slider — see what your monthly spend should return when the account is run properly.</p>\n\n  <div class=\"bx-controls\">\n    <select id=\"bxT\">\n      <option value=\"laser\">Laser Hair Removal</option>\n      <option value=\"botox\">Botox</option>\n      <option value=\"hydra\">Hydrafacial</option>\n      <option value=\"fillers\" selected>Lip Fillers</option>\n      <option value=\"hair\">Hair Transplant</option>\n      <option value=\"nails\">Nail Salon</option>\n    </select>\n  </div>\n\n  <label>Monthly ad budget <output id=\"bxO\">AED 14,000</output></label>\n  <input type=\"range\" id=\"bxR\" min=\"2000\" max=\"30000\" step=\"500\" value=\"14000\">\n\n  <div class=\"bx-grid\">\n    <div class=\"bxc\"><b id=\"bxClicks\">875</b><span>Estimated clicks / month</span></div>\n    <div class=\"bxc\"><b id=\"bxLeads\">74</b><span>Leads (8.4% page conversion)</span></div>\n    <div class=\"bxc\"><b id=\"bxBook\">44</b><span>Booked appointments</span></div>\n    <div class=\"bxc\"><b id=\"bxCpb\">AED 318</b><span>Cost per booking</span></div>\n  </div>\n\n  <p class=\"bx-note\">*Planning estimates using typical UAE beauty CPCs and Glowth landing-page conversion benchmarks; your audit includes projections from your real market data.</p>\n</div>\n\n<style>\n.bx {\n    background: #0e0d12;\n    color: #fff;\n    border-radius: 24px;\n    padding: 52px;\n}\n\n/* ===== Kicker with lime dash ===== */\n.bx .kicker {\n    display: inline-flex;\n    align-items: center;\n    gap: 10px;\n    color: #C6F432;\n    font-size: 13px;\n    font-weight: 800;\n    letter-spacing: .14em;\n    text-transform: uppercase;\n}\n.bx .kicker::before {\n    content: \"\";\n    display: inline-block;\n    width: 22px;\n    height: 3px;\n    background: #C6F432;\n    border-radius: 2px;\n}\n\n.bx h2 {\n    font-size: 42px;\n    line-height: 1.2;\n    margin: 15px 0 8px;\n    color: #fff;\n}\n.bx h2 .lime,\n.bx h2 span {\n    color: #C6F432;\n}\n\n.bx .sub {\n    color: #A7A2B6;\n    margin-bottom: 30px !important;\n    max-width: 560px;\n}\n\n/* ===== Dropdown ===== */\n.bx-controls {\n    display: flex;\n    gap: 16px;\n    flex-wrap: wrap;\n    margin-bottom: 30px;\n}\n\n.bx-controls select {\n    width: 100px;\n    -webkit-appearance: none;\n    appearance: none;\n    background-color: #17161c;\n    color: #fff;\n    font-size: 15px;\n    font-weight: 600;\n    padding: 5px 44px 5px 18px;\n    border: 1px solid rgba(255, 255, 255, .12);\n    border-radius: 12px;\n    cursor: pointer;\n    outline: none;\n    min-width: 220px;\n    transition: border-color .2s, box-shadow .2s;\n    background-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/>\");\n    background-repeat: no-repeat;\n    background-position: right 18px center;\n}\n\n.bx-controls select:hover {\n    border-color: rgba(255, 255, 255, .28);\n}\n\n.bx-controls select:focus {\n    border-color: #C6F432;\n    box-shadow: 0 0 0 1px #C6F432;\n}\n\n.bx-controls select option {\n    background: #17161c;\n    color: #fff;\n}\n\n/* ===== Slider label ===== */\n.bx label {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 15px;\n    font-weight: 600;\n    margin: 10px 0 12px;\n    color: #fff;\n}\n\n.bx output {\n    color: #C6F432;\n    font-weight: 700;\n}\n\n/* ===== Custom Range Slider (pink track + thumb) ===== */\n.bx input[type=\"range\"] {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 100%;\n    height: 6px;\n    border-radius: 99px;\n    outline: none;\n    cursor: pointer;\n    margin: 6px 0 0;\n    background: linear-gradient(to right,\n        #FF2E7E 0%,\n        #FF2E7E var(--fill, 43%),\n        #ECEBF1 var(--fill, 43%),\n        #ECEBF1 100%);\n}\n\n/* Thumb — WebKit (Chrome, Edge, Safari) */\n.bx input[type=\"range\"]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #FF2E7E;\n    border: none;\n    box-shadow: 0 4px 12px rgba(255, 46, 126, .45);\n    transition: transform .15s;\n}\n.bx input[type=\"range\"]::-webkit-slider-thumb:hover {\n    transform: scale(1.15);\n}\n\n/* Thumb — Firefox */\n.bx input[type=\"range\"]::-moz-range-thumb {\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #FF2E7E;\n    border: none;\n    box-shadow: 0 4px 12px rgba(255, 46, 126, .45);\n}\n.bx input[type=\"range\"]::-moz-range-track {\n    height: 6px;\n    border-radius: 99px;\n    background: transparent;\n}\n\n/* ===== Stat cards ===== */\n.bx-grid {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 18px;\n    margin: 36px 0 24px;\n}\n\n.bxc {\n    background: #17161c;\n    border: 1px solid rgba(255, 255, 255, .07);\n    border-radius: 16px;\n    padding: 30px 18px;\n    text-align: center;\n}\n\n.bxc b {\n    display: block;\n    font-family: \"Space Grotesk\", sans-serif;\n    font-size: 30px;\n    font-weight: 700;\n    color: #C6F432;\n    margin-bottom: 8px;\n}\n\n.bxc span {\n    display: block;\n    font-size: 13px;\n    color: #fff;\n}\n\n/* ===== Footnote ===== */\n.bx-note {\n    font-size: 12.5px;\n    color: #A7A2B6;\n}\n\n/* ===== Responsive ===== */\n@media (max-width: 900px) {\n    .bx {\n        padding: 36px 26px;\n    }\n    .bx h2 {\n        font-size: 32px;\n    }\n    .bx-grid {\n        grid-template-columns: repeat(2, 1fr);\n    }\n    .bx-controls select {\n        flex: 1;\n        min-width: 0;\n    }\n}\n@media (max-width: 520px) {\n    .bx-grid {\n        grid-template-columns: 1fr;\n    }\n}\n</style>\n\n<script>\nconst bxT = document.getElementById(\"bxT\");\nconst bxR = document.getElementById(\"bxR\");\nconst bxO = document.getElementById(\"bxO\");\n\nconst bxClicks = document.getElementById(\"bxClicks\");\nconst bxLeads  = document.getElementById(\"bxLeads\");\nconst bxBook   = document.getElementById(\"bxBook\");\nconst bxCpb    = document.getElementById(\"bxCpb\");\n\n// Typical UAE beauty CPCs (AED) per treatment\nconst bxCpc = {\n    laser:   22,\n    botox:   28,\n    hydra:   14,\n    fillers: 16,\n    hair:    34,\n    nails:   9\n};\n\nconst BX_CONV    = 0.084;  // 8.4% landing-page conversion\nconst BX_BOOKING = 0.60;   // 60% of leads become booked appointments\n\nfunction bxFormatAED(value) {\n    return \"AED \" + Number(value).toLocaleString();\n}\n\n// Pink filled portion of the slider track\nfunction bxUpdateFill(slider) {\n    const min = Number(slider.min);\n    const max = Number(slider.max);\n    const val = Number(slider.value);\n    const pct = ((val - min) / (max - min)) * 100;\n    slider.style.setProperty(\"--fill\", pct + \"%\");\n}\n\nfunction bxCalculate() {\n    const budget = Number(bxR.value);\n    const cpc    = bxCpc[bxT.value];\n\n    bxO.textContent = bxFormatAED(budget);\n\n    const clicks   = Math.round(budget / cpc);\n    const leads    = Math.round(clicks * BX_CONV);\n    const bookings = Math.round(leads * BX_BOOKING);\n    const cpb      = bookings > 0 ? Math.round(budget / bookings) : 0;\n\n    bxClicks.textContent = clicks.toLocaleString();\n    bxLeads.textContent  = leads.toLocaleString();\n    bxBook.textContent   = bookings.toLocaleString();\n    bxCpb.textContent    = bxFormatAED(cpb);\n\n    bxUpdateFill(bxR);\n}\n\nbxR.addEventListener(\"input\", bxCalculate);\nbxT.addEventListener(\"change\", bxCalculate);\n\nbxCalculate();\n</script>\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Who we serve",
+            "title": "What our Google Ads management covers —<span class=\"hl\"> all four layers</span>",
+            "intro": "<p>Clicks are step one. Bookings need the campaign, the landing page, the tracking and the follow-up working as one system.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-search\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z\"></path></svg>",
+                    "title": "<span> Search campaigns that capture demand </span>",
+                    "href": "",
+                    "text": "Campaigns built on the treatment + area searches UAE clients actually type — \"hydrafacial dubai marina\", \"botox price abu dhabi\", \"nail salon near me\" — with ad copy that mirrors the searcher's intent and a negative keyword wall that blocks the junk.",
+                    "list": [
+                        {
+                            "html": "UAE beauty keyword bank, mapped per treatment",
+                            "href": ""
+                        },
+                        {
+                            "html": "Negative keyword lists from day one",
+                            "href": ""
+                        },
+                        {
+                            "html": "Geo-radius targeting around your branch",
+                            "href": ""
+                        },
+                        {
+                            "html": "Ad schedules matched to booking behaviour",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-far-dot-circle\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 56c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m0-48C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 168c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80z\"></path></svg>",
+                    "title": "<span> Performance Max &amp; Demand Gen </span>",
+                    "href": "",
+                    "text": "Beyond search: your clinic across Google Maps, Google Shopping, YouTube, Discover and Gmail with treatment-specific creative. Performance Max drives the Maps calls and direction taps that local beauty businesses live on.",
+                    "list": [
+                        {
+                            "html": "Maps &amp; local actions campaigns",
+                            "href": ""
+                        },
+                        {
+                            "html": "YouTube &amp; Discover placements with beauty creative",
+                            "href": ""
+                        },
+                        {
+                            "html": "Asset testing — images, headlines, videos",
+                            "href": ""
+                        },
+                        {
+                            "html": "Remarketing to warm, not-yet-booked visitors",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-tv\" viewbox=\"0 0 640 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M592 0H48A48 48 0 0 0 0 48v320a48 48 0 0 0 48 48h240v32H112a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H352v-32h240a48 48 0 0 0 48-48V48a48 48 0 0 0-48-48zm-16 352H64V64h512z\"></path></svg>",
+                    "title": "<span> Landing pages built to convert </span>",
+                    "href": "/websites-landing-pages-for-beauty/",
+                    "text": "Every treatment gets its own <a href=\"/websites-landing-pages-for-beauty/\">landing page</a>: price anchoring, availability signals, reviews, FAQ and a WhatsApp-first booking path — loading in under two seconds on mobile, where your clients are.",
+                    "list": [
+                        {
+                            "html": "Per-treatment pages, not a generic homepage",
+                            "href": ""
+                        },
+                        {
+                            "html": "WhatsApp + form + call conversion paths",
+                            "href": ""
+                        },
+                        {
+                            "html": "Offer &amp; seasonal variants for promotions",
+                            "href": ""
+                        },
+                        {
+                            "html": "Arabic-ready structure for phase two",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-chart-line\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z\"></path></svg>",
+                    "title": "<span> Tracking &amp; weekly optimisation </span>",
+                    "href": "",
+                    "text": "Call tracking, WhatsApp click tracking, form tracking and booking imports — so optimisation decisions are made on appointments, not clicks. Weekly sprints move budget to what books.",
+                    "list": [
+                        {
+                            "html": "Every lead source tracked to booking",
+                            "href": ""
+                        },
+                        {
+                            "html": "Weekly bid, budget &amp; search-term sprints",
+                            "href": ""
+                        },
+                        {
+                            "html": "Monthly report in one number: cost per booking",
+                            "href": ""
+                        },
+                        {
+                            "html": "Transparent access — it's your account, always",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "How we grow beauty businesses",
+            "title": "Search intent, captured. One goal: <span class=\"hl\">your calendar, full.</span>",
+            "intro": "",
+            "layout": "features",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "feature",
+                    "kicker": "How we grow beauty businesses",
+                    "title": "High-intent searches: clients with a credit card in hand",
+                    "body": "<p>Google Ads is demand capture, not demand creation. Nobody searches “fractional CO2 laser Dubai price” out of idle curiosity — these are clients at the end of their decision, comparing two or three clinics. Winning that click means winning the booking, often the same week.</p><p>That’s also why beauty CPCs are worth paying: a click costing a few dirhams that becomes a <a href=\"/laser-hair-removal-clinics/\">laser hair removal</a> package, and then a repeat client, is one of the cheapest acquisitions in your business — when the account is run with discipline. Because happy salon and clinic clients rebook, the real return isn’t that first click — it’s the lifetime value it unlocks.</p>",
+                    "ctas": [
+                        {
+                            "href": "/get-a-free-audit/",
+                            "label": "Get a free Google Ads audit →"
+                        }
+                    ],
+                    "visual": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-57c0132 e-con-full e-flex e-con e-child\" data-id=\"57c0132\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t<div class=\"elementor-element elementor-element-b9d0f19 e-con-full e-flex e-con e-child\" data-id=\"b9d0f19\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t<div class=\"elementor-element elementor-element-b1a82b2 e-con-full e-flex e-con e-child\" data-id=\"b1a82b2\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-8f01448 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"8f01448\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-search\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z\"></path></svg>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">botox price abu dhabi</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-6aca30b e-con-full e-flex e-con e-child\" data-id=\"6aca30b\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-4a00464 elementor-widget elementor-widget-heading\" data-id=\"4a00464\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Sponsored\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a05cfee elementor-widget__width-initial elementor-widget elementor-widget-heading\" data-id=\"a05cfee\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">yourclinic.ae/anti-wrinkle-abu-dhabi\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-931ffbc elementor-widget elementor-widget-heading\" data-id=\"931ffbc\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Anti-Wrinkle Consultations in Abu Dhabi | Licensed Doctors\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-5714ed3 elementor-widget elementor-widget-text-editor\" data-id=\"5714ed3\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tTransparent pricing · Free consultation · Natural results. See prices and book your slot online today.\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-3c1c3cb e-con-full e-flex e-con e-child\" data-id=\"3c1c3cb\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-a528fdf elementor-widget elementor-widget-button\" data-id=\"a528fdf\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"#\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Cost query = buying query</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-cf7db17 elementor-widget elementor-widget-button\" data-id=\"cf7db17\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"elementor-button elementor-size-sm\" role=\"button\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Illustrative example</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Where the budget leaks",
+            "title": "Where your ad budget actually goes <span class=\"hl\"></span>",
+            "intro": "",
+            "layout": "features",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "feature",
+                    "kicker": "The leak",
+                    "title": "Wasted spend: where salon ad budgets actually go",
+                    "body": "<p>In audits of beauty accounts we consistently find a large slice of the budget doing nothing: clicks from searchers looking for training courses, at-home devices, jobs, or treatments in the wrong emirate. One missing negative keyword list can quietly cost more than an agency fee.</p><p>The second leak is structural: one campaign, one ad, all treatments mixed together — so Google’s Quality Score drops, your cost per click rises, and neither Smart Bidding nor you can tell which searches actually book.</p>",
+                    "ctas": [
+                        {
+                            "href": "/get-a-free-audit/",
+                            "label": "Get a free Google Ads audit →"
+                        }
+                    ],
+                    "visual": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-b229f48 e-con-full e-flex e-con e-child\" data-id=\"b229f48\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-d3550f3 elementor-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"d3550f3\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">\"laser hair removal course <b>\"Blocked</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">\"at home laser device <b>\"Blocked</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">\"beautician jobs dubai <b>\"Blocked</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">\"laser hair removal dubai marina <b>\"Bid raised</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Junk clicks blocked in a month <b>1,204 (example)</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "",
+            "title": "",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-972af38 e-con-full e-flex e-con e-child\" data-id=\"972af38\" data-element_type=\"container\" data-e-type=\"container\"><div class=\"elementor-element elementor-element-658afa0 e-con-full e-flex e-con e-child\" data-id=\"658afa0\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-0f123de elementor-widget__width-initial elementor-widget elementor-widget-heading\" data-id=\"0f123de\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">The proof layer\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a96a43a elementor-widget elementor-widget-heading\" data-id=\"a96a43a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">Conversion tracking: every dirham traced to a booking</h3>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-83d9a22 elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"83d9a22\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"_animation\":\"fadeIn\"}' data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tThe question that decides everything: “what did a booked appointment cost this month?” If your current agency can’t answer it, they’re optimising blind. We wire tracking before spending a dirham — calls, WhatsApp taps, forms, and booking confirmations flow back into Google Ads as the signal it optimises toward, lifting impression share on the searches that actually convert.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-3c0360c elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"3c0360c\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-check\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z\"></path></svg>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Call tracking with recording &amp; source attribution</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-check\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z\"></path></svg>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">WhatsApp click-to-chat conversion tracking</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-check\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z\"></path></svg>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Booking-system imports close the loop</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-check\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z\"></path></svg>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">One monthly number that matters: cost per booking</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-78a8a8d elementor-widget elementor-widget-button\" data-id=\"78a8a8d\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"/get-a-free-audit/\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Get a free Google Ads audit →</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"elementor-element elementor-element-93c1c6f e-con-full e-flex e-con e-child\" data-id=\"93c1c6f\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-f03d7a1 elementor-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"f03d7a1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">\"laser hair removal course <b>\"Blocked</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">\"at home laser device <b>\"Blocked</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">\"beautician jobs dubai <b>\"Blocked</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">\"laser hair removal dubai marina <b>\"Bid raised</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Junk clicks blocked in a month <b>1,204 (example)</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div></div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "How it works",
+            "title": "Your Google Ads (PPC) account, live and booking in <span class=\"hl\">4–6 weeks</span>",
+            "intro": "",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "WEEK 1–2",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Account setup &amp; keyword strategy </span>",
+                    "href": "",
+                    "text": "Keyword research, negative list build, campaign structure, tracking plan",
+                    "list": [],
+                    "foot": "Tracking coverage 0 → 100%",
+                    "extra": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-dd53f40 elementor-widget elementor-widget-html\" data-id=\"dd53f40\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "WEEK 3–4",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Build &amp; launch </span>",
+                    "href": "",
+                    "text": "Campaigns built, per-treatment landing pages live, call &amp; WhatsApp tracking wired.",
+                    "list": [],
+                    "foot": "First tracked bookings",
+                    "extra": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-31d9c22 elementor-widget elementor-widget-html\" data-id=\"31d9c22\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "MONTH 2",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Optimise &amp; scale </span>",
+                    "href": "",
+                    "text": "Ads go live, negative keywords active, first click-to-booking data flowing in.",
+                    "list": [],
+                    "foot": "Cost per booking trending down",
+                    "extra": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-73bddbf elementor-widget elementor-widget-html\" data-id=\"73bddbf\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "MONTH 3+",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Compound the wins </span>",
+                    "href": "",
+                    "text": "Weekly bid, budget and search-term sprints push cost per booking down every month.",
+                    "list": [],
+                    "foot": "Volume up, CPB held",
+                    "extra": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-00d8948 elementor-widget elementor-widget-html\" data-id=\"00d8948\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Before → after",
+            "title": "What Google Ads changes, <span style=\"color:#c6f432\">measured</span>",
+            "intro": "<p>Illustrative first-90-days movement once an account is rebuilt properly — not a specific client’s results.*</p>",
+            "layout": "embed",
+            "footnote": "<p>*Illustrative figures representative of typical deployments; your demo includes projections for your clinic.</p>",
+            "embed": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-15b1db2 e-con-full e-flex e-con e-child\" data-id=\"15b1db2\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t<div class=\"elementor-element elementor-element-ecf6ae1 e-con-full e-flex e-con e-child\" data-id=\"ecf6ae1\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-670ee73 e-con-full e-flex e-con e-child\" data-id=\"670ee73\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-7e210e6 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"7e210e6\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Wasted ad spend</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-7c5d5ff elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"7c5d5ff\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">Cut\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-c751906 elementor-widget elementor-widget-html\" data-id=\"c751906\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack\">\n<i></i>\n</div>\n<b>12%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    width: 120px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.irow b {\n    margin-left: 610px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-4765188 elementor-widget elementor-widget-html\" data-id=\"4765188\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-text\">100%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 720px;\n}\nb.after-text {\n    margin-left: 86px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-b6ec952 e-con-full e-flex e-con e-child\" data-id=\"b6ec952\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-b27b632 e-con-full e-flex e-con e-child\" data-id=\"b27b632\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-8df9c59 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"8df9c59\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Cost per booking, average\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-4d20333 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"4d20333\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">Lower\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-8928aca elementor-widget elementor-widget-html\" data-id=\"8928aca\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-month\">\n<i></i>\n</div>\n<b class=\"itrack-month-text\">96%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-month {\n    flex: 1;\n    width: 300px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.itrack-month-text {\n    margin-left: 435px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a0240bc elementor-widget elementor-widget-html\" data-id=\"a0240bc\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-month\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-month-text\">168\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-month{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 470px;\n}\nb.after-month-text {\n    margin-left: 270px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-82b6fc0 e-con-full e-flex e-con e-child\" data-id=\"82b6fc0\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-f840a53 e-con-full e-flex e-con e-child\" data-id=\"f840a53\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-73f9e32 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"73f9e32\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Landing page conversion rate</h2>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-13268dd elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"13268dd\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">Up\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-3395c9c elementor-widget elementor-widget-html\" data-id=\"3395c9c\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-before-hours\">\n<i></i>\n</div>\n<b class=\"itrack-before-hour\">0</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 6px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-before-hours {\n    flex: 1;\n    width: 20px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\nb.itrack-before-hour {\n    margin-left: 730px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-09be80f elementor-widget elementor-widget-html\" data-id=\"09be80f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-hour\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-hour-text\">17%\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-hour{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 370px;\n}\nb.after-hour-text {\n    margin-left: 370px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-f55a8b1 e-con-full e-flex e-con e-child\" data-id=\"f55a8b1\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-7e47f07 e-con-full e-flex e-con e-child\" data-id=\"7e47f07\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-00b1460 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"00b1460\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Return on ad spend (ROAS)</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-416d612 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"416d612\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">Up\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-b8a47fb elementor-widget elementor-widget-html\" data-id=\"b8a47fb\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-show-hours\">\n<i></i>\n</div>\n<b class=\"itrack-before-show\">0</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 6px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-show-hours {\n    flex: 1;\n    width: 420px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\nb.itrack-before-show {\n    margin-left: 430px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-95d23c4 elementor-widget elementor-widget-html\" data-id=\"95d23c4\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-show\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-show-text\">17%\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-show{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 270px;\n}\nb.after-show-text {\n    margin-left: 470px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div><div class=\"elementor-element elementor-element-06f35ed e-con-full e-flex e-con e-child\" data-id=\"06f35ed\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-5515ac1 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"5515ac1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Example account activity (illustrative)</p>\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-c0faea7 e-con-full e-flex e-con e-child\" data-id=\"c0faea7\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-6085a51 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"6085a51\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">\"hydrafacial dubai marina\" — CTR 11.2%</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a5e33f6 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"a5e33f6\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">WhatsApp</span>\n<span class=\"pos\">02:14 AM</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-cf50320 e-con-full e-flex e-con e-child\" data-id=\"cf50320\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-d0cfa17 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"d0cfa17\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Booking captured — call tracked</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-fd9c1eb elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"fd9c1eb\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Website</span>\n<span class=\"pos\">07:48 AM</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-7a4bb5f e-con-full e-flex e-con e-child\" data-id=\"7a4bb5f\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-5c3d7e9 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"5c3d7e9\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">\"laser hair removal course\" — blocked</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-dee7bce elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"dee7bce\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Search</span>\n<span class=\"pos\">09:15 AM</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-fd75ebb e-con-full e-flex e-con e-child\" data-id=\"fd75ebb\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-ac7a759 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"ac7a759\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">\"botox price abu dhabi\" — bid raised\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-90b33af elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"90b33af\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Automated</span>\n<span class=\"pos\">03:05 PM</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-3ceb7f4 e-con-full e-flex e-con e-child\" data-id=\"3ceb7f4\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-278bba1 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"278bba1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">WhatsApp click-to-chat booking — AED 32 CPA\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-98cf13b elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"98cf13b\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">WhatsApp</span>\n<span class=\"pos\">11:52 PM\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Case study · Medspa, Dubai Marina",
+            "title": "\"We were burning AED 8,000 a month with no idea what a booking actually cost. Within six weeks our cost per booking dropped by half and we finally knew which keywords paid the rent.\"",
+            "intro": "<div>Medspa Owner — Dubai <em>(illustrative placeholder pending live client data)</em></div>",
+            "layout": "stats",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">18% </span>",
+                    "label": "reduction in cost per booking"
+                },
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">31% </span>",
+                    "label": "wasted ad spend eliminated"
+                },
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">64 </span>",
+                    "label": "bookings tracked in the first month"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Who we serve",
+            "title": "Google Ads, tailored for <span class=\"hl\">every beauty business</span>",
+            "intro": "<p>Your campaigns adapt to how your specific business books clients — walk-ins, consultations, packages or deposit-required treatments.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> How much should I budget for Google Ads? </span>",
+                    "href": "/beauty-marketing-cost-dubai/",
+                    "text": "As a planning range (Glowth estimate), many UAE salons and clinics start from AED 3,000–6,000/month in ad spend; multi-treatment aesthetic clinics often run AED 8,000–15,000/month. That's separate from our Google Ads management fee (our <a href=\"/beauty-marketing-cost-dubai/\">Dubai beauty marketing cost guide</a> breaks this down) — your free audit gives an exact number for both, based on your treatments and area, not a generic rule of thumb.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Google Ads or Instagram Ads first? </span>",
+                    "href": "/instagram-facebook-ads-for-beauty/",
+                    "text": "Google Ads wins for high-intent, ready-to-book searches like \"botox price abu dhabi.\" <a href=\"/instagram-facebook-ads-for-beauty/\">Instagram ads</a> win for discovery and brand-building. Most clinics run both — we typically start with Google Ads for the fastest measurable return, then layer in Instagram.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Can aesthetic clinics advertise injectables at all? </span>",
+                    "href": "",
+                    "text": "Carefully. Google's Healthcare &amp; medicines policy restricts prescription-drug terms in ads, keywords and landing pages, and UAE law bars advertising prescription-only medicines to the public — so ads promote the consultation or treatment category (e.g. \"anti-wrinkle consultation\"), not the drug brand. Healthcare ads may also need approval from the local regulator — DHA in Dubai, DoH in Abu Dhabi, the relevant health authority elsewhere. We write ad copy and landing pages with both sets of rules in mind from day one to minimise disapprovals.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Do you run Google Maps and Performance Max ads too? </span>",
+                    "href": "",
+                    "text": "Yes — where it fits, we add Performance Max (with your Google Business Profile linked) for Maps calls and direction taps, alongside Search. (Google's Local Services Ads aren't currently available in the UAE.) For local beauty businesses, Maps visibility is often where the cheapest bookings come from. For bilingual clinics, we also run Arabic-language campaigns targeting the meaningful share of UAE searchers who query in Arabic first.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> What's a \"money keyword\" vs a wasted click? </span>",
+                    "href": "/salon-google-ads-keywords/",
+                    "text": "Money keywords are treatment + city or \"near me\" searches from someone ready to book (\"laser hair removal dubai marina\"). Wasted clicks come from broad match terms like \"laser hair removal course\" or \"at home laser device\" — searches with zero booking intent that a proper negative keyword list blocks from day one. See our keyword guides for <a href=\"/salon-google-ads-keywords/\">salon Google Ads</a> and <a href=\"/clinic-google-ads-keywords/\">clinic Google Ads</a>.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Who owns the Google Ads account? </span>",
+                    "href": "",
+                    "text": "You do, always. The account is created under your own Google Ads login, not ours — full transparency and no lock-in. Monthly reports show exactly what each dirham earned, traced to a booking, not just a click.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "The honest comparison",
+            "title": "Glowth vs. a <span class=\"hl\">typical agency</span>",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "<p>Most Google Ads agencies, generalist PPC companies and marketing providers run every industry through the same playbook. As a <a href=\"/about-us/\">beauty-only Google Ads agency</a>, we skip that — and the winning setup isn’t ads or <a href=\"/seo-for-beauty-salons-clinics/\">SEO</a> alone, it’s paid ads buying today’s bookings while organic search compounds underneath without a per-click cost.</p>",
+            "embed": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-db4ec42 elementor-widget elementor-widget-html\" data-id=\"db4ec42\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t    \n    \n    \n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Comparison Table</title>\n    \n    <style>\n    \n    \n    .table-wrapper{\n        max-width:1400px;\n        margin:auto;\n        background:#fff;\n        border-radius:24px;\n        overflow:hidden;\n        box-shadow:0 10px 30px rgba(0,0,0,.08);\n    }\n    \n    table{\n        width:100%;\n        border-collapse:collapse;\n    }\n    \n    thead th{\n        background:#0f0f13;\n        color:#fff;\n        padding: 14px 18px;\n        font-size:13.5px;\n        font-weight:700;\n        text-align:center;\n    }\n    \n    thead th:first-child{\n        width:28%;\n    }\n    \n    thead th:nth-child(2){\n        color:#a8ff00;\n    }\n    \n    tbody td{\n        padding: 14px 100px;\n        font-size:13.5px;\n        border-bottom:1px solid #ececec;\n        vertical-align:middle;\n    }\n    \n    tbody tr:last-child td{\n        border-bottom:none;\n    }\n    \n    tbody td:first-child{\n        color:#111;\n        font-weight:500;\n    }\n    \n    tbody td:not(:first-child){\n        text-align:center;\n        font-weight:700;\n    }\n    \n    .green{\n        color:#00a651;\n    }\n    \n    .orange{\n        color:#c97d00;\n    }\n    \n    .red{\n        color:#e23b5b;\n    }\n    \n    @media (max-width:900px){\n    \n        table{\n            display:block;\n            overflow-x:auto;\n            white-space:nowrap;\n        }\n    \n        thead th,\n        tbody td{\n            font-size:16px;\n            padding:16px;\n        }\n    }\n    </style>\n    \n    \n    \n    <div class=\"table-wrapper\">\n    <table>\n    \n        <thead>\n    <tr>\n        <th></th>\n        <th>Glowth</th>\n        <th>Typical Agency</th>\n    </tr>\n</thead>\n\n<tbody>\n\n    <tr>\n        <td>Account structure</td>\n        <td class=\"green\">One campaign per treatment, mapped to intent</td>\n        <td class=\"red\">One campaign, everything mixed</td>\n    </tr>\n\n    <tr>\n        <td>Negative keywords</td>\n        <td class=\"green\">✓ Built before launch, beauty-specific</td>\n        <td class=\"red\">Generic list, if any</td>\n    </tr>\n\n    <tr>\n        <td>Landing pages</td>\n        <td class=\"green\">✓ One per treatment, included</td>\n        <td class=\"red\">✗ Sent to homepage</td>\n    </tr>\n\n    <tr>\n        <td>Conversion tracking</td>\n        <td class=\"green\">✓ Calls, WhatsApp, forms wired in</td>\n        <td class=\"red\">Clicks only</td>\n    </tr>\n\n    <tr>\n        <td>Compliance</td>\n        <td class=\"green\">✓ DHA/DoH/MOHAP-aware ad copy</td>\n        <td class=\"red\">✗ Risk of disapproval</td>\n    </tr>\n\n    <tr>\n        <td>After launch</td>\n        <td class=\"green\">Weekly bid &amp; search-term optimisation</td>\n        <td class=\"red\">Invoice, goodbye</td>\n    </tr>\n    \n        </tbody>\n    \n    </table>\n    </div>\n    \n    \n    \t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Free 15-minute demo",
+            "title": "See what your ad account should really be earning <span style=\"color:#c6f432\">online</span>",
+            "intro": "<p>Tell us your treatments and current spend — we’ll show you exactly where the waste is, project a realistic cost per booking, and scope your campaign with a fixed price. Numbers first, commitments later.</p>",
+            "layout": "form",
+            "footnote": "",
+            "list": [
+                {
+                    "html": "Where your ads show (and don't) for money keywords",
+                    "href": ""
+                },
+                {
+                    "html": "Wasted spend audit of your current account",
+                    "href": ""
+                },
+                {
+                    "html": "Realistic cost-per-booking projection",
+                    "href": ""
+                },
+                {
+                    "html": "Your prioritised 90-day campaign roadmap",
+                    "href": ""
+                }
+            ],
+            "form": "<div class=\"lp-raw elementor elementor-446\" data-elementor-id=\"446\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-3cef4e3 e-con-full e-flex e-con e-child\" data-id=\"3cef4e3\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-09e168a elementor-widget elementor-widget-icon-box\" data-id=\"09e168a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\tBook your live demo\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-description\">\n\t\t\t\t\t\t15 minutes · free · no obligation\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-adf91f2 elementor-button-align-stretch elementor-widget elementor-widget-form\" data-id=\"adf91f2\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"step_next_label\":\"Next\",\"step_previous_label\":\"Previous\",\"button_width\":\"100\",\"step_type\":\"number_text\",\"step_icon_shape\":\"circle\"}' data-widget_type=\"form.default\">\n\t\t\t\t\t\t\t<form class=\"elementor-form\" method=\"post\" name=\"New Form\" aria-label=\"New Form\">\n\t\t\t<input type=\"hidden\" name=\"post_id\" value=\"446\">\n\t\t\t<input type=\"hidden\" name=\"form_id\" value=\"adf91f2\">\n\t\t\t<input type=\"hidden\" name=\"referer_title\" value=\"Google Ads for Beauty Salons &amp; Clinics UAE | Glowth\">\n\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"queried_id\" value=\"446\">\n\t\t\t\n\t\t\t<div class=\"elementor-form-fields-wrapper elementor-labels-\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-name\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tYour Name\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[name]\" id=\"form-field-name\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"Your Name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_877ea9e elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_877ea9e\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tSalon / clinic name\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[field_877ea9e]\" id=\"form-field-field_877ea9e\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"Salon / clinic name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_9c0ce6b elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_9c0ce6b\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tWhatsApp number (+971…)\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t<input size=\"1\" type=\"tel\" name=\"form_fields[field_9c0ce6b]\" id=\"form-field-field_9c0ce6b\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"WhatsApp number (+971…)\" required=\"required\" pattern=\"[0-9()#&amp;+*-=.]+\" title=\"Only numbers and phone characters (#, -, *, etc) are accepted.\">\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_b5428e6 elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_b5428e6\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tBiggest challenge right now?\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field elementor-select-wrapper remove-before \">\n\t\t\t<div class=\"select-caret-down-wrapper\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-eicon-caret-down\" viewbox=\"0 0 571.4 571.4\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z\"></path></svg>\t\t\t</div>\n\t\t\t<select name=\"form_fields[field_b5428e6]\" id=\"form-field-field_b5428e6\" class=\"elementor-field-textual elementor-size-sm\" required=\"required\">\n\t\t\t\t\t\t\t\t\t<option value=\"Where do most enquiries come from?\">Where do most enquiries come from?</option>\n\t\t\t\t\t\t\t\t\t<option value=\"WhatsApp\">WhatsApp</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Instagram\">Instagram</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Phone calls\">Phone calls</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Website\">Website</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Walk-ins\">Walk-ins</option>\n\t\t\t\t\t\t\t</select>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons\">\n\t\t\t\t\t<button class=\"elementor-button elementor-size-sm\" type=\"submit\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Send</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</form>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-d7ac6ca elementor-widget elementor-widget-text-editor\" data-id=\"d7ac6ca\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tWe’ll confirm a time on WhatsApp within 2 hours.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "FAQs",
+            "title": "Google Ads for salons &amp; clinics — before you ask",
+            "intro": "",
+            "layout": "faq",
+            "footnote": "",
+            "items": [
+                {
+                    "q": "How long until Google Ads produces bookings?",
+                    "a": "<p>Google Ads typically produces bookings within 2–4 weeks of launch. SEO takes longer to compound (3–6 months) but becomes your lowest-cost channel long term — running both together is usually the fastest path to a full calendar.</p>"
+                },
+                {
+                    "q": "Do you target every treatment we offer?",
+                    "a": "<p>No — a tightly focused set of “money keywords” for your top 3–5 treatments outperforms a broad account every time. We’d rather own page one for the searches that book than spread thin across everything you offer.</p>"
+                },
+                {
+                    "q": "Who manages the account day to day?",
+                    "a": "<p>As your Google Ads specialist, we manage the account, but you keep full ownership and access at all times. Weekly optimisation sprints — bids, budgets, search terms — are handled by our Google Ads experts on our end; you just watch the cost-per-booking number improve.</p>"
+                },
+                {
+                    "q": "Can ads connect to our booking system?",
+                    "a": "<p>Yes — every ad connects to a per-treatment landing page with call tracking, WhatsApp click-to-chat, and form tracking wired directly into your booking system, so every dirham spent is traced back to an actual appointment.</p>"
+                },
+                {
+                    "q": "What exactly am I paying for?",
+                    "a": "<p>Your ad spend (paid directly to Google, not to us), plus a management fee for strategy, campaign builds and weekly optimisation. Both are itemised separately before you commit — no hidden markup on your media budget.</p>"
+                }
+            ]
+        }
+    ],
+    "slug": "google-ads-for-beauty"
+}

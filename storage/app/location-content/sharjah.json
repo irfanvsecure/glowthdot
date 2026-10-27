@@ -1,0 +1,478 @@
+{
+    "hero": {
+        "pill": "Beauty Marketing Agency · Sharjah",
+        "title": "A beauty marketing agency for Sharjah's ladies salons &amp; clinics — <span class=\"hl\">so your neighbours book here, not across the border.</span>",
+        "intro": "Sharjah is a family emirate with its own decency rules, its own health regulator and a daily commute that pulls clients towards Dubai. We plan Maps, ads and WhatsApp booking around all three, from Al Majaz to Muwaileh.",
+        "ctas": [
+            {
+                "href": "/get-a-free-audit/",
+                "label": "Audit My Sharjah Salon"
+            },
+            {
+                "href": "#districts",
+                "label": "See Sharjah by District"
+            }
+        ],
+        "stats": [
+            {
+                "value": "1.8M",
+                "label": "people live in Sharjah emirate",
+                "source": "Source: Sharjah Census 2022"
+            },
+            {
+                "value": "100%",
+                "label": "Beauty-only agency focus",
+                "source": ""
+            },
+            {
+                "value": "24/7",
+                "label": "WhatsApp & AI booking cover",
+                "source": ""
+            }
+        ]
+    },
+    "market": {
+        "kicker": "The Sharjah market, honestly",
+        "title": "Why Sharjah salons can't borrow <span class=\"hl\">a Dubai playbook</span>",
+        "intro": "",
+        "body": "<p>Sharjah is a residential emirate first. The 2022 census counted 1.8 million residents and 340,000 households, most of them expatriate families rather than shared accommodation. That shapes the beauty market: your core client is often a mother, a working woman or a student who wants a trusted <a href=\"/ladies-salon-marketing/\">women-only salon</a> close to home, at a price that makes sense for a family budget.</p> <h3>The commute is your biggest competitor</h3> <p>Dubai's RTA puts the traffic heading from Sharjah into Dubai at around 1.2 million vehicles a day. Many of your potential clients spend their working week in Dubai, see Dubai salon ads on their feeds, and pass Dubai's Al Nahda and Al Qusais on the way home. If your salon is not the obvious answer when they search near their own building in the evening, the booking goes to a branch near the office instead. So Sharjah marketing leans hard on evening and weekend availability, home-radius targeting and instant WhatsApp replies, not on tourist reach.</p> <h3>Modest by law, not just by taste</h3> <p>Sharjah has had its own decency rules since 2001, covering dress and conduct in public places. That sets the tone for local creative: covered, family-appropriate imagery reads as respectful here, and clients choosing a ladies salon care visibly about privacy. We build Sharjah campaigns around results, hands and hair close-ups, clean interiors and clear \"ladies only\" signals rather than the glamour shots that sell in Dubai Marina.</p> <h3>Price-aware, loyal once won</h3> <p>Families compare. Clear package pricing, honest \"from\" prices on Google and loyalty offers for repeat <a href=\"/nail-salons/\">nail</a> and <a href=\"/hair-salons/\">hair</a> services usually convert better here than luxury positioning. Once a Sharjah client trusts a salon, she tends to bring her sisters, daughters and neighbours, which is why reviews and referrals matter so much (Glowth view).</p>",
+        "glance": {
+            "title": "Sharjah, at a glance",
+            "items": [
+                {
+                    "value": "1.8M",
+                    "text": "residents, up 22% since 2015"
+                },
+                {
+                    "value": "605K",
+                    "text": "female residents, Emirati and expatriate"
+                },
+                {
+                    "value": "51%",
+                    "text": "of residents aged 20–39"
+                },
+                {
+                    "value": "340K",
+                    "text": "households in the emirate"
+                },
+                {
+                    "value": "~1.2M",
+                    "text": "vehicles a day travelling from Sharjah towards Dubai"
+                }
+            ],
+            "source": "Sources: Sharjah Census 2022 preliminary results (Department of Statistics and Community Development), reported by <a href=\"https://www.gulftoday.ae/news/2023/05/24/sharjah-population-grows-to-1-8-million-with-a-61-per-cent-active-workforce\" target=\"_blank\" rel=\"noopener\">Gulf Today</a> and <a href=\"https://gulfnews.com/uae/sharjah-census-2022-results-out-emirates-population-reaches-18-million-1.95978023\" target=\"_blank\" rel=\"noopener\">Gulf News</a>, May 2023. Traffic figure: Dubai RTA, reported by <a href=\"https://gulfnews.com/uae/transport/why-is-sharjah-dubai-traffic-so-bad-new-figures-reveal-whats-driving-the-congestion-1.500564247\" target=\"_blank\" rel=\"noopener\">Gulf News</a>, June 2026."
+        }
+    },
+    "rules": {
+        "kicker": "Who signs off in Sharjah",
+        "title": "Sharjah has its own health regulator — <span class=\"hl\">and a two-step ad approval</span>",
+        "intro": "A clinic ad that is fine in Dubai or Abu Dhabi does not automatically clear in Sharjah. Here is who is involved before a campaign goes live, based on the authorities' own published services.",
+        "cards": [
+            {
+                "tag": "Clinics · licensing",
+                "title": "Sharjah Health Authority (SHA)",
+                "body": "<p>SHA was set up in May 2010 to develop and regulate healthcare in the emirate. Private clinics in Sharjah get their preliminary approval and final facility licence from SHA, with a licensed medical director, a technical inspection and an annual renewal. A 2025 Sharjah Executive Council decision confirmed SHA's role over private and free-zone health facilities; federal government facilities are excluded.</p> <small>Sources: <a href=\"https://sha.shj.ae/About-Us/About-Us\" target=\"_blank\" rel=\"noopener\">SHA — About Us</a>; <a href=\"https://sha.shj.ae/services_en/%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA%20%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9%20%203_en.html\" target=\"_blank\" rel=\"noopener\">SHA permanent facility licence service</a>; <a href=\"https://ec.shj.ae/en/?p=4910\" target=\"_blank\" rel=\"noopener\">Sharjah Executive Council, July 2025</a></small>"
+            },
+            {
+                "tag": "Clinics · advertising",
+                "title": "SHA ad licence, after MOHAP approval",
+                "body": "<p>SHA runs a dedicated medical advertisement licence. Its published conditions:</p> <ul> <li>The clinic or practitioner must hold a valid SHA licence.</li> <li>Prior approval from the federal Ministry of Health and Prevention (MOHAP) is mandatory.</li> <li>You submit the actual creative (images, video, audio or PDF) for review; service time is listed as 8 working days.</li> <li>Any change to an approved ad needs a new application.</li> </ul> <small>Source: <a href=\"https://sha.shj.ae/services_en/%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA%20%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9%20%2023_en.html\" target=\"_blank\" rel=\"noopener\">SHA — Request for a medical advertisement licence</a>; MOHAP also issues a separate <a href=\"https://mohap.gov.ae/en/services/license-for-healthcare-advertisement-on-social-media\" target=\"_blank\" rel=\"noopener\">healthcare advertising licence for social media accounts</a>.</small>"
+            },
+            {
+                "tag": "Salons · health control",
+                "title": "Sharjah City Municipality",
+                "body": "<p>Ladies salons, barbershops and massage centres are licensed under the municipality's Health Control Section. Its guide covers:</p> <ul> <li>Site inspection, décor-plan approval and a final inspection before the licence is issued.</li> <li>Occupational health cards for every worker from the municipality's Public Health Clinic, plus hepatitis B vaccination records.</li> <li>A valid trade licence (issued through Sharjah's Economic Development Department) and a pest-control contract.</li> </ul> <small>Sources: <a href=\"https://portal.shjmun.gov.ae/Documents/HCS-EN.pdf\" target=\"_blank\" rel=\"noopener\">Sharjah Municipality Health Control Section guide</a>; <a href=\"https://www.gccbusinessnews.com/sharjahs-sedd-includes-cosmetic-and-beauty-into-eitimad-license/\" target=\"_blank\" rel=\"noopener\">SEDD / Municipality on home-based beauty licences, 2021</a></small>"
+            }
+        ],
+        "note": "What this means in practice: clinic creative for Sharjah needs to be finalised early, because every edit restarts the approval. We plan clinic calendars around that lead time and keep salon ads clear of medical claims so they stay outside the clinic process altogether. For the wider UAE rulebook, read our <a href=\"/clinic-marketing-uae-guide/\">guide to compliant clinic marketing in the UAE</a>. This is general information, not legal advice; always confirm current requirements with SHA or the municipality."
+    },
+    "services": {
+        "kicker": "What we run in Sharjah",
+        "title": "Nine services, tuned to <span class=\"hl\">how Sharjah families book</span>",
+        "intro": "Each channel is set up for a residential, price-aware, women-first client base, with clinic work planned around SHA ad approvals.",
+        "cards": [
+            {
+                "href": "/seo-for-beauty-salons-clinics/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><path d=\"M4 19V5M4 19h16\"></path><path d=\"M8 15l3.5-4 3 2.5L19 8\"></path></svg>",
+                "title": "Local SEO for Sharjah Salons",
+                "text": "Rank for the \"near me\" and neighbourhood searches residents make from home, in English and Arabic, so you beat the Dubai branch near their office.",
+                "read": {
+                    "href": "/salon-not-showing-google-maps/",
+                    "label": "Read: Why your salon is missing from Maps →"
+                }
+            },
+            {
+                "href": "/google-ads-for-beauty/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"M21 21l-4.3-4.3\"></path></svg>",
+                "title": "Google Ads in Sharjah",
+                "text": "Tight radius campaigns weighted to evenings and weekends, when commuters are back home and searching for an appointment nearby.",
+                "read": {
+                    "href": "/salon-google-ads-keywords/",
+                    "label": "Read: Salon keywords worth bidding on →"
+                }
+            },
+            {
+                "href": "/instagram-facebook-ads-for-beauty/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><path d=\"M3 11l16-6-4 14-5-4-3 3v-5z\"></path></svg>",
+                "title": "Instagram &amp; Facebook Ads, Sharjah",
+                "text": "Modest, family-appropriate creative that respects Sharjah's decency norms and still shows off the work: hands, hair, brows and a calm ladies-only space.",
+                "read": null
+            },
+            {
+                "href": "/ai-appointment-booking-bot/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><path d=\"M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z\"></path></svg>",
+                "title": "WhatsApp Booking Bot",
+                "text": "Replies in Arabic or English while the client is still stuck in E11 traffic, with prices and the next free slot, so she books before she gets home.",
+                "read": {
+                    "href": "/salon-whatsapp-booking-leak/",
+                    "label": "Read: How evening WhatsApp leaks bookings →"
+                }
+            },
+            {
+                "href": "/websites-landing-pages-for-beauty/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"13\" rx=\"2\"></rect><path d=\"M8 21h8M12 17v4\"></path></svg>",
+                "title": "Bilingual Salon Websites",
+                "text": "Fast Arabic/English pages with visible \"from\" prices and package menus, because Sharjah clients compare before they call.",
+                "read": {
+                    "href": "/salon-website-conversion-fixes/",
+                    "label": "Read: 7 fixes that make a site book →"
+                }
+            },
+            {
+                "href": "/social-media-management-for-beauty/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><path d=\"M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z\"></path><path d=\"M18 15l.9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z\"></path></svg>",
+                "title": "Social Media for Ladies Salons",
+                "text": "Content calendars built around Ramadan, Eid, wedding season and back-to-school, the moments family clients plan their beauty visits around.",
+                "read": {
+                    "href": "/salon-content-ideas-30-days/",
+                    "label": "Read: 30 days of salon post ideas →"
+                }
+            },
+            {
+                "href": "/ecommerce-for-beauty/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><path d=\"M6 7h12l1 13H5z\"></path><path d=\"M9 10V6a3 3 0 0 1 6 0v4\"></path></svg>",
+                "title": "Gift Cards &amp; Packages Online",
+                "text": "Sell prepaid bundles and Eid or Mother's Day gift cards online, an easy way for families to buy for sisters, mothers and daughters.",
+                "read": null
+            },
+            {
+                "href": "/reviews-reputation/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><path d=\"M12 3l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.8L6.6 19.6l1-6L3.3 9.4l6-.9z\"></path></svg>",
+                "title": "Reviews &amp; Word of Mouth",
+                "text": "In a market that runs on recommendations between friends and family, we turn happy regulars into steady Google reviews, politely and without incentives.",
+                "read": {
+                    "href": "/salon-bad-review-response-templates/",
+                    "label": "Read: Replying to a 1-star review →"
+                }
+            },
+            {
+                "href": "/services/",
+                "icon": "<svg class=\"ico\" viewbox=\"0 0 24 24\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"></rect><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><circle cx=\"17.2\" cy=\"6.8\" r=\"1\"></circle></svg>",
+                "title": "Sharjah Clinic &amp; Salon Bundles",
+                "text": "Combine channels into one plan; for clinics, we schedule creative early so SHA and MOHAP approvals don't hold up launch.",
+                "read": {
+                    "href": "/clinic-marketing-uae-guide/",
+                    "label": "Read: Compliant clinic marketing in the UAE →"
+                }
+            }
+        ]
+    },
+    "areas": {
+        "kicker": "Interactive · Sharjah neighbourhoods",
+        "title": "From the lagoon to the campuses: <span style=\"color:var(--lime)\">five very different catchments</span>",
+        "intro": "How we'd approach each area. These are qualitative notes from how we plan campaigns, not measured market data. Your audit checks your actual competitors and searches.",
+        "items": [
+            {
+                "id": "majaz",
+                "tab": "Al Majaz & Buhaira",
+                "title": "Al Majaz &amp; the Buhaira Corniche",
+                "text": "Tower blocks around Al Majaz Waterfront and Khalid Lagoon, a short walk from Al Qasba. Plenty of established ladies salons and clinics share the same few streets, so a client choosing between them usually decides on photos, reviews and whether parking is easy.",
+                "tags": [
+                    "Lagoon-side towers",
+                    "Crowded salon streets",
+                    "Evening walk-ins"
+                ],
+                "facts": [
+                    {
+                        "label": "Typical demand (Glowth view)",
+                        "value": "Blow-dry, facials, threading"
+                    },
+                    {
+                        "label": "Main hurdle",
+                        "value": "Standing out on Maps"
+                    },
+                    {
+                        "label": "Channel we'd lead with",
+                        "value": "Maps profile + reviews"
+                    }
+                ]
+            },
+            {
+                "id": "nahda",
+                "tab": "Al Nahda (Sharjah)",
+                "title": "Al Nahda, Sharjah side",
+                "text": "This is the border. Dubai's Al Nahda and Al Qusais start across the road, so a resident searching \"ladies salon near me\" may see Dubai and Sharjah salons in the same map results. Clear prices, fast WhatsApp replies and a reason to stay on the Sharjah side do the work here.",
+                "tags": [
+                    "Next to Dubai's Al Nahda",
+                    "Mixed map results",
+                    "Price comparison"
+                ],
+                "facts": [
+                    {
+                        "label": "Typical demand (Glowth view)",
+                        "value": "Hair colour, nails, waxing"
+                    },
+                    {
+                        "label": "Main hurdle",
+                        "value": "Dubai salons a few minutes away"
+                    },
+                    {
+                        "label": "Channel we'd lead with",
+                        "value": "Google Ads + WhatsApp bot"
+                    }
+                ]
+            },
+            {
+                "id": "taawun",
+                "tab": "Al Taawun",
+                "title": "Al Taawun",
+                "text": "High-rise family apartments around Expo Centre Sharjah and the Al Taawun corridor. Residents tend to stick with a salon in their own building or the next one along, so being the nearest well-reviewed option and running loyalty offers matters more than flashy launches.",
+                "tags": [
+                    "Family towers",
+                    "Building-by-building loyalty",
+                    "Repeat bookings"
+                ],
+                "facts": [
+                    {
+                        "label": "Typical demand (Glowth view)",
+                        "value": "Regular hair & nail upkeep"
+                    },
+                    {
+                        "label": "Main hurdle",
+                        "value": "Winning clients from the salon downstairs"
+                    },
+                    {
+                        "label": "Channel we'd lead with",
+                        "value": "Local SEO + loyalty offers"
+                    }
+                ]
+            },
+            {
+                "id": "khan",
+                "tab": "Al Khan",
+                "title": "Al Khan",
+                "text": "A coastal neighbourhood beside Al Khan Lagoon and the Dubai boundary at Al Mamzar, with a growing number of residential towers. Newer buildings mean newer residents, many still looking for \"their\" salon, which makes this a good area to build a review lead early.",
+                "tags": [
+                    "Coastal towers",
+                    "New residents",
+                    "Room to build reviews"
+                ],
+                "facts": [
+                    {
+                        "label": "Typical demand (Glowth view)",
+                        "value": "Skincare facials, lashes, brows"
+                    },
+                    {
+                        "label": "Main hurdle",
+                        "value": "Getting found before habits form"
+                    },
+                    {
+                        "label": "Channel we'd lead with",
+                        "value": "Maps profile + Meta ads"
+                    }
+                ]
+            },
+            {
+                "id": "muwaileh",
+                "tab": "Muwaileh & University City",
+                "title": "Muwaileh &amp; University City",
+                "text": "University City is home to the University of Sharjah, the American University of Sharjah and other campuses, with Muwaileh's apartments and shops next door. Students and young families here respond to student offers, bundles and easy online booking more than to premium pricing.",
+                "tags": [
+                    "Students & young families",
+                    "Offer-led",
+                    "Mobile-first booking"
+                ],
+                "facts": [
+                    {
+                        "label": "Typical demand (Glowth view)",
+                        "value": "Nails, brows, quick hair services"
+                    },
+                    {
+                        "label": "Main hurdle",
+                        "value": "Price sensitivity"
+                    },
+                    {
+                        "label": "Channel we'd lead with",
+                        "value": "Instagram ads + online booking"
+                    }
+                ]
+            }
+        ],
+        "note": "District notes are Glowth's planning view, not survey or search-volume data."
+    },
+    "maps": {
+        "kicker": "The border problem on Google Maps",
+        "title": "When a Sharjah search <span class=\"hl\">shows Dubai salons too</span>",
+        "intro": "Near the Al Nahda and Al Khan boundaries, a \"near me\" search can mix salons from both emirates in one map box. Your profile has to give a Sharjah resident a reason to stay local: closer, open later, clearly ladies-only, honest prices. More in our guide to <a href=\"/salon-not-showing-google-maps/\">why salons drop out of the map results</a>.",
+        "search": "Search: \"ladies salon near me\" — from a flat in Al Nahda, Sharjah",
+        "badge": "",
+        "rows": [
+            {
+                "pin": "A",
+                "name": "Your Ladies Salon · Al Nahda, Sharjah",
+                "detail": "Ladies only · Open until 11 PM · Prices listed · Replies on WhatsApp",
+                "tag": "GOAL",
+                "you": true
+            },
+            {
+                "pin": "B",
+                "name": "Salon across the border · Al Nahda, Dubai",
+                "detail": "Similar services · a short drive away",
+                "tag": "",
+                "you": false
+            },
+            {
+                "pin": "C",
+                "name": "Another salon · Al Qusais, Dubai",
+                "detail": "Near the commute route",
+                "tag": "",
+                "you": false
+            }
+        ],
+        "note": "Illustrative example only: not a real search result, ranking or business."
+    },
+    "compare": {
+        "kicker": "Side by side",
+        "title": "Glowth vs. a campaign <span class=\"hl\">copied over from Dubai</span>",
+        "intro": "",
+        "columns": [
+            "",
+            "Glowth in Sharjah",
+            "Dubai template reused"
+        ],
+        "rows": [
+            [
+                "Ad creative",
+                "Modest, family-appropriate, ladies-only cues",
+                "Beach-club glamour shots"
+            ],
+            [
+                "Clinic ad approvals",
+                "Planned for SHA licence after MOHAP sign-off",
+                "Assumes the DHA process applies"
+            ],
+            [
+                "Ad scheduling",
+                "Evenings & weekends, when commuters are home",
+                "Office-hours delivery"
+            ],
+            [
+                "Targeting",
+                "Home radius, Dubai border areas handled deliberately",
+                "\"Sharjah\" as one big audience"
+            ],
+            [
+                "Offer & pricing",
+                "Clear \"from\" prices, family & student packages",
+                "Luxury positioning, prices hidden"
+            ],
+            [
+                "Language",
+                "Arabic and English, replies included",
+                "English only"
+            ],
+            [
+                "Contract",
+                "Monthly rolling",
+                "6–12 month lock-in"
+            ]
+        ]
+    },
+    "faq": {
+        "kicker": "Sharjah questions",
+        "title": "What Sharjah owners ask us first",
+        "intro": "",
+        "items": [
+            {
+                "q": "Does my Sharjah clinic need SHA approval to run Instagram or Google ads?",
+                "a": "For medical advertising, yes. Sharjah Health Authority publishes a \"medical advertisement licence\" service for SHA-licensed facilities and practitioners. Its stated conditions include prior approval from MOHAP, submission of the actual ad files, and a fresh application whenever the ad changes; the listed processing time is 8 working days. We build that lead time into every clinic campaign plan."
+            },
+            {
+                "q": "Is a Sharjah clinic regulated by MOHAP or by Sharjah Health Authority?",
+                "a": "Both play a part. Private clinics in Sharjah are licensed by SHA, which was set up in 2010 to regulate healthcare in the emirate. For advertising, SHA's own service requires MOHAP's prior approval before it issues its ad licence. Federal government facilities in Sharjah are outside SHA's 2025 regulation decision."
+            },
+            {
+                "q": "How do Sharjah's decency rules affect salon advertising?",
+                "a": "Sharjah's decency rules, in force since 2001, set expectations on dress and behaviour in public places, and they shape what local audiences see as appropriate. In practice we keep Sharjah creative modest: no revealing outfits, focus on the treatment result, and clear signals that a ladies salon is women-only and private. Meta and Google's own policies on personal health and body imagery still apply on top."
+            },
+            {
+                "q": "Most of my clients work in Dubai. How do we stop them booking there instead?",
+                "a": "Be the easiest option at home. That means appearing for searches made from their building in the evening, replying on WhatsApp within minutes (our booking bot covers late hours), showing clear prices and opening times on Google, and running ads when they're back in Sharjah, not while they're at the office."
+            },
+            {
+                "q": "What does Sharjah Municipality look at before a ladies salon can open?",
+                "a": "The municipality's Health Control Section inspects the premises, approves the décor plan and does a final inspection. Every worker needs an occupational health card from the municipality's Public Health Clinic and hepatitis B vaccination records, and the salon needs a valid trade licence and a pest-control contract. Check the current guide with the municipality before you commit to a fit-out."
+            }
+        ]
+    },
+    "links": [
+        {
+            "label": "Sharjah's busiest salon types",
+            "lead": "Most of our Sharjah work is for women-only businesses. See how we market a <a href=\"/ladies-salon-marketing/\">ladies salon in a conservative, family market</a>, or jump to your category below.",
+            "links": [
+                {
+                    "href": "/nail-salons/",
+                    "label": "Nail salon marketing →"
+                },
+                {
+                    "href": "/hair-salons/",
+                    "label": "Hair salon marketing →"
+                },
+                {
+                    "href": "/moroccan-bath-centre/",
+                    "label": "Moroccan bath centres →"
+                },
+                {
+                    "href": "/aesthetic-clinics/",
+                    "label": "Aesthetic clinics →"
+                }
+            ]
+        },
+        {
+            "label": "Next door",
+            "lead": "",
+            "links": [
+                {
+                    "href": "/dubai/",
+                    "label": "Salon & clinic marketing in Dubai →"
+                },
+                {
+                    "href": "/abu-dhabi/",
+                    "label": "Beauty marketing for Abu Dhabi →"
+                }
+            ]
+        }
+    ],
+    "final": {
+        "kicker": "Free audit for Sharjah businesses",
+        "title": "Find out why residents of your building <span style=\"color:var(--lime)\">book somewhere else</span>",
+        "intro": "We check your Google profile, ads, WhatsApp response time and website against the salons your neighbours actually see, on both sides of the Dubai border. For clinics, we also flag creative that is likely to need SHA ad approval.",
+        "ctas": [
+            {
+                "href": "/get-a-free-audit/",
+                "label": "Get My Sharjah Audit"
+            },
+            {
+                "href": "https://wa.me/971588979925",
+                "label": "WhatsApp Us"
+            }
+        ],
+        "trust": [
+            "Private & confidential",
+            "No sales spam",
+            "Free, no obligation"
+        ]
+    },
+    "slug": "sharjah",
+    "city": "Sharjah"
+}

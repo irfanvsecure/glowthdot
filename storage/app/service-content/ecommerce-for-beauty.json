@@ -1,0 +1,507 @@
+{
+    "docId": "433",
+    "hero": {
+        "anchors": [],
+        "pill": "Ecommerce · Retail that never closes",
+        "title": "Ecommerce for beauty salons &amp; clinics — <span class=\"hl\">sell while the chairs sleep.</span>",
+        "intro": "<p>Your therapists already recommend the serum, the aftercare kit, the SPF — and the client buys it somewhere else online. An ecommerce store for your salon or clinic turns those recommendations into 24/7 revenue: aftercare kits, skincare retail and rebookable bundles, delivered anywhere in the UAE.</p>",
+        "ctas": [
+            {
+                "href": "/get-a-free-audit/",
+                "label": "Get My SEO Audit — Free"
+            },
+            {
+                "href": "/get-a-free-audit/",
+                "label": "Explore My Keywords"
+            }
+        ],
+        "chips": [
+            {
+                "title": "<span> 10–20% </span>",
+                "text": "typical revenue upside*"
+            },
+            {
+                "title": "<span> 24/7 </span>",
+                "text": "selling — nights, Eid, holidays"
+            },
+            {
+                "title": "<span> 4–6 wks </span>",
+                "text": "from catalogue to launch"
+            }
+        ],
+        "extra": [],
+        "visual": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-b0437cb e-con-full e-flex e-con e-child\" data-id=\"b0437cb\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-513d48f elementor-widget elementor-widget-html\" data-id=\"513d48f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"shop rv in\">\n      <div class=\"shophd\"><b>yourclinic.ae/shop — live demo</b><span class=\"cartb\">Cart <i id=\"cartN\">0</i></span></div>\n      <div class=\"prods\">\n        <div class=\"prod\"><div class=\"pimg\" style=\"background:linear-gradient(135deg,#FF2E7E,#B84DD9)\">Post-Laser Aftercare Kit</div><b>Aftercare Kit — Laser</b><small>AED 180</small><button class=\"addb\">Add to Cart</button></div>\n        <div class=\"prod\"><div class=\"pimg\" style=\"background:linear-gradient(135deg,#7C3AED,#4A2ABF)\">Vitamin C Glow Serum</div><b>Glow Serum 30ml</b><small>AED 145</small><button class=\"addb\">Add to Cart</button></div>\n        <div class=\"prod\"><div class=\"pimg\" style=\"background:#0E0D12;color:#C6F432\">Hydrafacial At-Home Duo</div><b>At-Home Duo Bundle</b><small>AED 260</small><button class=\"addb\">Add to Cart</button></div>\n      </div>\n      <div class=\"ordfeed\" id=\"ordfeed\"><div>📦 Try the demo — add something to the cart.</div></div>\n    </div>\n    <style>\n        .shop {\n    background: #fff;\n    border: 1px solid var(--line);\n    border-radius: 20px;\n    padding: 24px;\n    box-shadow: 0 30px 70px -30px rgba(14, 13, 18, .3);\n}\n.shophd {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 16px;\n}\n.shophd b {\n    font-family: \"Space Grotesk\", sans-serif;\n    font-size: 15px;\n}\n.cartb {\n    position: relative;\n    font-size: 12.5px;\n    font-weight: 700;\n    border: 1.5px solid #e7e6ec;\n    border-radius: 999px;\n    padding: 8px 16px;\n    background: #FAFAFC;\n}\n.cartb i {\n    font-style: normal;\n    position: absolute;\n    top: -8px;\n    right: -8px;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    color: #fff;\n    font-family: \"Space Grotesk\", sans-serif;\n    font-size: 11px;\n    width: 22px;\n    height: 22px;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.prods {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 10px;\n}\n.prod {\n    border: 1px solid #e7e6ec;\n    border-radius: 14px;\n    padding: 12px;\n    text-align: center;\n}\n.prod .pimg {\n    height: 64px;\n    border-radius: 10px;\n    margin-bottom: 9px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-family: \"Space Grotesk\", sans-serif;\n    font-weight: 700;\n    color: #fff;\n    font-size: 11px;\n    padding: 6px;\n    background: linear-gradient(135deg, #FF2E7E, #B84DD9);\n}\n.prod b {\n    font-size: 11.5px;\n    display: block;\n    min-height: 28px;\n}\n.prod small {\n    font-family: \"Space Grotesk\", sans-serif;\n    font-weight: 700;\n    font-size: 12.5px;\n    display: block;\n    margin: 4px 0 8px;\n}\n.prod button {\n    width: 100%;\n    border: none;\n    background: #0E0D12;\n    color: #fff;\n    font-family: \"Space Grotesk\", sans-serif;\n    font-weight: 700;\n    font-size: 11px;\n    padding: 8px;\n    border-radius: 8px;\n    cursor: pointer;\n    transition: all .2s;\n}\n.ordfeed {\n    margin-top: 14px;\n    border-top: 1px solid #e7e6ec;\n    padding-top: 12px;\n    font-size: 12px;\n    color: #5d5b66;\n    min-height: 40px;\n}\n.ordfeed div {\n    padding: 4px 0;\n    font-weight: 600;\n    animation: popin .4s ease;\n}\n.ordfeed b {\n    color: #0BA05F;\n}\n@media(max-width: 768px){\n    .prods{\n        display: block;\n}\n}\n    </style>\n    <script>\n        const cartCount = document.getElementById(\"cartN\");\nconst orderFeed = document.getElementById(\"ordfeed\");\nconst addButtons = document.querySelectorAll(\".addb\");\n\nlet cart = 0;\n\nconst messages = [\n  \"📦 Aftercare Kit added to cart.\",\n  \"✨ Glow Serum added to cart.\",\n  \"🧴 At-Home Duo Bundle added to cart.\",\n  \"✅ Item successfully added.\",\n  \"🛍️ Ready for checkout.\"\n];\n\naddButtons.forEach((button, index) => {\n\n  button.addEventListener(\"click\", function () {\n\n    cart++;\n\n    // Update cart number\n    cartCount.innerText = cart;\n\n    // Button state\n    this.innerText = \"Added ✓\";\n    this.disabled = true;\n    this.style.background = \"#C6F432\";\n    this.style.color = \"#111\";\n    this.style.cursor = \"default\";\n\n    // Add activity message\n    const item = document.createElement(\"div\");\n    item.innerHTML = messages[index];\n    orderFeed.prepend(item);\n\n  });\n\n});\n    </script>\t\t\t\t</div>\n\t\t\t\t</div></div>"
+    },
+    "sections": [
+        {
+            "anchors": [],
+            "kicker": "The margin you're donating",
+            "title": "Online stores for salons — <span style=\"color:#c6f432\">the revenue hiding in your treatment room.</span>",
+            "intro": "<p>Every treatment ends with a product recommendation. The only question is who collects the sale — you, or a marketplace.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">73% </span>",
+                    "icon": "",
+                    "title": "<span> Of clients buy recommended products </span>",
+                    "href": "",
+                    "text": "They trust your therapist's advice — then buy the product from whoever sells it online at 11 PM.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">4% </span>",
+                    "icon": "",
+                    "title": "<span> Typical salon retail share of revenue </span>",
+                    "href": "",
+                    "text": "Top-performing beauty businesses run 15–25%. The gap is a system, not a shelf.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">0 </span>",
+                    "icon": "",
+                    "title": "<span> Sales when you're closed </span>",
+                    "href": "",
+                    "text": "Your shelf retails 10 hours a day. A store sells 24 — including the post-treatment \"I need that serum\" moment.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">68% </span>",
+                    "icon": "",
+                    "title": "<span> Of UAE carts get abandoned </span>",
+                    "href": "",
+                    "text": "Without recovery flows — WhatsApp nudges, payment options — two-thirds of intent evaporates",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "",
+            "title": "",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-7ae3df0 elementor-widget elementor-widget-html\" data-id=\"7ae3df0\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"rcalc rv in\">\n  <span class=\"kicker\">Interactive · Retail Upside Calculator</span>\n  <h2>What could your shelf earn <span class=\"lime\">online?</span></h2>\n  <p class=\"sub\">Three sliders — your monthly retail opportunity, quantified.</p>\n\n  <label>Clients you see per month <output id=\"oCl\">400</output></label>\n  <input type=\"range\" id=\"rCl\" min=\"50\" max=\"2000\" step=\"50\" value=\"400\">\n\n  <label>% who would buy recommended products <output id=\"oP\">25%</output></label>\n  <input type=\"range\" id=\"rP\" min=\"5\" max=\"80\" step=\"5\" value=\"25\">\n\n  <label>Average basket value <output id=\"oB\">AED 220</output></label>\n  <input type=\"range\" id=\"rB\" min=\"50\" max=\"1000\" step=\"10\" value=\"220\">\n\n  <div class=\"rstats\">\n    <div class=\"rstat\">\n      <div class=\"num\" id=\"sOrders\">100</div>\n      <span>Online orders / month</span>\n    </div>\n    <div class=\"rstat\">\n      <div class=\"num\" id=\"sMonthly\">AED 22k</div>\n      <span>Monthly retail revenue</span>\n    </div>\n    <div class=\"rstat\">\n      <div class=\"num\" id=\"sYearly\">AED 264k</div>\n      <span>Annualised</span>\n    </div>\n    <div class=\"rstat\">\n      <div class=\"num\">24/7</div>\n      <span>Hours your store sells</span>\n    </div>\n  </div>\n\n  <p class=\"rnote\">*Planning estimates; repeat purchases and replenishment flows typically grow these numbers over time.</p>\n</div>\n\n<style>\n.rcalc {\n    background: #0e0d12;\n    color: #fff;\n    border-radius: 24px;\n    padding: 52px;\n}\n\n/* ===== Kicker with lime dash ===== */\n.rcalc .kicker {\n    display: inline-flex;\n    align-items: center;\n    gap: 10px;\n    color: #C6F432;\n    font-size: 13px;\n    font-weight: 800;\n    letter-spacing: .14em;\n    text-transform: uppercase;\n}\n.rcalc .kicker::before {\n    content: \"\";\n    display: inline-block;\n    width: 22px;\n    height: 3px;\n    background: #C6F432;\n    border-radius: 2px;\n}\n\n.rcalc h2 {\n    font-size: 42px;\n    line-height: 1.2;\n    margin: 15px 0 8px;\n    color: #fff;\n}\n.rcalc h2 .lime {\n    color: #C6F432;\n}\n\n.rcalc .sub {\n    color: #A7A2B6;\n    margin-bottom: 30px;\n}\n\n.rcalc label {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 15px;\n    font-weight: 600;\n    margin: 26px 0 10px;\n    color: #fff;\n}\n\n.rcalc output {\n    color: #C6F432;\n    font-weight: 700;\n}\n\n/* ===== Custom Range Sliders (pink track + thumb) ===== */\n.rcalc input[type=\"range\"] {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 100%;\n    height: 6px;\n    border-radius: 99px;\n    outline: none;\n    cursor: pointer;\n    margin: 6px 0 0;\n    background: linear-gradient(to right,\n        #FF2E7E 0%,\n        #FF2E7E var(--fill, 30%),\n        #ECEBF1 var(--fill, 30%),\n        #ECEBF1 100%);\n}\n\n/* Thumb — WebKit (Chrome, Edge, Safari) */\n.rcalc input[type=\"range\"]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #FF2E7E;\n    border: none;\n    box-shadow: 0 4px 12px rgba(255, 46, 126, .45);\n    transition: transform .15s;\n}\n.rcalc input[type=\"range\"]::-webkit-slider-thumb:hover {\n    transform: scale(1.15);\n}\n\n/* Thumb — Firefox */\n.rcalc input[type=\"range\"]::-moz-range-thumb {\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #FF2E7E;\n    border: none;\n    box-shadow: 0 4px 12px rgba(255, 46, 126, .45);\n}\n.rcalc input[type=\"range\"]::-moz-range-track {\n    height: 6px;\n    border-radius: 99px;\n    background: transparent;\n}\n\n/* ===== Stat cards row ===== */\n.rstats {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 18px;\n    margin-top: 40px;\n}\n\n.rstat {\n    background: #17161c;\n    border: 1px solid rgba(255, 255, 255, .07);\n    border-radius: 16px;\n    padding: 28px 18px;\n    text-align: center;\n}\n\n.rstat .num {\n    font-family: \"Space Grotesk\", sans-serif;\n    font-size: 30px;\n    font-weight: 700;\n    color: #C6F432;\n    margin-bottom: 8px;\n}\n\n.rstat span {\n    display: block;\n    font-size: 13px;\n    color: #fff;\n}\n\n/* ===== Footnote ===== */\n.rnote {\n    margin-top: 22px;\n    font-size: 12.5px;\n    color: #A7A2B6;\n}\n\n/* ===== Responsive ===== */\n@media (max-width: 900px) {\n    .rcalc {\n        padding: 36px 26px;\n    }\n    .rcalc h2 {\n        font-size: 32px;\n    }\n    .rstats {\n        grid-template-columns: repeat(2, 1fr);\n    }\n}\n@media (max-width: 520px) {\n    .rstats {\n        grid-template-columns: 1fr;\n    }\n}\n</style>\n\n<script>\nconst rCl = document.getElementById(\"rCl\");\nconst rP  = document.getElementById(\"rP\");\nconst rB  = document.getElementById(\"rB\");\n\nconst oCl = document.getElementById(\"oCl\");\nconst oP  = document.getElementById(\"oP\");\nconst oB  = document.getElementById(\"oB\");\n\nconst sOrders  = document.getElementById(\"sOrders\");\nconst sMonthly = document.getElementById(\"sMonthly\");\nconst sYearly  = document.getElementById(\"sYearly\");\n\nfunction formatAED(value) {\n    return \"AED \" + Number(value).toLocaleString();\n}\n\n// Compact format: AED 22k / AED 1.2M\nfunction formatAEDCompact(value) {\n    if (value >= 1000000) {\n        const m = value / 1000000;\n        return \"AED \" + (m % 1 === 0 ? m : m.toFixed(1)) + \"M\";\n    }\n    if (value >= 1000) {\n        const k = value / 1000;\n        return \"AED \" + (k % 1 === 0 ? k : k.toFixed(1)) + \"k\";\n    }\n    return \"AED \" + value;\n}\n\n// Pink filled portion of the slider track\nfunction updateFill(slider) {\n    const min = Number(slider.min);\n    const max = Number(slider.max);\n    const val = Number(slider.value);\n    const pct = ((val - min) / (max - min)) * 100;\n    slider.style.setProperty(\"--fill\", pct + \"%\");\n}\n\nfunction calculate() {\n    const clients = Number(rCl.value);\n    const pct     = Number(rP.value) / 100;\n    const basket  = Number(rB.value);\n\n    oCl.textContent = clients.toLocaleString();\n    oP.textContent  = Math.round(pct * 100) + \"%\";\n    oB.textContent  = formatAED(basket);\n\n    const orders  = Math.round(clients * pct);\n    const monthly = orders * basket;\n    const yearly  = monthly * 12;\n\n    sOrders.textContent  = orders.toLocaleString();\n    sMonthly.textContent = formatAEDCompact(monthly);\n    sYearly.textContent  = formatAEDCompact(yearly);\n\n    // Update slider fill colors\n    [rCl, rP, rB].forEach(updateFill);\n}\n\n[rCl, rP, rB].forEach(slider => {\n    slider.addEventListener(\"input\", calculate);\n});\n\ncalculate();\n</script>\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "What's included",
+            "title": "Beauty ecommerce, <span class=\"hl\">built end to end</span>",
+            "intro": "<p>A store is the easy part. Payments, delivery, product content and the flows that bring buyers back — that’s the system we build.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-shopping-bag\" viewbox=\"0 0 448 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z\"></path></svg>",
+                    "title": "<span> Store build — Shopify or WooCommerce </span>",
+                    "href": "",
+                    "text": "A fast, on-brand storefront that matches your salon's design language — product pages, bundles, gift cards and treatment add-ons, structured for both browsing and Google Shopping.",
+                    "list": [
+                        {
+                            "html": "Platform recommendation for your catalogue &amp; team",
+                            "href": ""
+                        },
+                        {
+                            "html": "Bundles, kits &amp; gift card setup",
+                            "href": ""
+                        },
+                        {
+                            "html": "Product schema for Google Shopping",
+                            "href": ""
+                        },
+                        {
+                            "html": "Mobile-first, under 2 seconds",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-far-dot-circle\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 56c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m0-48C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 168c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80z\"></path></svg>",
+                    "title": "<span> UAE payments &amp; delivery </span>",
+                    "href": "",
+                    "text": "Configured for how the UAE actually buys: cards, Apple Pay, COD, and buy-now-pay-later (Tabby / Tamara) — plus courier integration with same-day Dubai options and click-and-collect at your salon.",
+                    "list": [
+                        {
+                            "html": "Cards, Apple Pay, COD, Tabby &amp; Tamara",
+                            "href": ""
+                        },
+                        {
+                            "html": "UAE courier integration, same-day capable",
+                            "href": ""
+                        },
+                        {
+                            "html": "Click-and-collect that drives repeat visits",
+                            "href": ""
+                        },
+                        {
+                            "html": "VAT-compliant invoicing",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-far-comment\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z\"></path></svg>",
+                    "title": "<span> Product content that sells </span>",
+                    "href": "",
+                    "text": "Beauty products sell on outcomes, not ingredient lists. We write and shoot product pages the way clients decide: what it does, who it's for, how it pairs with their treatment — with your therapists as the trust layer.",
+                    "list": [
+                        {
+                            "html": "Product copy written for outcomes &amp; SEO",
+                            "href": ""
+                        },
+                        {
+                            "html": "Photography direction or full shoot day",
+                            "href": ""
+                        },
+                        {
+                            "html": "\"Pairs with your treatment\" cross-sells",
+                            "href": ""
+                        },
+                        {
+                            "html": "Review collection on every product",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-far-dot-circle\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 56c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m0-48C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 168c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80z\"></path></svg>",
+                    "title": "<span> Replenishment &amp; retention flows </span>",
+                    "href": "",
+                    "text": "Serums run out on a schedule — so should your reminders. WhatsApp and email flows for replenishment, abandoned carts, post-treatment kits and seasonal offers turn one buyer into a subscriber-grade customer.",
+                    "list": [
+                        {
+                            "html": "Abandoned-cart recovery (WhatsApp + email)",
+                            "href": ""
+                        },
+                        {
+                            "html": "Replenishment reminders timed to product life",
+                            "href": ""
+                        },
+                        {
+                            "html": "Post-treatment aftercare kit automation",
+                            "href": ""
+                        },
+                        {
+                            "html": "Seasonal &amp; offer campaign flows",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "How the machine works",
+            "title": "Selling skincare online in the UAE, <span class=\"hl\">explained honestly</span>",
+            "intro": "",
+            "layout": "features",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "feature",
+                    "kicker": "The strategy",
+                    "title": "Aftercare kits: the easiest ecommerce win in beauty",
+                    "body": "<p>The highest-converting product your business will ever sell is the one your therapist just recommended, in the treatment room, to a client whose skin is glowing. Aftercare kits — post-laser, post-facial, post-filler — package that moment into a product with a built-in reason to buy.</p><p>Online, the kit keeps working: the booking confirmation links it, the post-visit WhatsApp offers it, and the replenishment flow re-sells it every 6–8 weeks. No cold traffic needed — your calendar is the customer list.</p>",
+                    "ctas": [
+                        {
+                            "href": "#",
+                            "label": "Read more +"
+                        }
+                    ],
+                    "visual": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-88df32d e-con-full e-flex e-con e-child\" data-id=\"88df32d\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-a06baad elementor-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"a06baad\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Treatment ends, glow peaks <b>Trust: maximum</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Therapist recommends kit <b>Conversion: 73%</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Post-visit WhatsApp link <b>1-tap purchase</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Week 7: replenishment nudge <b>Repeat order</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Client buys it on a marketplace instead <b>Your margin, gone</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "",
+            "title": "",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-4675632 e-con-full e-flex e-con e-child\" data-id=\"4675632\" data-element_type=\"container\" data-e-type=\"container\"><div class=\"elementor-element elementor-element-071ed92 e-con-full e-flex e-con e-child\" data-id=\"071ed92\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-1c8c96a elementor-widget__width-initial elementor-widget elementor-widget-heading\" data-id=\"1c8c96a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">The operations\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-aca45b3 elementor-widget elementor-widget-heading\" data-id=\"aca45b3\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">Payments, delivery &amp; the UAE checkout reality</h3>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-e393a73 elementor-widget elementor-widget-text-editor\" data-id=\"e393a73\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tUAE ecommerce has its own physics: COD still matters, BNPL (Tabby, Tamara) lifts average order values noticeably, Apple Pay owns mobile checkout, and delivery expectations are same-day-ish in Dubai. A store configured for global defaults quietly leaks local buyers.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a3014ae elementor-widget elementor-widget-text-editor\" data-id=\"a3014ae\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tWe configure for the market: every relevant payment method, courier integration with live rates, click-and-collect (which brings buyers back into the salon — where the next booking happens), and VAT-compliant invoicing from day one.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-264e9c1 elementor-widget elementor-widget-button\" data-id=\"264e9c1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"#\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Read more +</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"elementor-element elementor-element-321bbf2 e-con-full e-flex e-con e-child\" data-id=\"321bbf2\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-5352e25 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"5352e25\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Cards + Apple Pay ✓</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Cash on delivery ✓</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Tabby / Tamara BNPL ✓</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Same-day Dubai delivery ✓</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Click &amp; collect in-salon ✓</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div></div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "How it works",
+            "title": "Your salon's online store, live in <span class=\"hl\">4–6 weeks</span>",
+            "intro": "",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "WEEK 1",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Catalogue &amp; strategy </span>",
+                    "href": "",
+                    "text": "Product selection, kit design, pricing for margin, platform choice",
+                    "list": [],
+                    "foot": "Catalogue locked",
+                    "extra": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-83a0e37 elementor-widget elementor-widget-html\" data-id=\"83a0e37\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "WEEK 2–4",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Build &amp; content </span>",
+                    "href": "",
+                    "text": "Store built, product pages written &amp; shot, payments and couriers wired.",
+                    "list": [],
+                    "foot": "Store functional",
+                    "extra": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-d7f6b43 elementor-widget elementor-widget-html\" data-id=\"d7f6b43\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "WEEK 5–6",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Flows &amp; launch </span>",
+                    "href": "",
+                    "text": "Cart recovery, replenishment and aftercare flows live; test orders; launch.",
+                    "list": [],
+                    "foot": "First orders in",
+                    "extra": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-e16f316 elementor-widget elementor-widget-html\" data-id=\"e16f316\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "ONGOING",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Grow the basket </span>",
+                    "href": "",
+                    "text": "New kits, seasonal bundles, and flow optimisation grow AOV and repeat rate monthly.",
+                    "list": [],
+                    "foot": "Retail share climbing",
+                    "extra": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-ec0fcc2 elementor-widget elementor-widget-html\" data-id=\"ec0fcc2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Before → after",
+            "title": "What the bot changes, <span style=\"color:#c6f432\">measured</span>",
+            "intro": "<p>Typical first-90-days movement once the AI receptionist goes live.*</p>",
+            "layout": "embed",
+            "footnote": "<p>*Illustrative figures representative of niche engagements; your plan includes projections from your real client volume.</p>",
+            "embed": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-9635210 e-con-full e-flex e-con e-child\" data-id=\"9635210\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t<div class=\"elementor-element elementor-element-14f849a e-con-full e-flex e-con e-child\" data-id=\"14f849a\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-fe34abd e-con-full e-flex e-con e-child\" data-id=\"fe34abd\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-3d4db56 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"3d4db56\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Retail share of total revenue</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-29be54f elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"29be54f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">100%\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-c881e56 elementor-widget elementor-widget-html\" data-id=\"c881e56\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack\">\n<i></i>\n</div>\n<b>12%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    width: 120px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.irow b {\n    margin-left: 610px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-2365e58 elementor-widget elementor-widget-html\" data-id=\"2365e58\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-text\">100%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 720px;\n}\nb.after-text {\n    margin-left: 86px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-a0dabfb e-con-full e-flex e-con e-child\" data-id=\"a0dabfb\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-bbf11bf e-con-full e-flex e-con e-child\" data-id=\"bbf11bf\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-3b8edf4 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"3b8edf4\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Average order value\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-7c4d7bf elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"7c4d7bf\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">75%\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-9f63d98 elementor-widget elementor-widget-html\" data-id=\"9f63d98\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-month\">\n<i></i>\n</div>\n<b class=\"itrack-month-text\">96%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-month {\n    flex: 1;\n    width: 300px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.itrack-month-text {\n    margin-left: 435px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-2b03061 elementor-widget elementor-widget-html\" data-id=\"2b03061\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-month\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-month-text\">168\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-month{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 470px;\n}\nb.after-month-text {\n    margin-left: 270px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-322fbb4 e-con-full e-flex e-con e-child\" data-id=\"322fbb4\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-15a6e86 e-con-full e-flex e-con e-child\" data-id=\"15a6e86\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-02fe73d elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"02fe73d\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Repeat purchase rate\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-9d2a9d2 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"9d2a9d2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">From Zero\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a4c73d8 elementor-widget elementor-widget-html\" data-id=\"a4c73d8\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-before-hours\">\n<i></i>\n</div>\n<b class=\"itrack-before-hour\">0</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 6px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-before-hours {\n    flex: 1;\n    width: 20px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\nb.itrack-before-hour {\n    margin-left: 730px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-9d3850f elementor-widget elementor-widget-html\" data-id=\"9d3850f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-hour\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-hour-text\">17%\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-hour{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 370px;\n}\nb.after-hour-text {\n    margin-left: 370px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-abf8e83 e-con-full e-flex e-con e-child\" data-id=\"abf8e83\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-967ce29 e-con-full e-flex e-con e-child\" data-id=\"967ce29\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-84e07e1 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"84e07e1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Abandoned carts recovered\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-9dad0b8 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"9dad0b8\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">−39%\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-099bc33 elementor-widget elementor-widget-html\" data-id=\"099bc33\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-show-hours\">\n<i></i>\n</div>\n<b class=\"itrack-before-show\">0</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 6px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-show-hours {\n    flex: 1;\n    width: 420px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\nb.itrack-before-show {\n    margin-left: 430px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-38be3dc elementor-widget elementor-widget-html\" data-id=\"38be3dc\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-show\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-show-text\">17%\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-show{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 270px;\n}\nb.after-show-text {\n    margin-left: 470px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div><div class=\"elementor-element elementor-element-9548a2e e-con-full e-flex e-con e-child\" data-id=\"9548a2e\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-76d09e1 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"76d09e1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Live store events — client dashboard preview\n</p>\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-d39ec2d e-con-full e-flex e-con e-child\" data-id=\"d39ec2d\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-7940c81 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"7940c81\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Post-laser kit ordered — Jumeirah\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-1384558 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"1384558\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Order</span>\n<span class=\"pos\">11:42 PM</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-af1ea64 e-con-full e-flex e-con e-child\" data-id=\"af1ea64\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-73c38ba elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"73c38ba\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Abandoned cart recovered via WhatsApp\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-68ee672 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"68ee672\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Flow</span>\n<span class=\"pos\">AED 310</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-e3639a5 e-con-full e-flex e-con e-child\" data-id=\"e3639a5\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-ab5dcc4 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"ab5dcc4\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Replenishment reminder → reorder\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-f7063ca elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"f7063ca\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Flow</span>\n<span class=\"pos\">Serum 30ml</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-2bacbff e-con-full e-flex e-con e-child\" data-id=\"2bacbff\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-7d40e44 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"7d40e44\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Click &amp; collect → rebooked facial\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-4fb1168 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"4fb1168\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">In-salon</span>\n<span class=\"pos\">+1 booking</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-0b0e3e0 e-con-full e-flex e-con e-child\" data-id=\"0b0e3e0\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-7abda66 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"7abda66\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Eid bundle sold out\n</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-707da5a elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"707da5a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Seasonal</span>\n<span class=\"pos\">64 units</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Case study · Medspa, Dubai Marina",
+            "title": "\"The aftercare kits sell themselves — the store just made it official. Retail went from an afterthought shelf to a fifth of our revenue.\"",
+            "intro": "<div>Medspa Owner — Dubai <em>(illustrative placeholder pending live client data)</em></div>",
+            "layout": "stats",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">18% </span>",
+                    "label": "of revenue now from retail"
+                },
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">31% </span>",
+                    "label": "repeat purchase rate"
+                },
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">64 </span>",
+                    "label": "orders in the first month"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Who we serve",
+            "title": "Beauty ecommerce questions,e <span class=\"hl\">answered straight</span>",
+            "intro": "",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Should my salon really sell online? </span>",
+                    "href": "",
+                    "text": "If you retail in-store, yes — you already do the hard part (trust and recommendation). The store just removes the limits of shelf hours and shelf space, typically adding 10–20% revenue at retail margins.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Shopify or WooCommerce? </span>",
+                    "href": "",
+                    "text": "Shopify wins on day-to-day simplicity; WooCommerce wins when your main site is WordPress and you want one system. We recommend based on catalogue size, your team and your existing website — both are proven.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> What about products we don't manufacture? </span>",
+                    "href": "",
+                    "text": "Most salon stores sell brands they already stock — check your reseller terms, which usually permit it. Kits and bundles of stocked products are the margin sweet spot.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Is COD still necessary in the UAE? </span>",
+                    "href": "",
+                    "text": "Less than before, but yes — a meaningful segment still prefers it, and BNPL (Tabby/Tamara) captures another. Payment breadth is cheap; lost checkouts aren't.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> How do we get traffic to the store? </span>",
+                    "href": "",
+                    "text": "You already have it: your booking flow, WhatsApp list, Instagram and post-treatment moments. Flows convert owned traffic first; Google Shopping and Meta catalogue ads scale it later.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Who handles delivery? </span>",
+                    "href": "",
+                    "text": "Integrated UAE couriers with live rates — same-day options in Dubai — plus click-and-collect, which costs nothing and pulls buyers back into the salon where rebookings happen.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "The honest comparison",
+            "title": "Glowth ecommerce vs. a <span class=\"hl\">typical store builder</span>",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-a8ad2f9 elementor-widget elementor-widget-html\" data-id=\"a8ad2f9\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t    \n    \n    \n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Comparison Table</title>\n    \n    <style>\n    \n    \n    .table-wrapper{\n        max-width:1400px;\n        margin:auto;\n        background:#fff;\n        border-radius:24px;\n        overflow:hidden;\n        box-shadow:0 10px 30px rgba(0,0,0,.08);\n    }\n    \n    table{\n        width:100%;\n        border-collapse:collapse;\n    }\n    \n    thead th{\n        background:#0f0f13;\n        color:#fff;\n        padding: 14px 18px;\n        font-size:13.5px;\n        font-weight:700;\n        text-align:center;\n    }\n    \n    thead th:first-child{\n        width:28%;\n    }\n    \n    thead th:nth-child(2){\n        color:#a8ff00;\n    }\n    \n    tbody td{\n        padding: 14px 100px;\n        font-size:13.5px;\n        border-bottom:1px solid #ececec;\n        vertical-align:middle;\n    }\n    \n    tbody tr:last-child td{\n        border-bottom:none;\n    }\n    \n    tbody td:first-child{\n        color:#111;\n        font-weight:500;\n    }\n    \n    tbody td:not(:first-child){\n        text-align:center;\n        font-weight:700;\n    }\n    \n    .green{\n        color:#00a651;\n    }\n    \n    .orange{\n        color:#c97d00;\n    }\n    \n    .red{\n        color:#e23b5b;\n    }\n    \n    @media (max-width:900px){\n    \n        table{\n            display:block;\n            overflow-x:auto;\n            white-space:nowrap;\n        }\n    \n        thead th,\n        tbody td{\n            font-size:16px;\n            padding:16px;\n        }\n    }\n    </style>\n    \n    \n    \n    <div class=\"table-wrapper\">\n    <table>\n    \n        <thead>\n    <tr>\n        <th></th>\n        <th>Growth</th>\n        <th>Typical store builder</th>\n    </tr>\n</thead>\n\n<tbody>\n\n    <tr>\n        <td>Strategy</td>\n        <td class=\"green\">Aftercare kits wired to treatments</td>\n        <td class=\"red\">Upload products, hope</td>\n    </tr>\n\n    <tr>\n        <td>UAE payments</td>\n        <td class=\"green\">✓ Cards, COD, Tabby, Tamara</td>\n        <td class=\"red\">Global defaults</td>\n    </tr>\n\n    <tr>\n        <td>Retention flows</td>\n        <td class=\"green\">✓ WhatsApp + email, included</td>\n        <td class=\"red\">✗ \"Install an app\"</td>\n    </tr>\n\n    <tr>\n        <td>Product content</td>\n        <td class=\"green\">✓ Written &amp; shot for outcomes</td>\n        <td class=\"red\">Manufacturer copy-paste</td>\n    </tr>\n\n    <tr>\n        <td>Ties into bookings</td>\n        <td class=\"green\">✓ One customer journey</td>\n        <td class=\"red\">✗ Separate island</td>\n    </tr>\n\n    <tr>\n        <td>After launch</td>\n        <td class=\"green\">Monthly AOV &amp; flow optimisation</td>\n        <td class=\"red\">Invoice, goodbye</td>\n    </tr>\n    \n        </tbody>\n    \n    </table>\n    </div>\n    \n    \n    \t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Free 15-minute demo",
+            "title": "See what your shelf could earn <span style=\"color:#c6f432\">online</span>",
+            "intro": "<p>Tell us your client volume and what you stock — we’ll map your kit opportunities, project the revenue, and scope the store with a fixed price. Numbers first, commitments later.</p>",
+            "layout": "form",
+            "footnote": "",
+            "list": [
+                {
+                    "html": "Kit &amp; bundle opportunities from your menu",
+                    "href": ""
+                },
+                {
+                    "html": "Revenue projection from your client volume",
+                    "href": ""
+                },
+                {
+                    "html": "Platform recommendation &amp; fixed-price scope",
+                    "href": ""
+                },
+                {
+                    "html": "Launch timeline, week by week",
+                    "href": ""
+                }
+            ],
+            "form": "<div class=\"lp-raw elementor elementor-433\" data-elementor-id=\"433\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-7e1e919 e-con-full e-flex e-con e-child\" data-id=\"7e1e919\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-0de6e54 elementor-widget elementor-widget-icon-box\" data-id=\"0de6e54\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\tBook your live demo\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-description\">\n\t\t\t\t\t\t15 minutes · free · no obligation\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-e7511c7 elementor-button-align-stretch elementor-widget elementor-widget-form\" data-id=\"e7511c7\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"step_next_label\":\"Next\",\"step_previous_label\":\"Previous\",\"button_width\":\"100\",\"step_type\":\"number_text\",\"step_icon_shape\":\"circle\"}' data-widget_type=\"form.default\">\n\t\t\t\t\t\t\t<form class=\"elementor-form\" method=\"post\" name=\"New Form\" aria-label=\"New Form\">\n\t\t\t<input type=\"hidden\" name=\"post_id\" value=\"433\">\n\t\t\t<input type=\"hidden\" name=\"form_id\" value=\"e7511c7\">\n\t\t\t<input type=\"hidden\" name=\"referer_title\" value=\"Ecommerce for Beauty Brands &amp; Salons UAE | Glowth\">\n\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"queried_id\" value=\"433\">\n\t\t\t\n\t\t\t<div class=\"elementor-form-fields-wrapper elementor-labels-\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-name\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tYour Name\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[name]\" id=\"form-field-name\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"Your Name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_877ea9e elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_877ea9e\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tSalon / clinic name\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[field_877ea9e]\" id=\"form-field-field_877ea9e\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"Salon / clinic name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_9c0ce6b elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_9c0ce6b\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tWhatsApp number (+971…)\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t<input size=\"1\" type=\"tel\" name=\"form_fields[field_9c0ce6b]\" id=\"form-field-field_9c0ce6b\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"WhatsApp number (+971…)\" required=\"required\" pattern=\"[0-9()#&amp;+*-=.]+\" title=\"Only numbers and phone characters (#, -, *, etc) are accepted.\">\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_b5428e6 elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_b5428e6\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tBiggest challenge right now?\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field elementor-select-wrapper remove-before \">\n\t\t\t<div class=\"select-caret-down-wrapper\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-eicon-caret-down\" viewbox=\"0 0 571.4 571.4\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z\"></path></svg>\t\t\t</div>\n\t\t\t<select name=\"form_fields[field_b5428e6]\" id=\"form-field-field_b5428e6\" class=\"elementor-field-textual elementor-size-sm\" required=\"required\">\n\t\t\t\t\t\t\t\t\t<option value=\"Where do most enquiries come from?\">Where do most enquiries come from?</option>\n\t\t\t\t\t\t\t\t\t<option value=\"WhatsApp\">WhatsApp</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Instagram\">Instagram</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Phone calls\">Phone calls</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Website\">Website</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Walk-ins\">Walk-ins</option>\n\t\t\t\t\t\t\t</select>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons\">\n\t\t\t\t\t<button class=\"elementor-button elementor-size-sm\" type=\"submit\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Send</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</form>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-6332925 elementor-widget elementor-widget-text-editor\" data-id=\"6332925\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tWe’ll confirm a time on WhatsApp within 2 hours.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "FAQs",
+            "title": "Salon ecommerce — before you ask",
+            "intro": "",
+            "layout": "faq",
+            "footnote": "",
+            "items": [
+                {
+                    "q": "How long until the store is live?",
+                    "a": "<p>Ads and the AI booking bot typically produce bookings within 2–4 weeks. SEO compounds over 3–6 months and becomes your lowest-cost channel long term.</p>"
+                },
+                {
+                    "q": "Do we need a big product range?",
+                    "a": "<p>No — focused beats broad. Ten well-chosen products and three treatment kits outsell a hundred random SKUs, and they’re far easier to manage.</p>"
+                },
+                {
+                    "q": "Who fulfils the orders?",
+                    "a": "<p>Your team packs; integrated couriers collect. For low volumes it’s minutes a day; we set up the pick-pack flow and printable labels so it stays that way.</p>"
+                },
+                {
+                    "q": "Can the store connect to our booking system?",
+                    "a": "<p>Yes — one customer journey: aftercare kits linked from booking confirmations, click-and-collect that prompts rebooking, and shared customer data where your systems allow.</p>"
+                },
+                {
+                    "q": "Can it speak Arabic?",
+                    "a": "<p>Platform fees (Shopify/hosting), payment processing, and optional Glowth management for flows and growth. All itemised in the fixed-price scope before you commit.</p>"
+                },
+                {
+                    "q": "Are there long contracts?",
+                    "a": ""
+                }
+            ]
+        }
+    ],
+    "slug": "ecommerce-for-beauty"
+}

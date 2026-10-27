@@ -1,0 +1,526 @@
+{
+    "docId": "476",
+    "hero": {
+        "anchors": [],
+        "pill": "Reviews & Reputation · Your rating is your marketing",
+        "title": "Google reviews for salons &amp; clinics — <span class=\"hl\">your rating decides who books.</span>",
+        "intro": "<p>Before a client trusts your chair, she reads your reviews — count, rating, recency, and how you answer the angry ones. Our review &amp; reputation management for beauty salons, aesthetic clinics &amp; medspas in the UAE builds the five-star engine ethically: real clients, right moment, zero awkwardness.</p>",
+        "ctas": [
+            {
+                "href": "/get-a-free-audit/",
+                "label": "Get My SEO Audit — Free"
+            },
+            {
+                "href": "/services/",
+                "label": "See Our Services"
+            }
+        ],
+        "chips": [
+            {
+                "title": "<span> 38/mo </span>",
+                "text": "new reviews, typical pace*"
+            },
+            {
+                "title": "<span> 100% </span>",
+                "text": "reviews answered, in your voice"
+            },
+            {
+                "title": "<span> #1 </span>",
+                "text": "local ranking factor: reviews"
+            }
+        ],
+        "extra": [],
+        "visual": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-e3260be e-con-full e-flex e-con e-child\" data-id=\"e3260be\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-349895b elementor-widget elementor-widget-html\" data-id=\"349895b\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t\n<style>\n  :root{\n    --ink:#1f2430;\n    --grey:#8a90a0;\n    --line:#e6e8f0;\n    --bg:#f6f7fb;\n    --card:#ffffff;\n    --purple:#7c2fe8;\n    --purple-soft:rgba(124,47,232,.18);\n    --gold:#f5a623;\n  }\n\n  *{box-sizing:border-box;margin:0;padding:0}\n\n  \n\n  /* ---------- Outer card ---------- */\n  .rateb{\n    width:100%;\n    max-width:680px;\n    background:var(--card);\n    border:1px solid var(--line);\n    border-radius:20px;\n    padding:28px;\n    box-shadow:0 10px 30px rgba(31,36,48,.06);\n    opacity:0;\n    transform:translateY(8px);\n    transition:opacity .45s ease, transform .45s ease;\n  }\n  .rateb.in{opacity:1;transform:translateY(0)}\n\n  /* ---------- Google profile box ---------- */\n  .gprof{\n    border:1.5px solid var(--line);\n    border-radius:16px;\n    padding:22px 24px;\n    box-shadow:none;\n    transition:border-color .5s ease, box-shadow .5s ease;\n  }\n  .gprof.after{\n    border-color:var(--purple);\n    box-shadow:0 8px 28px var(--purple-soft);\n    width: 400px !important;\n    background: #fff !importantim;\n  }\n\n  .gname{\n    font-size:18px;\n    font-weight:700;\n    margin-bottom:10px;\n  }\n\n  .gstars{\n    font-size:17px;\n    color:var(--gold);\n    letter-spacing:2px;\n    padding-bottom:14px;\n    border-bottom:1px solid var(--line);\n  }\n  .gstars small{\n    font-size:14px;\n    font-weight:600;\n    color:#4a5064;\n    letter-spacing:normal;\n    margin-left:6px;\n  }\n\n  .grow2{\n    display:flex;\n    align-items:center;\n    justify-content:space-between;\n    padding:15px 0;\n    border-bottom:1px solid var(--line);\n    font-size:15px;\n    color:#3a3f4e;\n    font-weight:600;\n  }\n  .grow2:last-child{border-bottom:none;padding-bottom:2px}\n  .grow2 b{\n    font-size:16px;\n    font-weight:700;\n    color:var(--ink);\n    font-variant-numeric:tabular-nums;\n  }\n\n  /* ---------- Switch row ---------- */\n  .rswitch{\n    display:flex;\n    align-items:center;\n    justify-content:center;\n    gap:14px;\n    margin-top:24px;\n    font-size:15px;\n    font-weight:700;\n  }\n  .rswitch span{transition:color .35s ease}\n\n  .rsw{\n    position:relative;\n    width:76px;\n    height:40px;\n    border:1.5px solid var(--ink);\n    border-radius:999px;\n    background:#e4e2ee;\n    cursor:pointer;\n    transition:background .35s ease, border-color .35s ease;\n    flex:none;\n  }\n  .rsw::after{\n    content:\"\";\n    position:absolute;\n    top:3px;\n    left:4px;\n    width:31px;\n    height:31px;\n    border-radius:50%;\n    background:#fff !important;\n    box-shadow:0 2px 6px rgba(31,36,48,.25);\n    transition:transform .35s cubic-bezier(.4,0,.2,1);\n  }\n  .rsw.on{\n    background:var(--purple);\n    border-color:var(--purple);\n  }\n  .rsw.on::after{transform:translateX(36px)}\n  .rsw:focus-visible{\n    outline:2px solid var(--purple);\n    outline-offset:3px;\n  }\n\n  .footnote{\n    text-align:center;\n    font-size:11.5px;\n    color:var(--grey);\n    margin-top:14px;\n  }\n\n  @media (prefers-reduced-motion:reduce){\n    .rateb,.gprof,.rsw,.rsw::after,.rswitch span{transition:none}\n  }\n\n  @media (max-width:480px){\n    .rateb{padding:20px}\n    .gprof{padding:18px}\n    .rswitch{flex-wrap:wrap;gap:10px;font-size:14px}\n    .grow2{font-size:14px}\n    .gprof.after{\n        width: 250px !important;\n    }\n  }\n</style>\n\n<div class=\"rateb\" id=\"toggle\">\n  <div class=\"gprof\" id=\"gprof\">\n    <div class=\"gname\">Your Clinic · Dubai Marina</div>\n    <div class=\"gstars\" id=\"gstars\">★★★★☆ <small id=\"gcount\">4.2 · 96 reviews · last review 3 months ago</small></div>\n    <div class=\"grow2\"><span>Calls this month</span><b id=\"gcalls\">31</b></div>\n    <div class=\"grow2\"><span>Direction requests</span><b id=\"gdirs\">44</b></div>\n    <div class=\"grow2\"><span>Maps ranking — \"clinic near me\"</span><b id=\"grank\">#7</b></div>\n  </div>\n\n  <div class=\"rswitch\">\n    <span id=\"lblB\">Today</span>\n    <button class=\"rsw\" id=\"rsw\" role=\"switch\" aria-checked=\"false\" aria-label=\"Toggle reputation state\"></button>\n    <span id=\"lblA\">After 6 months of Glowth</span>\n  </div>\n\n  <p class=\"footnote\">Flip the switch — watch what the profile does to demand.*</p>\n</div>\n\n<script>\n(function () {\n  \"use strict\";\n\n  // ---------- Before / after states ----------\n  var STATES = {\n    before: {\n      stars: \"\\u2605\\u2605\\u2605\\u2605\\u2606\",           // ★★★★☆\n      rating: 4.2,\n      reviews: 96,\n      lastReview: \"last review 3 months ago\",\n      calls: 31,\n      dirs: 44,\n      rank: 7\n    },\n    after: {\n      stars: \"\\u2605\\u2605\\u2605\\u2605\\u2605\",           // ★★★★★\n      rating: 4.8,\n      reviews: 312,\n      lastReview: \"last review 2 hours ago\",\n      calls: 78,\n      dirs: 108,\n      rank: 2\n    }\n  };\n\n  var ANIM_MS = 700; // number count-up duration\n\n  // ---------- Cached elements ----------\n  var el = {\n    card:   document.getElementById(\"toggle\"),\n    prof:   document.getElementById(\"gprof\"),\n    stars:  document.getElementById(\"gstars\"),\n    count:  document.getElementById(\"gcount\"),\n    calls:  document.getElementById(\"gcalls\"),\n    dirs:   document.getElementById(\"gdirs\"),\n    rank:   document.getElementById(\"grank\"),\n    sw:     document.getElementById(\"rsw\"),\n    lblB:   document.getElementById(\"lblB\"),\n    lblA:   document.getElementById(\"lblA\")\n  };\n\n  var isAfter = false;\n  var reduceMotion = window.matchMedia(\"(prefers-reduced-motion: reduce)\").matches;\n\n  // ---------- Animated number count ----------\n  function countTo(node, from, to, prefix, done) {\n    prefix = prefix || \"\";\n    if (reduceMotion || from === to) {\n      node.textContent = prefix + to;\n      if (done) done();\n      return;\n    }\n    var start = null;\n    function step(ts) {\n      if (start === null) start = ts;\n      var p = Math.min((ts - start) / ANIM_MS, 1);\n      var eased = 1 - Math.pow(1 - p, 3); // ease-out cubic\n      node.textContent = prefix + Math.round(from + (to - from) * eased);\n      if (p < 1) {\n        requestAnimationFrame(step);\n      } else if (done) {\n        done();\n      }\n    }\n    requestAnimationFrame(step);\n  }\n\n  // ---------- Render a state ----------\n  function render(prev, next) {\n    // Stars line: rebuild safely with textContent\n    el.stars.textContent = next.stars + \" \";\n    var small = document.createElement(\"small\");\n    small.id = \"gcount\";\n    small.textContent = next.rating.toFixed(1) + \" \\u00b7 \" + next.reviews +\n                        \" reviews \\u00b7 \" + next.lastReview;\n    el.stars.appendChild(small);\n    el.count = small;\n\n    // Animated metrics\n    countTo(el.calls, prev.calls, next.calls);\n    countTo(el.dirs,  prev.dirs,  next.dirs);\n    countTo(el.rank,  prev.rank,  next.rank, \"#\");\n  }\n\n  // ---------- Toggle handler ----------\n  function toggle() {\n    isAfter = !isAfter;\n\n    var prev = isAfter ? STATES.before : STATES.after;\n    var next = isAfter ? STATES.after  : STATES.before;\n\n    render(prev, next);\n\n    // Switch + profile styling\n    el.sw.classList.toggle(\"on\", isAfter);\n    el.sw.setAttribute(\"aria-checked\", String(isAfter));\n    el.prof.classList.toggle(\"after\", isAfter);\n\n    // Active label colors\n    el.lblB.style.color = isAfter ? \"var(--grey)\" : \"var(--ink)\";\n    el.lblA.style.color = isAfter ? \"var(--ink)\"  : \"var(--grey)\";\n  }\n\n  // ---------- Events ---------- \n  el.sw.addEventListener(\"click\", toggle);\n\n  // Labels are clickable too\n  el.lblB.addEventListener(\"click\", function () { if (isAfter) toggle(); });\n  el.lblA.addEventListener(\"click\", function () { if (!isAfter) toggle(); });\n  el.lblB.style.cursor = \"pointer\";\n  el.lblA.style.cursor = \"pointer\";\n\n  // ---------- Init ----------\n  requestAnimationFrame(function () {\n    el.card.classList.add(\"in\");\n  });\n})();\n</script>\n\t\t\t\t</div>\n\t\t\t\t</div></div>"
+    },
+    "sections": [
+        {
+            "anchors": [],
+            "kicker": "The trust math",
+            "title": "Reputation management for clinics — <span style=\"color:#c6f432\">because clients read before they book.</span>",
+            "intro": "<p>In beauty, a stranger is about to trust you with her face. Your reviews are the only evidence she has.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">93% </span>",
+                    "icon": "",
+                    "title": "<span> Read reviews before choosing </span>",
+                    "href": "",
+                    "text": "Your rating is read more often than your website, your feed — and your prices.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">4.7+ </span>",
+                    "icon": "",
+                    "title": "<span> The threshold clients filter for </span>",
+                    "href": "",
+                    "text": "Below it, you're quietly excluded from shortlists you never knew you were on.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">#1 </span>",
+                    "icon": "",
+                    "title": "<span> Local ranking factor </span>",
+                    "href": "",
+                    "text": "Review count, rating and velocity drive the Maps 3-pack more than anything else you control.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "<span style=\"color:#c6f432\">88% </span>",
+                    "icon": "",
+                    "title": "<span> Judge you by your replies </span>",
+                    "href": "",
+                    "text": "An unanswered one-star review reads as guilt. A professional response reads as class.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "What's included",
+            "title": "Review growth for beauty businesses — <span class=\"hl\">the ethical engine</span>",
+            "intro": "<p>No purchased reviews, no gating tricks — a system that makes leaving a review the easiest thing your happiest clients do today.</p>",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-far-star\" viewbox=\"0 0 576 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z\"></path></svg>",
+                    "title": "<span> Review generation engine </span>",
+                    "href": "",
+                    "text": "The ask, systematised: post-visit WhatsApp messages with one-tap review links, in-salon QR cards at reception, and timing tuned to the treatments clients rave about. Volume without begging.",
+                    "list": [
+                        {
+                            "html": "Post-visit WhatsApp ask flows, automated",
+                            "href": ""
+                        },
+                        {
+                            "html": "QR cards &amp; front-desk scripts",
+                            "href": ""
+                        },
+                        {
+                            "html": "Timing mapped to happiest-client moments",
+                            "href": ""
+                        },
+                        {
+                            "html": "Google-policy compliant — always",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-far-comment\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z\"></path></svg>",
+                    "title": "<span> Professional responses, 100% </span>",
+                    "href": "",
+                    "text": "Every review answered within 24–48 hours in your brand voice — warm to fans, graceful to critics, and always compliant for medical-aesthetic contexts (no health claims, no confidentiality slips).",
+                    "list": [
+                        {
+                            "html": "Every review answered, EN now / AR ready",
+                            "href": ""
+                        },
+                        {
+                            "html": "Clinic-compliant language, always",
+                            "href": ""
+                        },
+                        {
+                            "html": "Keyword-aware replies that help rankings",
+                            "href": ""
+                        },
+                        {
+                            "html": "Escalation to you only when it matters",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-shield-alt\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z\"></path></svg>",
+                    "title": "<span> Negative review defense </span>",
+                    "href": "",
+                    "text": "A bad review isn't a crisis — an unmanaged one is. We respond publicly with grace, pursue policy-violating fakes for removal, recover the client privately where possible, and bury the rest under fresh five-stars.",
+                    "list": [
+                        {
+                            "html": "24-hour response protocol",
+                            "href": ""
+                        },
+                        {
+                            "html": "Fake-review reporting &amp; removal pursuit",
+                            "href": ""
+                        },
+                        {
+                            "html": "Private recovery outreach playbook",
+                            "href": ""
+                        },
+                        {
+                            "html": "Velocity strategy that dilutes damage",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-chart-line\" viewbox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z\"></path></svg>",
+                    "title": "<span> Monitoring &amp; reporting </span>",
+                    "href": "",
+                    "text": "Every platform watched — Google, Fresha, Instagram comments — with monthly reporting on count, rating trajectory, response rate and the number that matters: calls and bookings from your profile.",
+                    "list": [
+                        {
+                            "html": "All-platform review monitoring",
+                            "href": ""
+                        },
+                        {
+                            "html": "Competitor rating benchmarks",
+                            "href": ""
+                        },
+                        {
+                            "html": "Monthly reputation scorecard",
+                            "href": ""
+                        },
+                        {
+                            "html": "Profile actions tracked to bookings",
+                            "href": ""
+                        }
+                    ],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "How the engine works",
+            "title": "Getting more Google reviews, <span class=\"hl\">explained honestly</span>",
+            "intro": "",
+            "layout": "features",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "feature",
+                    "kicker": "The system",
+                    "title": "The ask: why happy clients don't review (and how they will)",
+                    "body": "<p>Your clients love you — and still don’t review you, because reviewing is friction: find the profile, think of words, type on a phone. Meanwhile the rare angry client is motivated. That asymmetry is why good businesses sit at 4.2 while worse ones outrank them.</p><p>The fix is engineering, not begging: a WhatsApp message two hours after the appointment — “So glad you loved it! One tap here if you’d share it” — with a direct review link. One tap, thirty seconds, done. Asked at the glow moment, acceptance rates are remarkable.</p>",
+                    "ctas": [
+                        {
+                            "href": "/contact-us/",
+                            "label": "Read more +"
+                        }
+                    ],
+                    "visual": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-ff51d2c e-con-full e-flex e-con e-child\" data-id=\"ff51d2c\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-9c51856 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"9c51856\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Appointment ends — glow peak <b>2:00 PM</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">WhatsApp ask, one-tap link <b>4:00 PM</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\"><b>★★★★★</b> posted <b>4:03 PM</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Reply in your voice<b> Next morning</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Begging strangers \"pls review\" <b>Never</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "",
+            "title": "",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-27f0778 e-con-full e-flex e-con e-child\" data-id=\"27f0778\" data-element_type=\"container\" data-e-type=\"container\"><div class=\"elementor-element elementor-element-885fe36 e-con-full e-flex e-con e-child\" data-id=\"885fe36\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-a8044fe elementor-widget__width-initial elementor-widget elementor-widget-heading\" data-id=\"a8044fe\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">The defense</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-29c6691 elementor-widget elementor-widget-heading\" data-id=\"29c6691\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">Negative reviews: the response is the reputation</h3>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-b76a3b7 elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"b76a3b7\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"_animation\":\"fadeIn\"}' data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tEvery business gets them. Readers know it — a spotless 5.0 with 12 reviews looks more suspicious than a 4.8 with 300. What readers actually judge is your reply: defensive and personal, or professional and human?\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-143dd2b elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"143dd2b\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"_animation\":\"fadeIn\"}' data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tOur protocol: respond within 24 hours, acknowledge without admitting fault where facts are disputed, never discuss treatment details publicly (clinic confidentiality), invite the conversation offline, and follow up privately for recovery. Handled well, a negative review becomes proof you’re accountable.\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-83525d2 elementor-widget elementor-widget-button\" data-id=\"83525d2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"#\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Read more +</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"elementor-element elementor-element-1a525e9 e-con-full e-flex e-con e-child\" data-id=\"1a525e9\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-ce2c5c7 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"ce2c5c7\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\"><b>★</b> \"Worst clinic ever!!\" <b>Posted 9:14 AM</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Professional reply, offline invite <b>10:02 AM</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Private recovery message <b>10:05 AM</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Fresh <b>★★★★★</b> this week <b>+9 </b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Damage to rating <b>Neutralised</b></span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div></div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Improvements, month by month",
+            "title": "Your first 6 months of <span class=\"hl\">reputation with Glowth</span>",
+            "intro": "",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "WEEK 1–2",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Foundation </span>",
+                    "href": "",
+                    "text": "Profile audit, response backlog cleared, ask flows and QR system live",
+                    "list": [],
+                    "foot": "Response rate → 100%",
+                    "extra": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-9ac265d elementor-widget elementor-widget-html\" data-id=\"9ac265d\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "MONTH 1–2",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Velocity builds </span>",
+                    "href": "",
+                    "text": "Weekly five-stars become the norm; recency signals refresh the profile.",
+                    "list": [],
+                    "foot": "30+ new reviews",
+                    "extra": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-b3dd8a9 elementor-widget elementor-widget-html\" data-id=\"b3dd8a9\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "MONTH 3–4",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Rating climbs </span>",
+                    "href": "",
+                    "text": "Volume lifts the average; Maps visibility responds to the strongest local signal.",
+                    "list": [],
+                    "foot": "4.2 → 4.6+",
+                    "extra": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-139a251 elementor-widget elementor-widget-html\" data-id=\"139a251\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                },
+                {
+                    "kind": "card",
+                    "badge": "MONTH 5–6",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Demand shows </span>",
+                    "href": "",
+                    "text": "Calls and direction taps climb with the rating — reputation becomes acquisition.",
+                    "list": [],
+                    "foot": "Profile actions +148%",
+                    "extra": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-7d7374f elementor-widget elementor-widget-html\" data-id=\"7d7374f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow\">\n    <div class=\"itracks\" style=\"--w:96%\">\n        <i></i>\n    </div>\n</div>\n\n<style>\n.irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n\n.itracks {\n    width: 700px;\n    height: 10px;\n    background: #E5E7Eb; /* Track color */\n    border-radius: 5px;\n    overflow: hidden;\n    position: relative;\n}\n\n.itracks i {\n    display: block;\n    width: 80%;\n    height: 100%;\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n    border-radius: 5px;\n}\n</style>\t\t\t\t</div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Before → after",
+            "title": "The improvements,, <span style=\"color:#c6f432\">measured</span>",
+            "intro": "<p>Typical 6-month reputation transformation.*</p>",
+            "layout": "embed",
+            "footnote": "<p>*Illustrative figures representative of niche engagements; your audit includes your real baseline.</p>",
+            "embed": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-3e37df2 e-con-full e-flex e-con e-child\" data-id=\"3e37df2\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t<div class=\"elementor-element elementor-element-5a48d00 e-con-full e-flex e-con e-child\" data-id=\"5a48d00\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-855a7a3 e-con-full e-flex e-con e-child\" data-id=\"855a7a3\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-2f8424a elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"2f8424a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">New reviews per month\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-8612f26 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"8612f26\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">9.5×</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-0849849 elementor-widget elementor-widget-html\" data-id=\"0849849\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack\">\n<i></i>\n</div>\n<b>12%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    width: 120px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.irow b {\n    margin-left: 610px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-516571a elementor-widget elementor-widget-html\" data-id=\"516571a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-text\">100%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 720px;\n}\nb.after-text {\n    margin-left: 86px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-9d67638 e-con-full e-flex e-con e-child\" data-id=\"9d67638\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-7addd9e e-con-full e-flex e-con e-child\" data-id=\"7addd9e\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-1418767 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"1418767\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Google rating\n</h2>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-ae780ce elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"ae780ce\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">4.2 → 4.8\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-c2b5f96 elementor-widget elementor-widget-html\" data-id=\"c2b5f96\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-month\">\n<i></i>\n</div>\n<b class=\"itrack-month-text\">96%</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-month {\n    flex: 1;\n    width: 300px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.itrack-month-text {\n    margin-left: 435px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a414e0f elementor-widget elementor-widget-html\" data-id=\"a414e0f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-month\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-month-text\">168\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-month{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 470px;\n}\nb.after-month-text {\n    margin-left: 270px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-2c171f8 e-con-full e-flex e-con e-child\" data-id=\"2c171f8\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-0b76b5e e-con-full e-flex e-con e-child\" data-id=\"0b76b5e\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-2892360 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"2892360\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Review response rate\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-f8c8e44 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"f8c8e44\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">100%\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-d3afd83 elementor-widget elementor-widget-html\" data-id=\"d3afd83\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-before-hours\">\n<i></i>\n</div>\n<b class=\"itrack-before-hour\">0</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 6px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-before-hours {\n    flex: 1;\n    width: 20px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\nb.itrack-before-hour {\n    margin-left: 730px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-f8168fd elementor-widget elementor-widget-html\" data-id=\"f8168fd\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-hour\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-hour-text\">17%\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-hour{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 370px;\n}\nb.after-hour-text {\n    margin-left: 370px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-196e0a6 e-con-full e-flex e-con e-child\" data-id=\"196e0a6\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t<div class=\"elementor-element elementor-element-fff7a56 e-con-full e-flex e-con e-child\" data-id=\"fff7a56\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-b05889d elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"b05889d\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Calls + directions from profile / month\n</p>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-e0f2c08 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"e0f2c08\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span style=\"color:#c6f432\">+148%\n</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-45e2fb1 elementor-widget elementor-widget-html\" data-id=\"45e2fb1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow before\"><span>Before</span>\n<div class=\"itrack-show-hours\">\n<i></i>\n</div>\n<b class=\"itrack-before-show\">0</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 6px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack-show-hours {\n    flex: 1;\n    width: 420px;\n    height: 10px;\n    background: #26242E;\n    border-radius: 5px;\n    overflow: hidden;\n}\nb.itrack-before-show {\n    margin-left: 430px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-19892ea elementor-widget elementor-widget-html\" data-id=\"19892ea\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t<div class=\"irow \">\n    <span>After</span>\n    <div class=\"itrack after-show\" style=\"--w:96%\">\n        <i></i>\n    </div>\n    <b class=\"after-show-text\">17%\n</b></div>\n<style>\n    .irow {\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    margin-bottom: 9px;\n    font-size: 12px;\n    color: #A7A2B6;\n}\n.irow span {\n    width: 56px;\n    flex-shrink: 0;\n    font-weight: 700;\n}\n.itrack {\n    flex: 1;\n    height: 10px;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.after-show{\n    background: linear-gradient(100deg, #FF2E7E, #7C3AED);\n        width: 270px;\n}\nb.after-show-text {\n    margin-left: 470px;\n    text-align: right;\n    font-family: var(--disp);\n    font-size: 13px;\n    color: #fff;\n}\n</style>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div><div class=\"elementor-element elementor-element-2b21984 e-con-full e-flex e-con e-child\" data-id=\"2b21984\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-8e8f09e elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"8e8f09e\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<p class=\"elementor-heading-title elementor-size-default\">Live reputation events — client dashboard preview</p>\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-4b2acaa e-con-full e-flex e-con e-child\" data-id=\"4b2acaa\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-d46917d elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"d46917d\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">★★★★★ \"Best Hydrafacial in Marina\"</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-deb9bbe elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"deb9bbe\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Google\n</span>\n<span class=\"pos\">2 min ago</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-f339dbb e-con-full e-flex e-con e-child\" data-id=\"f339dbb\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-0a4bee1 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"0a4bee1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Review replied in brand voice</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-2e22f52 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"2e22f52\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Response</span>\n<span class=\"pos\">18 min</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-3786abb e-con-full e-flex e-con e-child\" data-id=\"3786abb\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-774a248 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"774a248\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Fake 1-star reported with evidence</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-5667cb8 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"5667cb8\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">\nDefense</span>\n<span class=\"pos\">Under review</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-4a83072 e-con-full e-flex e-con e-child\" data-id=\"4a83072\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-b11f99f elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"b11f99f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Review milestone reached</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-f7af852 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"f7af852\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">Growth</span>\n<span class=\"pos\">#300</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-3e91325 e-con-full e-flex e-con e-child\" data-id=\"3e91325\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-b8be732 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"b8be732\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<span class=\"elementor-heading-title elementor-size-default\">Maps ranking — \"clinic near me\"</span>\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-611002f elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading\" data-id=\"611002f\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t\t<div class=\"elementor-heading-title elementor-size-default\"><span class=\"mv\">\nLocal SEO</span>\n<span class=\"pos\">#7 → #2</span></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Case study · Laser clinic, Sharjah",
+            "title": "\"We went from 96 dusty reviews to 300+ with a 4.8. New clients now tell us 'your reviews convinced me' — that sentence used to belong to our competitor.\"",
+            "intro": "<p>Clinic Owner — Sharjah <em>(illustrative placeholder pending live client data)</em></p>",
+            "layout": "stats",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">300+ </span>",
+                    "label": "reviews, 4.8 rating held"
+                },
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">+148% </span>",
+                    "label": "profile calls &amp; directions"
+                },
+                {
+                    "kind": "stat",
+                    "value": "<span style=\"color:#c6f432\">#2 </span>",
+                    "label": "Maps position, home area"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "Owner's knowledge hub",
+            "title": "Reputation questions owners ask,<span class=\"hl\">answered straight</span>",
+            "intro": "",
+            "layout": "cards",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Can't we just buy reviews? </span>",
+                    "href": "",
+                    "text": "Please don't. Purchased reviews violate Google policy, risk suspension of the profile you depend on, and read as fake to the clients you want. The ethical engine produces more, permanently, with zero risk.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> How do you ask without being pushy? </span>",
+                    "href": "",
+                    "text": "Timing and effort: ask at the glow moment (2 hours post-visit), make it one tap, and phrase it as sharing, not begging. Done right, clients thank you for the reminder.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Can a fake negative review be removed? </span>",
+                    "href": "",
+                    "text": "Sometimes — policy violations (never-a-client, competitor sabotage, prohibited content) can be reported with evidence and do get removed. For the rest: professional response + velocity. Both run in parallel.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Is \"review gating\" really not allowed? </span>",
+                    "href": "",
+                    "text": "Correct — asking only predicted-happy clients violates Google policy. We ask everyone; a good business's real ratio wins anyway, and the profile stays safe.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> Do replies actually affect rankings? </span>",
+                    "href": "",
+                    "text": "Yes — response rate and review velocity are local ranking signals, and thoughtful replies naturally contain the treatment and area terms your profile should rank for.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                },
+                {
+                    "kind": "card",
+                    "badge": "",
+                    "stat": "",
+                    "icon": "",
+                    "title": "<span> What can clinic replies legally say? </span>",
+                    "href": "",
+                    "text": "Less than owners think: no confirming someone was a patient, no treatment details, no health claims. Our clinic response templates are built inside those lines — warm, professional, compliant.",
+                    "list": [],
+                    "foot": "",
+                    "extra": ""
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "The difference, in one table",
+            "title": "Glowth reputation vs. <span class=\"hl\">doing it ad hoc</span>",
+            "intro": "",
+            "layout": "embed",
+            "footnote": "",
+            "embed": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-b62bbcc elementor-widget elementor-widget-html\" data-id=\"b62bbcc\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t\t    \n    \n    \n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Comparison Table</title>\n    \n    <style>\n    \n    \n    .table-wrapper{\n        max-width:1400px;\n        margin:auto;\n        background:#fff;\n        border-radius:24px;\n        overflow:hidden;\n        box-shadow:0 10px 30px rgba(0,0,0,.08);\n    }\n    \n    table{\n        width:100%;\n        border-collapse:collapse;\n    }\n    \n    thead th{\n        background:#0f0f13;\n        color:#fff;\n        padding: 14px 18px;\n        font-size:13.5px;\n        font-weight:700;\n        text-align:center;\n    }\n    \n    thead th:first-child{\n        width:28%;\n    }\n    \n    thead th:nth-child(2){\n        color:#a8ff00;\n    }\n    \n    tbody td{\n        padding: 14px 70px;\n        font-size:13.5px;\n        border-bottom:1px solid #ececec;\n        vertical-align:middle;\n    }\n    \n    tbody tr:last-child td{\n        border-bottom:none;\n    }\n    \n    tbody td:first-child{\n        color:#111;\n        font-weight:500;\n    }\n    \n    tbody td:not(:first-child){\n        text-align:center;\n        font-weight:700;\n    }\n    \n    .green{\n        color:#00a651;\n    }\n    \n    .orange{\n        color:#c97d00;\n    }\n    \n    .red{\n        color:#e23b5b;\n    }\n    \n    @media (max-width:900px){\n    \n        table{\n            display:block;\n            overflow-x:auto;\n            white-space:nowrap;\n        }\n    \n        thead th,\n        tbody td{\n            font-size:16px;\n            padding:16px;\n        }\n    }\n    </style>\n    \n    \n    \n    <div class=\"table-wrapper\">\n    <table>\n\n    <thead>\n        <tr>\n            <th></th>\n            <th>Glowth</th>\n            <th>Ad hoc / Typical Agency</th>\n        </tr>\n    </thead>\n\n    <tbody>\n\n        <tr>\n            <td>Review generation</td>\n            <td class=\"green\">Systematised asks, every client</td>\n            <td class=\"red\">\"We should really ask more\"</td>\n        </tr>\n\n        <tr>\n            <td>Response rate</td>\n            <td class=\"green\">100%, within 48h</td>\n            <td class=\"red\">When someone remembers</td>\n        </tr>\n\n        <tr>\n            <td>Clinic compliance</td>\n            <td class=\"green\">✓ Built into every reply</td>\n            <td class=\"red\">✗ Confidentiality slips</td>\n        </tr>\n\n        <tr>\n            <td>Negative handling</td>\n            <td class=\"green\">Protocol + removal pursuit</td>\n            <td class=\"red\">Panic or silence</td>\n        </tr>\n\n        <tr>\n            <td>Policy risk</td>\n            <td class=\"green\">Zero — strictly ethical</td>\n            <td class=\"red\">Gating &amp; bought reviews</td>\n        </tr>\n\n        <tr>\n            <td>Reporting</td>\n            <td class=\"green\">Profile actions → bookings</td>\n            <td class=\"red\">Star screenshot</td>\n        </tr>\n\n    </tbody>\n\n</table>    \n\n\n    </div>\n    \n    \n    \t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "Free 48-hour Meta audit",
+            "title": "See how your rating compares — <span style=\"color:#c6f432\">and what it's costing</span>",
+            "intro": "<p>A human review of your Google profile versus your three closest competitors: count, rating, velocity, response quality — and the booking demand your current reputation is leaving on the table.</p>",
+            "layout": "form",
+            "footnote": "",
+            "list": [
+                {
+                    "html": "Your rating &amp; velocity vs. the local 3-pack",
+                    "href": ""
+                },
+                {
+                    "html": "Response quality &amp; compliance check",
+                    "href": ""
+                },
+                {
+                    "html": "Fake / removable review scan",
+                    "href": ""
+                },
+                {
+                    "html": "Your 90-day review growth plan",
+                    "href": ""
+                }
+            ],
+            "form": "<div class=\"lp-raw elementor elementor-476\" data-elementor-id=\"476\" data-elementor-type=\"wp-page\"><div class=\"elementor-element elementor-element-274b59b e-con-full e-flex e-con e-child\" data-id=\"274b59b\" data-element_type=\"container\" data-e-type=\"container\" data-settings='{\"background_background\":\"classic\"}'>\n\t\t\t\t<div class=\"elementor-element elementor-element-9fdfb76 elementor-widget elementor-widget-icon-box\" data-id=\"9fdfb76\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-box-wrapper\">\n\n\t\t\t\n\t\t\t\t\t\t<div class=\"elementor-icon-box-content\">\n\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-box-title\">\n\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\tClaim your free Meta audit\t\t\t\t\t\t</span>\n\t\t\t\t\t</span>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t<p class=\"elementor-icon-box-description\">\n\t\t\t\t\t\t30 seconds — delivered on WhatsApp in 48h.\n\t\t\t\t\t</p>\n\t\t\t\t\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-5b987b8 elementor-button-align-stretch elementor-widget elementor-widget-form\" data-id=\"5b987b8\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings='{\"step_next_label\":\"Next\",\"step_previous_label\":\"Previous\",\"button_width\":\"100\",\"step_type\":\"number_text\",\"step_icon_shape\":\"circle\"}' data-widget_type=\"form.default\">\n\t\t\t\t\t\t\t<form class=\"elementor-form\" method=\"post\" name=\"New Form\" aria-label=\"New Form\">\n\t\t\t<input type=\"hidden\" name=\"post_id\" value=\"476\">\n\t\t\t<input type=\"hidden\" name=\"form_id\" value=\"5b987b8\">\n\t\t\t<input type=\"hidden\" name=\"referer_title\" value=\"Google Reviews for Salons &amp; Clinics UAE | Glowth\">\n\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"queried_id\" value=\"476\">\n\t\t\t\n\t\t\t<div class=\"elementor-form-fields-wrapper elementor-labels-\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-name\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tYour Name\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[name]\" id=\"form-field-name\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"Your Name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_877ea9e elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_877ea9e\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tSalon / clinic name\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[field_877ea9e]\" id=\"form-field-field_877ea9e\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"Salon / clinic name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_9c0ce6b elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_9c0ce6b\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tWhatsApp number (+971…)\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t<input size=\"1\" type=\"tel\" name=\"form_fields[field_9c0ce6b]\" id=\"form-field-field_9c0ce6b\" class=\"elementor-field elementor-size-sm  elementor-field-textual\" placeholder=\"WhatsApp number (+971…)\" required=\"required\" pattern=\"[0-9()#&amp;+*-=.]+\" title=\"Only numbers and phone characters (#, -, *, etc) are accepted.\">\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_b5428e6 elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t<label for=\"form-field-field_b5428e6\" class=\"elementor-field-label elementor-screen-only\">\n\t\t\t\t\t\t\t\tBiggest challenge right now?\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field elementor-select-wrapper remove-before \">\n\t\t\t<div class=\"select-caret-down-wrapper\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-eicon-caret-down\" viewbox=\"0 0 571.4 571.4\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z\"></path></svg>\t\t\t</div>\n\t\t\t<select name=\"form_fields[field_b5428e6]\" id=\"form-field-field_b5428e6\" class=\"elementor-field-textual elementor-size-sm\" required=\"required\">\n\t\t\t\t\t\t\t\t\t<option value=\"Where do most enquiries come from?\">Where do most enquiries come from?</option>\n\t\t\t\t\t\t\t\t\t<option value=\"WhatsApp\">WhatsApp</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Instagram\">Instagram</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Phone calls\">Phone calls</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Website\">Website</option>\n\t\t\t\t\t\t\t\t\t<option value=\"Walk-ins\">Walk-ins</option>\n\t\t\t\t\t\t\t</select>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons\">\n\t\t\t\t\t<button class=\"elementor-button elementor-size-sm\" type=\"submit\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Send</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</form>\n\t\t\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-0f11b37 elementor-widget elementor-widget-text-editor\" data-id=\"0f11b37\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t\t\t\t\t\tNo spam. No obligation. Ever.\n\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div></div>"
+        },
+        {
+            "anchors": [],
+            "kicker": "From owners with engines running",
+            "title": "What a 4.8 <span class=\"hl\">feels like</span>",
+            "intro": "",
+            "layout": "reviews",
+            "footnote": "",
+            "items": [
+                {
+                    "kind": "review",
+                    "stars": 5,
+                    "text": "<p>“We begged for reviews for years and got four a month. The WhatsApp flow gets that in a weekend — from clients who were happy all along.”</p>",
+                    "who": "<div class=\"hd\"><span class=\"av\">N</span><div><b>Salon Owner.</b><small>Beauty Salon · Dubai (placeholder) </small></div></div>"
+                },
+                {
+                    "kind": "review",
+                    "stars": 5,
+                    "text": "<p>“A one-star nearly ruined my week until I saw their reply go up — graceful, professional, human. Three clients mentioned it approvingly. A negative review became marketing.”</p>",
+                    "who": "<div class=\"hd\"><span class=\"av\">H</span><div><b>Clinic Director </b><small>Aesthetic Clinic · Abu Dhabi (placeholder)</small></div></div>"
+                },
+                {
+                    "kind": "review",
+                    "stars": 5,
+                    "text": "<p>“New clients keep saying the same sentence: ‘your reviews convinced me.’ That’s the whole service, right there.”</p>",
+                    "who": "<div class=\"hd\"><span class=\"av\">D</span><div><b>Medspa Owner</b><small> Medspa · Dubai Marina (placeholder)</small></div></div>"
+                }
+            ]
+        },
+        {
+            "anchors": [],
+            "kicker": "From owners with engines running",
+            "title": "Reviews &amp; reputation — <span class=\"hl\">before you ask</span>",
+            "intro": "",
+            "layout": "faq",
+            "footnote": "",
+            "items": [
+                {
+                    "q": "Is this allowed by Google?",
+                    "a": "<p>Everything we do is inside Google’s policies: asking real clients is encouraged; buying reviews and gating are what’s prohibited — and we never do either.</p>"
+                },
+                {
+                    "q": "Who writes the responses — you or us?",
+                    "a": "<p>We do, in a voice guide built from how you actually talk, with clinic-compliant boundaries. Anything sensitive escalates to you before posting.</p>"
+                },
+                {
+                    "q": "What platforms do you cover?",
+                    "a": "<p>Google is the battleground that decides bookings; we also monitor Fresha and Instagram comments, and can extend to any platform where your clients talk.</p>"
+                },
+                {
+                    "q": "How fast does the rating move?",
+                    "a": "<p>Velocity shows in weeks; the average moves with volume — a 4.2 with 96 reviews typically reaches 4.6+ within 3–4 months of consistent five-star flow.</p>"
+                },
+                {
+                    "q": "Can you guarantee removal of a bad review?",
+                    "a": "<p>No one honestly can — removal depends on policy violations and Google’s judgment. We pursue every legitimate case and neutralise the rest with response quality and velocity.</p>"
+                },
+                {
+                    "q": "Are there long contracts?",
+                    "a": "<p>Monthly rolling — and the reviews, of course, are yours forever. Reputation compounds even if you leave.</p>"
+                }
+            ]
+        }
+    ],
+    "slug": "reviews-reputation"
+}
