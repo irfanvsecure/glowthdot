@@ -9,6 +9,22 @@ use Illuminate\Http\Response;
 
 class SiteController extends Controller
 {
+    /**
+     * Industry pages, hidden for now: still served, but noindex, and every link to them on the
+     * site (cards, content, the footer "Industries" column) goes to the free audit instead.
+     * Empty the list to bring them back.
+     */
+    public const HIDDEN_PAGES = [
+        'industries', 'beauty-salons', 'aesthetic-clinics', 'hair-salons', 'nail-salons', 'day-spas',
+        'medical-spas', 'dermatology-clinics', 'laser-hair-removal-clinics', 'barber-shops',
+        'lash-studios', 'brow-studios', 'makeup-studios', 'beauty-academies', 'wellness-centers',
+    ];
+
+    private const HIDDEN_LINK_TARGET = '/get-a-free-audit/';
+
+    // The footer's "Industries" column (same Elementor footer on every page)
+    private const INDUSTRIES_FOOTER_COLUMN = 'elementor-element-25d4237';
+
     public function show(Request $request, PageSpeed $speed, ?string $path = null): Response|RedirectResponse
     {
         // When the domain serves the project folder, /public/... and /public/index.php also
@@ -52,6 +68,15 @@ class SiteController extends Controller
         if ($slug === 'home' && ! str_contains($html, 'home-polish.css')) {
             $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/home-polish.css').'" />';
         }
+        $hidden = in_array($slug, self::HIDDEN_PAGES, true);
+        if (self::HIDDEN_PAGES !== []) {
+            $html = $this->hideLinksToHiddenPages($html);
+            $injectHead .= '<style>.'.self::INDUSTRIES_FOOTER_COLUMN.'{display:none!important}</style>';
+        }
+        if ($hidden) {
+            $html = preg_replace('#<meta\s+name=["\']robots["\'][^>]*>\s*#i', '', $html) ?? $html;
+            $injectHead .= '<meta name="robots" content="noindex, nofollow" />';
+        }
         if ($injectHead !== '') {
             $html = preg_replace('/<\/head>/i', $injectHead.'</head>', $html, 1) ?? $html;
         }
@@ -68,9 +93,24 @@ class SiteController extends Controller
 
         $html = $speed->optimize($html);
 
-        return response($html, 200, [
+        return response($html, 200, array_filter([
             'Content-Type' => 'text/html; charset=UTF-8',
-        ]);
+            'X-Robots-Tag' => $hidden ? 'noindex, nofollow' : null,
+        ]));
+    }
+
+    /**
+     * Links (not canonical tags or schema) to a hidden page point at the free audit instead.
+     */
+    private function hideLinksToHiddenPages(string $html): string
+    {
+        $slugs = implode('|', array_map(fn ($s) => preg_quote($s, '#'), self::HIDDEN_PAGES));
+
+        return preg_replace(
+            '#(<a\b[^>]*?\bhref=)(["\'])(?:https?://(?:www\.)?glowthdot\.com)?/(?:'.$slugs.')/?(?:[?\#][^"\']*)?\2#i',
+            '$1$2'.self::HIDDEN_LINK_TARGET.'$2',
+            $html
+        ) ?? $html;
     }
 
     /**
