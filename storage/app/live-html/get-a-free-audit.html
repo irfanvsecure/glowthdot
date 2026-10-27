@@ -1155,6 +1155,20 @@ document.getElementById('siteUrl').addEventListener('keydown', e=>{
     if(e.key === 'Enter') document.getElementById('next1').click();
 });
 
+// Arriving from the home hero card (?site=...): step 1 is already answered
+const fromHero = new URLSearchParams(location.search).get('site');
+if(fromHero !== null){
+    const site = fromHero.trim().slice(0, 200);
+    if(site === 'none'){
+        noSite();
+    } else if(site){
+        document.getElementById('siteUrl').value = site;
+        document.getElementById('next1').click();
+    } else {
+        document.getElementById('siteUrl').focus();
+    }
+}
+
 // -------------------------
 // CHIP SELECT STEPS
 // -------------------------
