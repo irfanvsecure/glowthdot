@@ -11,12 +11,17 @@ class SiteController extends Controller
 {
     /**
      * Industry pages, hidden for now: still served, but noindex, and every link to them on the
-     * site (cards, content, footer) goes to the free audit instead. Empty the list to bring them back.
+     * site (cards, content, footer, the /industries/ hub) goes to the free audit instead.
+     * Empty the list to bring them back.
      */
     public const HIDDEN_PAGES = [
-        'industries', 'beauty-salons', 'aesthetic-clinics', 'hair-salons', 'nail-salons', 'day-spas',
+        'beauty-salons', 'aesthetic-clinics', 'hair-salons', 'nail-salons', 'day-spas',
         'medical-spas', 'dermatology-clinics', 'laser-hair-removal-clinics', 'barber-shops',
         'lash-studios', 'brow-studios', 'makeup-studios', 'beauty-academies', 'wellness-centers',
+        'arabic-beauty-salon', 'cosmetic-makeup-beauty-brand', 'hair-care-beauty-brand',
+        'hair-extension-studios', 'hammam-center', 'korean-beauty-salon', 'ladies-salon-marketing',
+        'massage-centers', 'moroccan-bath-centre', 'plastic-surgery-clinics', 'russian-beauty-salon',
+        'skincare-beauty-brand', 'skin-care-clinics',
     ];
 
     private const HIDDEN_LINK_TARGET = '/get-a-free-audit/';

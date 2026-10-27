@@ -62,5 +62,21 @@ class HiddenPagesTest extends TestCase
         foreach (SiteController::HIDDEN_PAGES as $slug) {
             $this->assertStringNotContainsString('https://glowthdot.com/'.$slug.'/<', $sitemap);
         }
+        $this->assertStringContainsString('https://glowthdot.com/industries/<', $sitemap);
+    }
+
+    public function test_industries_hub_stays_visible_and_is_in_the_header(): void
+    {
+        $response = $this->get('/industries/');
+        $response->assertOk()->assertHeaderMissing('X-Robots-Tag');
+        $this->assertStringNotContainsString('noindex', $response->getContent());
+
+        foreach (['/', '/about-us/', '/dubai/', '/seo-for-beauty-salons-clinics/', '/industries/'] as $url) {
+            $this->assertStringContainsString(
+                '<a href="/industries/"',
+                $this->get($url)->getContent(),
+                "$url has no Industries menu item"
+            );
+        }
     }
 }
