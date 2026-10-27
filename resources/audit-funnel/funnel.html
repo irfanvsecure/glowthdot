@@ -368,20 +368,6 @@ document.getElementById('siteUrl').addEventListener('keydown', e=>{
     if(e.key === 'Enter') document.getElementById('next1').click();
 });
 
-// Arriving from the home hero card (?site=...): step 1 is already answered
-const fromHero = new URLSearchParams(location.search).get('site');
-if(fromHero !== null){
-    const site = fromHero.trim().slice(0, 200);
-    if(site === 'none'){
-        noSite();
-    } else if(site){
-        document.getElementById('siteUrl').value = site;
-        document.getElementById('next1').click();
-    } else {
-        document.getElementById('siteUrl').focus();
-    }
-}
-
 // -------------------------
 // CHIP SELECT STEPS
 // -------------------------
@@ -578,5 +564,29 @@ document.getElementById('redoBtn').addEventListener('click',()=>{
 
     showStep(1);
 });
+
+// -------------------------
+// ARRIVING FROM THE HOME PAGE
+// ?goal=... (problem picker) picks the step 3 answer, ?site=... (hero card) answers step 1
+// -------------------------
+
+const params = new URLSearchParams(location.search);
+const goal = params.get('goal');
+if(goal){
+    const chip = [...document.querySelectorAll('#goalChips .chip')].find(c => c.dataset.v === goal);
+    if(chip) chip.click();
+}
+const fromHero = params.get('site');
+if(fromHero !== null){
+    const site = fromHero.trim().slice(0, 200);
+    if(site === 'none'){
+        noSite();
+    } else if(site){
+        document.getElementById('siteUrl').value = site;
+        document.getElementById('next1').click();
+    } else {
+        document.getElementById('siteUrl').focus();
+    }
+}
 })();
 </script>

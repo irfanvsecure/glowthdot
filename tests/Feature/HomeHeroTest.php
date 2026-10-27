@@ -29,6 +29,7 @@ class HomeHeroTest extends TestCase
     {
         $html = $this->get('/get-a-free-audit/?site=myclinic.ae')->assertOk()->getContent();
 
-        $this->assertStringContainsString("new URLSearchParams(location.search).get('site')", $html);
+        $this->assertStringContainsString('const params = new URLSearchParams(location.search);', $html);
+        $this->assertStringContainsString("params.get('site')", $html);
     }
 }
