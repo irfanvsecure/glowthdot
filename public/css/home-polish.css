@@ -96,155 +96,356 @@ body.gp-scrolled .ast-primary-header-bar {
 }
 
 /* ----- Hero layout: copy left, free-audit card right (scripts/home-hero.php) ----- */
-.gh-audit {
+
+/* Copy column */
+#bg .gh-hero .elementor-element-3df45d0 .elementor-icon-list-text {
+  font-size: 12px !important;
+  letter-spacing: 0.08em;
+}
+#bg .gh-hero .elementor-element-3df45d0 .elementor-icon-list-icon svg {
+  filter: drop-shadow(0 0 6px rgba(198, 244, 50, 0.8));
+}
+#bg .gh-hero .elementor-element-e10b9eb .elementor-heading-title {
+  font-size: clamp(36px, 4.2vw, 62px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.03em;
+}
+#bg .gh-hero .elementor-element-e10b9eb .elementor-heading-title span {
+  display: block;
+}
+#bg .gh-hero .elementor-element-54e3c22,
+#bg .gh-hero .elementor-element-54e3c22 p {
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+}
+#bg .gh-hero .elementor-element-55fe249 .elementor-button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  min-height: 56px;
+  padding: 0 26px !important;
+  border-radius: 14px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+#bg .gh-hero .elementor-element-55fe249 .elementor-button-text::after {
+  content: " →";
+}
+/* "How It Works" becomes a quiet text link, so the audit stays the one big action */
+#bg .gh-hero .elementor-element-389b14c .elementor-button {
+  display: inline-flex !important;
+  align-items: center;
+  min-height: 56px;
+  padding: 0 8px !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+#bg .gh-hero .elementor-element-389b14c .elementor-button-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+  text-underline-offset: 6px;
+}
+#bg .gh-hero .elementor-element-389b14c .elementor-button-text::before {
+  content: "";
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M9 7.5v9l7.5-4.5z'/%3E%3C/svg%3E") center / 16px no-repeat;
+}
+#bg .gh-hero .elementor-element-389b14c .elementor-button:hover .elementor-button-text {
+  color: var(--gp-lime);
+  text-decoration-color: var(--gp-lime);
+}
+#bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-item {
+  padding-left: 26px !important;
   position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 460px;
-  margin: 0 auto;
-  padding: 28px;
-  border-radius: 20px;
-  background: rgba(14, 13, 18, 0.78);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  color: #fff;
-  text-align: left;
 }
-.gh-audit__badge {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: var(--gp-lime);
-  color: var(--gp-ink);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-.gh-audit__title {
-  margin: 14px 0 16px !important;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-}
-.gh-audit__list {
-  margin: 0 0 20px !important;
-  padding: 0 !important;
-  list-style: none;
-}
-.gh-audit__list li {
-  position: relative;
-  margin: 0 0 9px;
-  padding-left: 28px;
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 15px;
-  line-height: 1.4;
-}
-.gh-audit__list li::before {
+#bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-item::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  border-radius: 50%;
+  background: rgba(198, 244, 50, 0.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c6f432' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / 11px no-repeat;
+}
+#bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-text {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 15px !important;
+}
+#bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-text b {
+  color: #fff;
+}
+
+/* Audit card: white, so the form is the brightest thing in the hero */
+#bg .gh-audit {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 30px 30px 26px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  color: var(--gp-ink);
+  text-align: left;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.5), 0 0 80px rgba(255, 46, 126, 0.25);
+  box-sizing: border-box;
+}
+#bg .gh-audit::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, var(--gp-pink), #8b3dff 55%, var(--gp-lime));
+}
+#bg .gh-audit__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+#bg .gh-audit__badge {
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: rgba(255, 46, 126, 0.1);
+  color: #d4145f;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+#bg .gh-audit__step {
+  color: #6f6c78;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+#bg .gh-audit__bar {
+  height: 5px;
+  margin: 14px 0 20px;
+  border-radius: 5px;
+  background: #efeef3;
+}
+#bg .gh-audit__bar i {
+  display: block;
+  width: 14.3%;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--gp-pink), #8b3dff);
+}
+#bg .gh-audit__title {
+  margin: 0 0 6px !important;
+  color: var(--gp-ink) !important;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-shadow: none;
+  text-wrap: balance;
+}
+#bg .gh-audit__sub {
+  margin: 0 0 18px !important;
+  color: #55525e !important;
+  font-size: 15px;
+  line-height: 1.5;
+  text-shadow: none;
+  text-wrap: pretty;
+}
+#bg .gh-audit__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+  margin: 0 0 22px !important;
+  padding: 0 !important;
+  list-style: none;
+}
+#bg .gh-audit__list li {
+  position: relative;
+  margin: 0;
+  padding-left: 26px;
+  color: #2b2933;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+#bg .gh-audit__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: var(--gp-lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e0d12' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / 12px no-repeat;
+  background: var(--gp-ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c6f432' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / 11px no-repeat;
 }
-.gh-audit__label {
-  display: block;
-  margin-bottom: 8px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-}
-.gh-audit__form {
+#bg .gh-audit__form {
   margin: 0;
 }
-.gh-audit__input {
+#bg .gh-audit__label {
   display: block;
-  width: 100%;
-  height: 52px;
-  margin: 0 0 10px;
-  padding: 0 16px;
-  border: 2px solid transparent !important;
-  border-radius: 12px !important;
-  background: #fff;
+  margin-bottom: 8px;
   color: var(--gp-ink);
-  font-size: 16px;
-  box-sizing: border-box;
-}
-.gh-audit__input:focus {
-  outline: none;
-  border-color: var(--gp-lime) !important;
-  box-shadow: 0 0 0 4px rgba(198, 244, 50, 0.25);
-}
-.gh-audit__btn {
-  display: block;
-  width: 100%;
-  min-height: 54px;
-  border: 0;
-  border-radius: 12px;
-  background: var(--gp-lime);
-  color: var(--gp-ink);
-  font-size: 17px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 12px 32px rgba(198, 244, 50, 0.25);
-  transition: transform 0.25s var(--gp-ease), filter 0.25s var(--gp-ease);
-}
-.gh-audit__btn:hover,
-.gh-audit__btn:focus-visible {
-  transform: translateY(-2px);
-  filter: brightness(1.05);
-  background: var(--gp-lime);
-  color: var(--gp-ink);
-}
-.gh-audit__note {
-  margin: 14px 0 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
-  line-height: 1.45;
-}
-.gh-audit__alt {
-  display: inline-block;
-  margin-top: 8px;
-  color: #fff !important;
   font-size: 14px;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  font-weight: 700;
 }
-.gh-audit__alt:hover {
-  color: var(--gp-lime) !important;
+#bg .gh-audit__field {
+  position: relative;
+  margin-bottom: 12px;
+}
+#bg .gh-audit__field svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  fill: none;
+  stroke: #8d8a96;
+  stroke-width: 1.8;
+  pointer-events: none;
+}
+#bg .gh-audit__input {
+  display: block;
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  padding: 0 16px 0 46px !important;
+  border: 1.5px solid #dcdae3 !important;
+  border-radius: 14px !important;
+  background: #faf9fc !important;
+  color: var(--gp-ink) !important;
+  font-size: 16px;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+#bg .gh-audit__input::placeholder {
+  color: #9b98a4;
+}
+#bg .gh-audit__input:focus {
+  outline: none;
+  border-color: #8b3dff !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 4px rgba(139, 61, 255, 0.15);
+}
+#bg .gh-audit__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 58px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(95deg, var(--gp-pink), #8b3dff);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  box-shadow: 0 14px 30px rgba(255, 46, 126, 0.35);
+  transition: transform 0.25s var(--gp-ease), box-shadow 0.25s var(--gp-ease), filter 0.25s var(--gp-ease);
+}
+#bg .gh-audit__btn svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.25s var(--gp-ease);
+}
+#bg .gh-audit__btn:hover,
+#bg .gh-audit__btn:focus-visible {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 18px 38px rgba(255, 46, 126, 0.45);
+  color: #fff;
+}
+#bg .gh-audit__btn:hover svg {
+  transform: translateX(4px);
+}
+#bg .gh-audit__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 14px 0 0 !important;
+  color: #6f6c78 !important;
+  font-size: 12.5px;
+  line-height: 1.45;
+  text-shadow: none;
+  text-wrap: pretty;
+}
+#bg .gh-audit__note svg {
+  flex: 0 0 15px;
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+  fill: none;
+  stroke: #6f6c78;
+  stroke-width: 2;
+}
+#bg .gh-audit__alt {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--gp-ink) !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(14, 13, 18, 0.25);
+  text-underline-offset: 4px;
+}
+#bg .gh-audit__alt:hover {
+  color: #8b3dff !important;
+  text-decoration-color: #8b3dff;
 }
 
 @media (min-width: 1025px) {
+  /* Darker on the copy side, the photo shows through behind the card */
+  #bg.elementor-element-d2ed37a::after {
+    background:
+      radial-gradient(ellipse 45% 70% at 80% 50%, rgba(255, 46, 126, 0.22), transparent 60%),
+      linear-gradient(90deg, rgba(14, 13, 18, 0.94) 0%, rgba(14, 13, 18, 0.82) 42%, rgba(14, 13, 18, 0.45) 100%);
+  }
   #bg .gh-hero > .e-con-inner {
     display: grid !important;
-    grid-template-columns: minmax(0, 1.3fr) minmax(360px, 0.9fr);
-    gap: 56px;
+    grid-template-columns: minmax(0, 1.2fr) minmax(380px, 440px);
+    gap: 64px;
     align-items: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
   #bg .gh-hero .elementor-element-12923d8 {
     align-items: flex-start !important;
     text-align: left;
+    gap: 22px !important;
   }
   #bg .gh-hero .elementor-element-12923d8 .elementor-heading-title,
   #bg .gh-hero .elementor-element-12923d8 .elementor-widget-text-editor {
     text-align: left !important;
   }
-  #bg .gh-hero .elementor-element-e10b9eb .elementor-heading-title {
-    font-size: clamp(40px, 3.7vw, 58px);
-    line-height: 1.08;
-  }
   #bg .gh-hero .elementor-element-54e3c22 {
-    max-width: 600px;
+    max-width: 540px;
   }
   #bg .gh-hero .elementor-element-95d7350 {
     justify-content: flex-start !important;
+    gap: 18px !important;
   }
   #bg .gh-hero .elementor-icon-list-items {
     justify-content: flex-start !important;
@@ -254,7 +455,10 @@ body.gp-scrolled .ast-primary-header-bar {
     text-align: left !important;
     justify-content: flex-start !important;
   }
-  .gh-audit {
+  #bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-items {
+    gap: 10px 24px;
+  }
+  #bg .gh-audit {
     margin: 0 0 0 auto;
   }
 }
@@ -262,16 +466,38 @@ body.gp-scrolled .ast-primary-header-bar {
   #bg .gh-hero > .e-con-inner {
     flex-direction: column;
   }
-  .gh-audit {
-    margin-top: 28px;
+  #bg .gh-audit {
+    margin-top: 32px;
   }
 }
 @media (max-width: 767px) {
-  .gh-audit {
-    padding: 22px 18px;
+  #bg .gh-audit {
+    padding: 26px 20px 22px;
+    border-radius: 20px;
   }
-  .gh-audit__title {
-    font-size: 21px;
+  #bg .gh-audit__title {
+    font-size: 23px;
+  }
+  #bg .gh-audit__list {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+  #bg .gh-hero .elementor-element-55fe249 .elementor-button {
+    width: 100% !important;
+  }
+  #bg .gh-hero .elementor-element-389b14c .elementor-button {
+    justify-content: center;
+  }
+  #bg .gh-hero .elementor-element-3df45d0 .elementor-icon-list-text {
+    font-size: 10.5px !important;
+    letter-spacing: 0.04em;
+  }
+  /* One tidy column of checks instead of a ragged centred stack */
+  #bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-items {
+    display: grid !important;
+    justify-content: center;
+    justify-items: start;
+    gap: 8px;
   }
 }
 
