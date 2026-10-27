@@ -11,8 +11,7 @@ class SiteController extends Controller
 {
     /**
      * Industry pages, hidden for now: still served, but noindex, and every link to them on the
-     * site (cards, content, the footer "Industries" column) goes to the free audit instead.
-     * Empty the list to bring them back.
+     * site (cards, content, footer) goes to the free audit instead. Empty the list to bring them back.
      */
     public const HIDDEN_PAGES = [
         'industries', 'beauty-salons', 'aesthetic-clinics', 'hair-salons', 'nail-salons', 'day-spas',
@@ -21,9 +20,6 @@ class SiteController extends Controller
     ];
 
     private const HIDDEN_LINK_TARGET = '/get-a-free-audit/';
-
-    // The footer's "Industries" column (same Elementor footer on every page)
-    private const INDUSTRIES_FOOTER_COLUMN = 'elementor-element-25d4237';
 
     public function show(Request $request, PageSpeed $speed, ?string $path = null): Response|RedirectResponse
     {
@@ -71,7 +67,6 @@ class SiteController extends Controller
         $hidden = in_array($slug, self::HIDDEN_PAGES, true);
         if (self::HIDDEN_PAGES !== []) {
             $html = $this->hideLinksToHiddenPages($html);
-            $injectHead .= '<style>.'.self::INDUSTRIES_FOOTER_COLUMN.'{display:none!important}</style>';
         }
         if ($hidden) {
             $html = preg_replace('#<meta\s+name=["\']robots["\'][^>]*>\s*#i', '', $html) ?? $html;

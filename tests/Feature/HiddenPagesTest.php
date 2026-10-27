@@ -42,13 +42,9 @@ class HiddenPagesTest extends TestCase
         $html = $this->get('/')->getContent();
 
         $this->assertGreaterThanOrEqual(10, substr_count($html, 'href="/get-a-free-audit/"'));
-        // PageSpeed moves inline <style> into the CSS bundle
-        $this->assertMatchesRegularExpression("~id='glowth-bundle-css' href='([^']+)'~", $html);
-        preg_match("~id='glowth-bundle-css' href='([^']+)'~", $html, $bundle);
-        $this->assertStringContainsString(
-            '.elementor-element-25d4237{display:none!important}',
-            file_get_contents(public_path(parse_url($bundle[1], PHP_URL_PATH)))
-        );
+        // The footer "Industries" column stays, its links go to the audit too
+        $this->assertStringContainsString('elementor-element-25d4237', $html);
+        $this->assertStringNotContainsString('25d4237{display:none', $html);
     }
 
     public function test_visible_pages_stay_indexable(): void
