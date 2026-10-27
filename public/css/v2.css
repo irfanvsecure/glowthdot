@@ -1,0 +1,349 @@
+/**
+ * Glowth v2, site-wide: pill kickers, ink titles, card depth, 3D tilt + glare and a 3D reveal.
+ * Hooks: SiteController (.v2-kicker / .v2-title on Elementor pages), public/js/v2.js (.v2-js,
+ * .v2-card, .v2-tilt, .v2-mock, .v2-r, .v2-tone-*), and on the home page scripts/home-v2.php
+ * (.v2-sec--*). Home-only pieces live in public/css/home-v2.css.
+ */
+:root {
+  --v2-ink: #0e0d12;
+  --v2-night: #0b0a10;
+  --v2-lime: #c6f432;
+  --v2-pink: #ff2e7e;
+  --v2-violet: #8b3dff;
+  --v2-muted: #5d5a68;
+  --v2-line: #ebe9f2;
+  --v2-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ----- Section themes (home: scripts/home-v2.php) ----- */
+.v2-sec {
+  --border-top-width: 0px;
+  --border-bottom-width: 0px;
+  --border-block-start-width: 0px;
+  --border-block-end-width: 0px;
+  position: relative;
+  isolation: isolate;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+.v2-sec::before {
+  border: 0 !important;
+}
+.v2-sec--light {
+  background: #fff !important;
+}
+.v2-sec--soft {
+  background:
+    radial-gradient(ellipse 50% 60% at 95% 0%, rgba(255, 46, 126, 0.06), transparent 60%),
+    radial-gradient(ellipse 45% 55% at 0% 100%, rgba(139, 61, 255, 0.06), transparent 60%),
+    #f7f5fc !important;
+}
+.v2-sec--dark {
+  background: var(--v2-night) !important;
+  color: #fff;
+}
+.v2-sec--dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 45% 50% at 88% 12%, rgba(255, 46, 126, 0.16), transparent 62%),
+    radial-gradient(ellipse 40% 50% at 8% 85%, rgba(139, 61, 255, 0.16), transparent 62%),
+    radial-gradient(ellipse 35% 30% at 50% 110%, rgba(198, 244, 50, 0.08), transparent 70%);
+}
+/* A faint perspective grid gives the dark bands a floor; it fades out at both ends */
+.v2-sec--dark::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 46%;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  transform: perspective(600px) rotateX(62deg);
+  transform-origin: 50% 100%;
+  -webkit-mask-image: linear-gradient(to top, transparent 0, #000 18%, transparent 85%);
+  mask-image: linear-gradient(to top, transparent 0, #000 18%, transparent 85%);
+}
+
+/* Light text on dark bands (home themes, or a dark section v2.js found on another page),
+   except inside product mock-ups, which keep their own colours */
+:is(.v2-sec--dark, .v2-tone-dark) .elementor-heading-title:not(.v2-mock *),
+:is(.v2-sec--dark, .v2-tone-dark) h2:not(.v2-mock *),
+:is(.v2-sec--dark, .v2-tone-dark) h3:not(.v2-mock *),
+:is(.v2-sec--dark, .v2-tone-dark) h4:not(.v2-mock *) {
+  color: #fff !important;
+}
+:is(.v2-sec--dark, .v2-tone-dark) .elementor-widget-text-editor:not(.v2-mock *),
+:is(.v2-sec--dark, .v2-tone-dark) .elementor-widget-text-editor p:not(.v2-mock *) {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+.v2-sec--dark .elementor-icon-list-text:not(.v2-mock *) {
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+:is(.v2-sec--light, .v2-sec--soft) .elementor-widget-text-editor {
+  color: var(--v2-muted);
+}
+
+/* ----- Kickers become pills ----- */
+.v2-kicker {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 15px 8px 12px !important;
+  border-radius: 999px;
+  background: rgba(139, 61, 255, 0.08) !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  -webkit-text-fill-color: currentColor !important;
+  color: #6d28d9 !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 1px rgba(139, 61, 255, 0.14);
+}
+.v2-kicker::before {
+  content: "";
+  flex: 0 0 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--v2-pink), var(--v2-violet));
+  box-shadow: 0 0 0 3px rgba(255, 46, 126, 0.16);
+}
+:is(.v2-sec--dark, .v2-tone-dark) .v2-kicker {
+  background: rgba(198, 244, 50, 0.09) !important;
+  color: var(--v2-lime) !important;
+  box-shadow: inset 0 0 0 1px rgba(198, 244, 50, 0.2);
+}
+:is(.v2-sec--dark, .v2-tone-dark) .v2-kicker::before {
+  background: var(--v2-lime);
+  box-shadow: 0 0 10px rgba(198, 244, 50, 0.8);
+}
+.v2-sublabel {
+  color: var(--v2-muted) !important;
+  -webkit-text-fill-color: currentColor !important;
+  background: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+/* Service and location pages: their "— KICKER" line becomes the same pill */
+.lp-kicker {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 15px 8px 12px;
+  border-radius: 999px;
+  background: rgba(139, 61, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(139, 61, 255, 0.14);
+  color: #6d28d9 !important;
+  line-height: 1;
+}
+.lp-kicker::before {
+  content: "" !important;
+  flex: 0 0 7px;
+  width: 7px !important;
+  height: 7px !important;
+  margin: 0 !important;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--v2-pink), var(--v2-violet)) !important;
+  box-shadow: 0 0 0 3px rgba(255, 46, 126, 0.16);
+}
+.lp-section--dark .lp-kicker,
+.lp-kicker--lime {
+  background: rgba(198, 244, 50, 0.09);
+  box-shadow: inset 0 0 0 1px rgba(198, 244, 50, 0.2);
+  color: var(--v2-lime) !important;
+}
+.lp-section--dark .lp-kicker::before,
+.lp-kicker--lime::before {
+  background: var(--v2-lime) !important;
+  box-shadow: 0 0 10px rgba(198, 244, 50, 0.8);
+}
+.lp-title {
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+/* ----- Titles ----- */
+.v2-title {
+  font-size: clamp(32px, 3.9vw, 56px) !important;
+  font-weight: 700 !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.035em !important;
+  text-wrap: balance;
+}
+:is(.v2-sec--light, .v2-sec--soft, .v2-tone-light) .v2-title {
+  color: var(--v2-ink) !important;
+}
+/* Section headings without a kicker (e.g. the About page's long-form h2s) */
+.v2-tone-light h2.elementor-heading-title {
+  color: var(--v2-ink) !important;
+  letter-spacing: -0.03em !important;
+}
+:is(.v2-sec--dark, .v2-tone-dark) .v2-title {
+  color: #fff !important;
+  font-size: clamp(30px, 3.3vw, 48px) !important;
+}
+
+/* ----- Cards (marked by v2.js) ----- */
+.v2-card {
+  position: relative;
+  border: 1px solid var(--v2-line) !important;
+  border-radius: 22px !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 12px 32px -14px rgba(32, 16, 64, 0.16) !important;
+  transition: box-shadow 0.4s var(--v2-ease), border-color 0.3s;
+}
+.v2-card:hover {
+  border-color: #dcd6ec !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 30px 60px -20px rgba(32, 16, 64, 0.28) !important;
+}
+.v2-card .elementor-icon {
+  background: linear-gradient(135deg, var(--v2-pink), var(--v2-violet)) !important;
+  box-shadow: 0 10px 22px -8px rgba(139, 61, 255, 0.55);
+}
+.v2-card .elementor-icon svg {
+  fill: #fff !important;
+}
+.v2-card .elementor-icon i {
+  color: #fff !important;
+}
+.v2-card .elementor-icon-box-title,
+.v2-card .elementor-icon-box-title a {
+  font-weight: 700 !important;
+  letter-spacing: -0.01em;
+}
+:is(.v2-sec--light, .v2-sec--soft, .v2-tone-light) .v2-card .elementor-icon-box-title,
+:is(.v2-sec--light, .v2-sec--soft, .v2-tone-light) .v2-card .elementor-icon-box-title a {
+  color: var(--v2-ink) !important;
+}
+/* Photo cards keep their own background */
+.v2-card--photo {
+  border: 0 !important;
+  overflow: hidden;
+}
+/* Cards on dark bands are glass */
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card:hover {
+  border-color: rgba(198, 244, 50, 0.35) !important;
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card .elementor-icon-box-title,
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card .elementor-icon-box-title a,
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card .elementor-heading-title {
+  color: #fff !important;
+}
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card .elementor-icon-box-description,
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* ----- 3D tilt with a glare that follows the pointer ----- */
+.v2-tilt {
+  --rx: 0deg;
+  --ry: 0deg;
+  --lift: 0px;
+  transform: perspective(1000px) translateY(var(--lift)) rotateX(var(--rx)) rotateY(var(--ry));
+  transform-style: preserve-3d;
+  transition: transform 0.6s var(--v2-ease), box-shadow 0.4s var(--v2-ease), border-color 0.3s;
+  will-change: transform;
+}
+.v2-tilt.is-tilting {
+  --lift: -6px;
+  transition: transform 0.12s linear, box-shadow 0.4s var(--v2-ease), border-color 0.3s;
+}
+.v2-tilt::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), var(--v2-glare, rgba(255, 46, 126, 0.1)), transparent 45%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.v2-tilt.is-tilting::after {
+  opacity: 1;
+}
+.v2-card--photo,
+.v2-tilt--glass,
+:is(.v2-sec--dark, .v2-tone-dark, .lp-section--dark, .lp-hero) .v2-tilt {
+  --v2-glare: rgba(255, 255, 255, 0.2);
+}
+/* Service/location cards: position the glare */
+.lp-card.v2-tilt,
+.lp-service.v2-tilt,
+.lp-rule.v2-tilt,
+.lp-stat.v2-tilt,
+.lp-review.v2-tilt,
+.lp-glance.v2-tilt,
+.lp-links__group.v2-tilt,
+.lp-audit.v2-tilt {
+  position: relative;
+}
+
+/* ----- Product mock-ups float at an angle and settle on hover ----- */
+@media (min-width: 1025px) {
+  .v2-mock {
+    --base-ry: -12deg;
+    transform: perspective(1400px) rotateY(calc(var(--base-ry) + var(--ry, 0deg))) rotateX(calc(5deg + var(--rx, 0deg)));
+    transform-style: preserve-3d;
+    transition: transform 0.9s var(--v2-ease), box-shadow 0.6s var(--v2-ease);
+    box-shadow: 0 50px 100px -30px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+  }
+  .v2-mock--left {
+    --base-ry: 12deg;
+  }
+  .v2-mock:hover {
+    --base-ry: 0deg;
+  }
+  .v2-mock.is-tilting {
+    transition: transform 0.15s linear, box-shadow 0.6s var(--v2-ease);
+  }
+}
+
+/* ----- Reveal: rise out of a 3D plane ----- */
+.v2-js .gp-reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+.v2-js .v2-r {
+  opacity: 0;
+  transform: perspective(1000px) translate3d(0, 46px, 0) rotateX(16deg);
+  transform-origin: 50% 100%;
+  transition: opacity 0.8s var(--v2-ease), transform 1s var(--v2-ease);
+  transition-delay: var(--d, 0ms);
+}
+.v2-js .v2-r.is-in {
+  opacity: 1;
+  transform: perspective(1000px) translate3d(0, 0, 0) rotateX(0deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v2-tilt,
+  .v2-mock {
+    transform: none !important;
+  }
+  .v2-js .v2-r {
+    opacity: 1;
+    transform: none;
+  }
+}

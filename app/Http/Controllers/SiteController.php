@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\DesignV2;
 use App\Support\PageSpeed;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -26,7 +27,7 @@ class SiteController extends Controller
 
     private const HIDDEN_LINK_TARGET = '/get-a-free-audit/';
 
-    public function show(Request $request, PageSpeed $speed, ?string $path = null): Response|RedirectResponse
+    public function show(Request $request, PageSpeed $speed, DesignV2 $design, ?string $path = null): Response|RedirectResponse
     {
         // When the domain serves the project folder, /public/... and /public/index.php also
         // reach the app; send them to the one real address of the page.
@@ -71,6 +72,11 @@ class SiteController extends Controller
             // v2 design layer: depth, section rhythm, 3D motion (after polish, so it wins ties)
             $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/home-v2.css').'" />';
         }
+        // Site-wide v2 design layer, after the page's own styles so it wins ties
+        if (! str_contains($html, '/css/v2.css')) {
+            $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/v2.css').'" />';
+        }
+        $html = $design->apply($html);
         $hidden = in_array($slug, self::HIDDEN_PAGES, true);
         if (self::HIDDEN_PAGES !== []) {
             $html = $this->hideLinksToHiddenPages($html);
@@ -89,6 +95,15 @@ class SiteController extends Controller
                 '/<\/body>/i',
                 '<script src="'.$this->asset('/js/home-polish.js').'" defer></script>'
                 .'<script src="'.$this->asset('/js/home-v2.js').'" defer></script></body>',
+                $html,
+                1
+            ) ?? $html;
+        }
+        // Site-wide v2 motion; on the home page it runs after home-v2.js, which configures it
+        if (! str_contains($html, '/js/v2.js')) {
+            $html = preg_replace(
+                '/<\/body>/i',
+                '<script src="'.$this->asset('/js/v2.js').'" defer></script></body>',
                 $html,
                 1
             ) ?? $html;
