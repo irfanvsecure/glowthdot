@@ -407,6 +407,25 @@
 .elementor-element-ba68542 > .e-con {
   border-radius: 22px !important;
 }
+/* 5-step process: room under the title (the number badges sit on the card edge), and every
+   card starts at the top so the badges line up whatever the text length */
+.elementor-element-a0e3781 {
+  margin-top: 56px !important;
+  --gap: 22px;
+  gap: 22px !important;
+}
+.elementor-element-a0e3781 > .e-con {
+  justify-content: flex-start !important;
+}
+/* Step 3's badge was pulled 14px higher than the others (-64px vs -50px) */
+.elementor-8 .elementor-element.elementor-element-edfd7ef {
+  margin-top: -50px !important;
+}
+@media (max-width: 767px) {
+  .elementor-element-a0e3781 {
+    margin-top: 36px !important;
+  }
+}
 /* Free audit: both cards are coloured (pink gradient, black), so their text stays light */
 .elementor-element-8fec5e0 .v2-title {
   color: #fff !important;
