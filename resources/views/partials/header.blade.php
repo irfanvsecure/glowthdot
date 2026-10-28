@@ -106,7 +106,7 @@
 											<div class="h-builder-layout-element h-flex site-header-focus-item h-header-button-1" data-section="section-hb-button-1">
 			<div class="h-builder-button-wrap h-builder-button-size-"><a class="h-custom-button-link" href="/get-a-free-audit/" target="_self"  role="button" aria-label="Free Growth Audit" >
 				<div class="h-custom-button">Free Growth Audit</div>
-			</a><a class="nav-link" href="/contact-us/" target="_self" >Free Growth Audit</a></div>		</div>
+			</a><a class="nav-link" href="/get-a-free-audit/" target="_self" >Free Growth Audit</a></div>		</div>
 									</div>
 												</div>
 					</div>
