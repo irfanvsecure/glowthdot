@@ -16,7 +16,7 @@ class ServicePagesTest extends TestCase
     }
 
     /**
-     * resources/views/pages/{slug}.blade.php
+     * The page from the database (pages + page_sections), as imported by site:import
      *
      * @dataProvider pages
      */

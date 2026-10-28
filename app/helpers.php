@@ -1,5 +1,7 @@
 <?php
 
+use App\Support\Settings;
+
 if (! function_exists('versioned')) {
     /**
      * A public file's URL with its modified time, so the long browser cache in public/.htaccess
@@ -10,5 +12,15 @@ if (! function_exists('versioned')) {
         $mtime = @filemtime(public_path($path));
 
         return $mtime ? $path.'?v='.$mtime : $path;
+    }
+}
+
+if (! function_exists('setting')) {
+    /**
+     * A site setting (contact details, menu, footer ...): see App\Support\Settings::KEYS
+     */
+    function setting(string $key, mixed $default = null): mixed
+    {
+        return Settings::get($key, $default);
     }
 }

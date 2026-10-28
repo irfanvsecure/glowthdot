@@ -52,6 +52,14 @@ return [
 
     'channels' => [
 
+        // Every call to the MCP endpoint (App\Http\Middleware\McpAuth)
+        'mcp' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/mcp.log'),
+            'level' => 'info',
+            'days' => 90,
+        ],
+
         'stack' => [
             'driver' => 'stack',
             'channels' => explode(',', (string) env('LOG_STACK', 'single')),

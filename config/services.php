@@ -2,6 +2,17 @@
 
 return [
 
+    // The MCP server at /mcp (routes/ai.php): a long random secret, at least 32 characters
+    'mcp' => [
+        'secret' => env('MCP_SECRET'),
+    ],
+
+    // Optional: purged by the clear_cache tool when both are set
+    'cloudflare' => [
+        'zone_id' => env('CLOUDFLARE_ZONE_ID'),
+        'api_token' => env('CLOUDFLARE_API_TOKEN'),
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Third Party Services

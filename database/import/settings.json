@@ -1,0 +1,220 @@
+{
+    "site_name": "Glowth",
+    "phone": "+971588979925",
+    "whatsapp": "971588979925",
+    "email": "Sales@glowthdot.com",
+    "address": "16 Al Isayfir 2 St - Musaffah - M33 - Abu Dhabi",
+    "social_links": [],
+    "topbar_html": "🎁 <b>FREE</b> Salon &amp; Clinic Growth Audit (worth AED 2,000) — only <b>5 slots</b> left this week · <a href=\"/get-a-free-audit/\">Claim yours →</a>",
+    "header_cta": {
+        "label": "Free Growth Audit",
+        "url": "/get-a-free-audit/"
+    },
+    "whatsapp_button_text": "How can I help you?",
+    "nav_menu": [
+        {
+            "label": "Home",
+            "url": "/"
+        },
+        {
+            "label": "Services",
+            "url": "/services/",
+            "children": [
+                {
+                    "label": "Search Engine Optimization",
+                    "url": "/seo-for-beauty-salons-clinics/"
+                },
+                {
+                    "label": "Websites & Landing Pages",
+                    "url": "/websites-landing-pages-for-beauty/"
+                },
+                {
+                    "label": "Social Media Management",
+                    "url": "/social-media-management-for-beauty/"
+                },
+                {
+                    "label": "Google Ads",
+                    "url": "/google-ads-for-beauty/"
+                },
+                {
+                    "label": "Meta Ads",
+                    "url": "/instagram-facebook-ads-for-beauty/"
+                },
+                {
+                    "label": "AI Booking System",
+                    "url": "/ai-appointment-booking-bot/"
+                },
+                {
+                    "label": "Ecommerce",
+                    "url": "/ecommerce-for-beauty/"
+                },
+                {
+                    "label": "Reviews & Reputation",
+                    "url": "/reviews-reputation/"
+                }
+            ]
+        },
+        {
+            "label": "Industries",
+            "url": "/industries/",
+            "mobile": false
+        },
+        {
+            "label": "About Us",
+            "url": "/about-us/"
+        },
+        {
+            "label": "Location",
+            "url": "/",
+            "children": [
+                {
+                    "label": "Sharjah",
+                    "url": "/sharjah/"
+                },
+                {
+                    "label": "Abu Dhabi",
+                    "url": "/abu-dhabi/"
+                },
+                {
+                    "label": "Dubai",
+                    "url": "/dubai/"
+                }
+            ]
+        },
+        {
+            "label": "Terms of Service",
+            "url": "/terms-of-service/",
+            "class": "nav-item-terms"
+        },
+        {
+            "label": "FAQ",
+            "url": "/faq/"
+        },
+        {
+            "label": "Our Blog",
+            "url": "/our-blog/"
+        }
+    ],
+    "footer_tagline": "Performance marketing for beauty salons, clinics & medspas across the UAE.",
+    "footer_columns": [
+        {
+            "title": "Services",
+            "links": [
+                {
+                    "label": "AI Booking Bot",
+                    "url": "/ai-appointment-booking-bot/"
+                },
+                {
+                    "label": "Websites & Landing Pages",
+                    "url": "/websites-landing-pages-for-beauty/"
+                },
+                {
+                    "label": "SEO for Beauty",
+                    "url": "/seo-for-beauty-salons-clinics/"
+                },
+                {
+                    "label": "Google Ads Meta Ads",
+                    "url": "/google-ads-for-beauty/"
+                },
+                {
+                    "label": "Social Media",
+                    "url": "/social-media-management-for-beauty/"
+                },
+                {
+                    "label": "Ecommerce",
+                    "url": "/ecommerce-for-beauty/"
+                }
+            ],
+            "_classes": [
+                "k-8a7bcdf",
+                "k-a9cd138",
+                "k-93e93a5"
+            ]
+        },
+        {
+            "title": "Industries",
+            "links": [
+                {
+                    "label": "Beauty salons",
+                    "url": "/beauty-salons/"
+                },
+                {
+                    "label": "Aesthetic Clinics",
+                    "url": "/aesthetic-clinics/"
+                },
+                {
+                    "label": "Medspas",
+                    "url": "/medical-spas/"
+                },
+                {
+                    "label": "Laser Centres",
+                    "url": "/laser-hair-removal-clinics/"
+                },
+                {
+                    "label": "Dermatology",
+                    "url": "/dermatology-clinics/"
+                },
+                {
+                    "label": "Hair Salons",
+                    "url": "/hair-salons/"
+                }
+            ],
+            "_classes": [
+                "k-25d4237",
+                "k-67ca2a2",
+                "k-36e419f"
+            ]
+        },
+        {
+            "title": "Locations",
+            "links": [
+                {
+                    "label": "Dubai",
+                    "url": "/dubai/"
+                },
+                {
+                    "label": "Abu Dhabi",
+                    "url": "/abu-dhabi/"
+                },
+                {
+                    "label": "Sharjah",
+                    "url": "/sharjah/"
+                }
+            ],
+            "_classes": [
+                "k-86c7cd2",
+                "k-5a616f6",
+                "k-dee3734"
+            ]
+        },
+        {
+            "title": "Company",
+            "links": [
+                {
+                    "label": "About",
+                    "url": "/about-us/"
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact-us/"
+                },
+                {
+                    "label": "Privacy Policy",
+                    "url": "/privacy-policy-2/"
+                }
+            ],
+            "_classes": [
+                "k-7879980",
+                "k-f8e147b",
+                "k-6876faa"
+            ]
+        }
+    ],
+    "copyright": "© 2026 Glowth By Micro Aegis International Technologies (MAIT)",
+    "google_site_verification": "AcTE97RGUOU-zMACvCPa7-TqBj1qv9CysqIL-DOp4rw",
+    "robots_default": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "robots_txt": "User-agent: *\nDisallow:\n\nSitemap: https://glowthdot.com/sitemap_index.xml\n",
+    "og_locale": "en_US",
+    "twitter_card": "summary_large_image",
+    "default_author": "Abu Bakar"
+}

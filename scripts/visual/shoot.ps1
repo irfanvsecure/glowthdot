@@ -1,7 +1,7 @@
 param(
     [string]$Out,                        # folder for the PNGs
     [string]$Base = 'http://127.0.0.1:8765',
-    [string[]]$Slugs = @(),              # empty = every page in resources/views/pages
+    [string[]]$Slugs = @(),              # empty = every page imported from database/import/pages
     [int[]]$Widths = @(1440, 500)
 )
 # Full-page screenshots of each page, motion frozen (?__shot=1), for scripts/visual/diff.php.
@@ -10,7 +10,7 @@ $chrome = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
 New-Item -ItemType Directory -Force $Out | Out-Null
 $profile = Join-Path $env:TEMP 'glowth-shot-profile'
 if (-not $Slugs.Count) {
-    $Slugs = Get-ChildItem (Join-Path $root 'resources/views/pages/*.blade.php') | ForEach-Object { $_.Name -replace '\.blade\.php$', '' }
+    $Slugs = Get-ChildItem (Join-Path $root 'database/import/pages/*.blade.php') | ForEach-Object { $_.Name -replace '\.blade\.php$', '' }
 }
 foreach ($slug in $Slugs) {
     # routes/web.php: home is /, category-x-page-2 is /category/x/page/2/
