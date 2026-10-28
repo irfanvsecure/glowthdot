@@ -1,4 +1,4 @@
-/* Location pages (/dubai/, /abu-dhabi/, /sharjah/), markup from resources/location-page/template.php */
+/* Location pages (/dubai/, /abu-dhabi/, /sharjah/): resources/views/pages/{dubai,abu-dhabi,sharjah}.blade.php */
 
 .lp {
   --ink: #0E0D12;
@@ -648,8 +648,8 @@
     color: #fff !important;
   }
   .lp-sticky__wa svg { width: 24px; height: 24px; fill: currentColor; }
-  /* The WhatsApp plugin bubble would sit on top of the bar */
-  body.lp-sticky-on .qlwapp__container { display: none !important; }
+  /* The floating WhatsApp button would sit on top of the bar */
+  body.lp-sticky-on .wa__container { display: none !important; }
   body.lp-sticky-on { padding-bottom: 70px; }
 }
 

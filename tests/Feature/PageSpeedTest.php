@@ -28,20 +28,23 @@ class PageSpeedTest extends TestCase
         preg_match("#href='(/css/bundle/[^']+)'#", $this->pageHead('/'), $m);
         $css = file_get_contents(public_path($m[1]));
 
+        // The page's own stylesheet first, then the site-wide files from the layout
         $order = array_map(fn ($needle) => strpos($css, $needle), [
-            '/* /assets/themes/astra/assets/css/minified/main.min.css */',
-            ':root{--ast-post-nav-space:0',                // astra inline style after its file
-            "@font-face {\n  font-family: 'Inter'",       // where the first Google Fonts link was
-            '/* /images/elementor/css/post-8.css */',
-            '/* glowth-hero-fallback */',
-            '/* /css/home-polish.css */',                  // injected last by SiteController
+            '/* /css/pages/home.css */',
+            '/* /css/site.css */',
+            '/* /css/site-align.css */',
+            '/* /css/home-polish.css */',
+            '/* /css/home-v2.css */',
+            '/* /css/v2.css */',
         ]);
         $this->assertNotContains(false, $order);
         $sorted = $order;
         sort($sorted);
         $this->assertSame($sorted, $order);
 
-        $this->assertStringContainsString("/* /images/elementor/css/base-mobile.css */\n@media (max-width:767px){", $css);
+        $this->assertStringContainsString("@font-face {\n  font-family: 'Inter'", $css);
+        // The phone-only base styles keep their media query
+        $this->assertStringContainsString('@media (max-width:767px){', $css);
     }
 
     public function test_hero_image_and_fonts_are_requested_early(): void
@@ -62,7 +65,7 @@ class PageSpeedTest extends TestCase
     {
         $html = $this->get('/')->getContent();
 
-        preg_match('#<img[^>]*class="custom-logo"[^>]*srcset="([^"]+)"#', $html, $m);
+        preg_match('#<img[^>]*class="logo"[^>]*srcset="([^"]+)"#', $html, $m);
         $this->assertSame(
             '/images/2026/07/cropped-glowth-logo-transparent-205x48.png 205w, /images/2026/07/cropped-glowth-logo-transparent-410x95.png 410w',
             $m[1]

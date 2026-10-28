@@ -30,7 +30,7 @@ class LeadTest extends TestCase
 
     private function audit(array $overrides = []): \Illuminate\Testing\TestResponse
     {
-        return $this->postJson('/wp-json/glowth/v1/audit', $overrides + [
+        return $this->postJson('/api/audit', $overrides + [
             'name' => 'Sara Test',
             'bizName' => 'Glow <b>Salon</b>',
             'wa' => '+971 50 123 4567',
@@ -86,10 +86,9 @@ class LeadTest extends TestCase
         Http::assertNothingSent();
     }
 
-    public function test_elementor_form_lead_is_emailed_but_not_sent_to_the_sheet(): void
+    public function test_website_form_lead_is_emailed_but_not_sent_to_the_sheet(): void
     {
-        $this->post('/wp-admin/admin-ajax.php', [
-            'action' => 'elementor_pro_forms_send_form',
+        $this->post('/api/enquiry', [
             'form_id' => 'ccee265',
             'referer_title' => 'Home',
             'form_fields' => [

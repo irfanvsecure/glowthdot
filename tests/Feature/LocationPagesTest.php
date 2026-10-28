@@ -12,15 +12,13 @@ class LocationPagesTest extends TestCase
     }
 
     /**
-     * The snapshots are rendered from storage/app/location-content/{slug}.json by
-     * scripts/build-location-pages.php; this guards the result.
+     * resources/views/pages/{slug}.blade.php
      *
      * @dataProvider pages
      */
     public function test_location_page_renders_the_new_layout(string $slug): void
     {
         $html = $this->get('/'.$slug.'/')->assertOk()->getContent();
-        $data = json_decode(file_get_contents(storage_path('app/location-content/'.$slug.'.json')), true);
 
         $this->assertStringContainsString('class="lp" id="lp-'.$slug.'"', $html);
         $this->assertStringNotContainsString("class='gwd'", $html);
@@ -35,16 +33,16 @@ class LocationPagesTest extends TestCase
             $this->assertStringContainsString('id="'.$id.'"', $html, "#$id");
         }
 
-        // Every service, area and question from the JSON is on the page
-        $this->assertSame(count($data['services']['cards']), substr_count($html, 'class="lp-service"'));
-        $this->assertSame(count($data['areas']['items']), substr_count($html, 'role="tabpanel"'));
-        $this->assertSame(count($data['faq']['items']), substr_count($html, '<summary>'));
+        // Services, areas (one tab panel per tab) and questions are on the page
+        $this->assertGreaterThan(0, substr_count($html, 'class="lp-service"'));
+        $this->assertSame(substr_count($html, 'role="tab"'), substr_count($html, 'role="tabpanel"'));
+        $this->assertGreaterThan(0, substr_count($html, '<summary>'));
 
         // FAQPage schema matches the visible questions
         preg_match('#<script type="application/ld\+json" id="glowth-page-faq">(.*?)</script>#s', $html, $schema);
         $faq = json_decode($schema[1] ?? '', true);
         $this->assertSame('FAQPage', $faq['@type'] ?? null);
-        $this->assertCount(count($data['faq']['items']), $faq['mainEntity']);
+        $this->assertCount(substr_count($html, '<summary>'), $faq['mainEntity']);
 
         // The layout's stylesheet is bundled into the head and its script is loaded
         $this->assertStringContainsString('/js/location.js?v=', $html);

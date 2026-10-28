@@ -1,17 +1,17 @@
 /**
  * One horizontal grid for header + all sections (all pages).
- * Matches Astra header: max-width 1240px, side gutter 20px.
+ * Matches the header: max-width 1240px, side gutter 20px.
  */
 :root {
   --glowth-page-width: 1240px;
   --glowth-page-gutter: 20px;
 }
 
-#masthead .ast-container,
-.site-header .ast-container,
-.ast-above-header-bar .ast-container,
-.site-footer .ast-container,
-.site-below-footer-wrap .ast-builder-grid-row {
+#masthead .h-container,
+.site-header .h-container,
+.h-above-header-bar .h-container,
+.site-footer .h-container,
+.site-below-footer-wrap .h-builder-grid-row {
   max-width: var(--glowth-page-width) !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -21,21 +21,21 @@
   box-sizing: border-box !important;
 }
 
-.site-content > .ast-container {
+.site-content > .h-container {
   max-width: 100% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-.e-con {
+.c-con {
   --container-max-width: var(--glowth-page-width) !important;
 }
-.elementor-section.elementor-section-boxed > .elementor-container {
+.x-section.x-section-boxed > .x-container {
   max-width: var(--glowth-page-width) !important;
 }
 
 /* Top-level boxed sections = same column as header */
-.elementor .e-con.e-con-boxed.e-parent > .e-con-inner {
+.x .c-con.c-con-boxed.c-parent > .c-con-inner {
   max-width: var(--glowth-page-width) !important;
   width: 100% !important;
   margin-left: auto !important;
@@ -46,7 +46,7 @@
 }
 
 /* Full-width bands: keep background full bleed; pin inner column to header */
-.elementor .e-con.e-con-full.e-parent > .e-con-inner {
+.x .c-con.c-con-full.c-parent > .c-con-inner {
   max-width: var(--glowth-page-width) !important;
   width: 100% !important;
   margin-left: auto !important;
@@ -57,9 +57,9 @@
 }
 
 /* True edge-to-edge strips (hero slideshow / niche ticker) */
-.elementor .e-con.e-con-full.e-parent#bg > .e-con-inner,
-.elementor .e-con.e-con-full.e-parent.bg > .e-con-inner,
-.elementor .e-con.e-parent:has(> .e-con-inner .nichebar) > .e-con-inner {
+.x .c-con.c-con-full.c-parent#bg > .c-con-inner,
+.x .c-con.c-con-full.c-parent.bg > .c-con-inner,
+.x .c-con.c-parent:has(> .c-con-inner .nichebar) > .c-con-inner {
   max-width: none !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -74,10 +74,46 @@
 /* Inline icon lists (e.g. AI booking bot stats) use negative side margins and
    pushed the page wider than the phone screen; let them wrap inside the column */
 @media (max-width: 767px) {
-  .elementor-icon-list-items.elementor-inline-items {
+  .x-icon-list-items.x-inline-items {
     flex-wrap: wrap;
     margin-left: 0 !important;
     margin-right: 0 !important;
     max-width: 100%;
+  }
+}
+
+/* Small laptops: the 8 menu items plus the CTA button fit on one row */
+@media (min-width: 922px) and (max-width: 1279px) {
+  .h-header-button-1 .h-custom-button {
+    white-space: nowrap;
+  }
+  .h-builder-menu-1 .main-header-menu {
+    flex-wrap: nowrap !important;
+  }
+  .h-builder-menu-1 .main-header-menu > .nav-item > .nav-link {
+    white-space: nowrap;
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+    font-size: 14.5px !important;
+  }
+  .h-header-button-1 .h-custom-button {
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+  }
+}
+/* Too narrow for all of them: Terms of Service stays in the footer */
+@media (min-width: 922px) and (max-width: 1139px) {
+  .h-builder-menu-1 .main-header-menu > .nav-item-terms {
+    display: none !important;
+  }
+}
+@media (min-width: 922px) and (max-width: 1059px) {
+  .h-builder-menu-1 .main-header-menu > .nav-item > .nav-link {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    font-size: 14px !important;
+  }
+  .site-header .site-logo-img img {
+    max-width: 160px !important;
   }
 }

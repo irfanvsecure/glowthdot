@@ -3,18 +3,11 @@
 namespace App\Support;
 
 /**
- * Speeds up the first paint of the mirrored WordPress pages without touching the snapshots:
- * self-hosted fonts, one stylesheet instead of ~25, an early hero image request and a
- * logo srcset that suits phone screens.
+ * Speeds up the first paint of the pages as they are served: one stylesheet instead of several
+ * and an early hero image request. (Fonts and their preloads are in resources/views/layouts/site.blade.php.)
  */
 class PageSpeed
 {
-    /** Google Fonts families served from public/fonts (see public/css/fonts.css) */
-    private const SELF_HOSTED_FONTS = ['Inter', 'Space Grotesk', 'Roboto', 'Roboto Slab'];
-
-    /** Fonts the first screen needs, fetched in parallel with the stylesheet */
-    private const PRELOAD_FONTS = ['/fonts/inter-latin.woff2', '/fonts/space-grotesk-latin.woff2'];
-
     private const BUNDLE_DIR = '/css/bundle';
 
     public function optimize(string $html): string
@@ -25,10 +18,8 @@ class PageSpeed
         }
         [$head, $close, $body] = $parts;
 
-        $head = $this->selfHostFonts($head);
         $head = $this->bundleStyles($head);
         $head = $this->preloadHeroImage($head, $body);
-        $body = $this->trimLogoSrcset($body);
 
         return $head.$close.$body;
     }
@@ -41,46 +32,6 @@ class PageSpeed
         $result = preg_replace('#<meta[^>]*name=["\']viewport["\'][^>]*>#i', '$0'.$tags, $head, 1, $count);
 
         return $count ? $result : preg_replace('#<head\b[^>]*>#i', '$0'.$tags, $head, 1);
-    }
-
-    /**
-     * The theme asks Google for every weight and italic of four families (five requests on
-     * another origin, then the font files). The variable woff2 files cover all weights in use.
-     */
-    private function selfHostFonts(string $head): string
-    {
-        $replaced = false;
-
-        $head = preg_replace_callback(
-            "#<link rel=['\"]stylesheet['\"][^>]*href=['\"]https://fonts\.googleapis\.com/css\?family=([^'\":&]+)[^>]*>\s*#i",
-            function ($m) use (&$replaced) {
-                if (! in_array(str_replace('+', ' ', urldecode($m[1])), self::SELF_HOSTED_FONTS, true)) {
-                    return $m[0];
-                }
-                // The first one becomes the local font stylesheet, so it keeps its place in the cascade
-                $link = $replaced ? '' : "<link rel='stylesheet' id='glowth-fonts-css' href='/css/fonts.css' media='all' />\n";
-                $replaced = true;
-
-                return $link;
-            },
-            $head
-        ) ?? $head;
-
-        if (! $replaced) {
-            return $head;
-        }
-
-        // Preconnects to Google are wasted connections once nothing is loaded from there
-        if (! str_contains($head, 'fonts.googleapis.com/css')) {
-            $head = preg_replace("#<link[^>]*(?:rel=['\"](?:preconnect|dns-prefetch)['\"][^>]*href=['\"](?:https:)?//fonts\.(?:googleapis|gstatic)\.com['\"]|href=['\"](?:https:)?//fonts\.(?:googleapis|gstatic)\.com['\"][^>]*rel=['\"](?:preconnect|dns-prefetch)['\"])[^>]*>\s*#i", '', $head) ?? $head;
-        }
-
-        $preload = '';
-        foreach (self::PRELOAD_FONTS as $font) {
-            $preload .= '<link rel="preload" href="'.$font.'" as="font" type="font/woff2" crossorigin>';
-        }
-
-        return $this->addEarly($head, $preload);
     }
 
     /**
@@ -200,12 +151,12 @@ class PageSpeed
     }
 
     /**
-     * The hero slideshow image is the largest paint, but the browser only finds it inside CSS
-     * (or once Elementor's JS builds the slideshow). Ask for it straight away.
+     * The hero slideshow image is the largest paint, but the browser only finds it once
+     * public/js/site.js builds the slideshow from data-slideshow. Ask for it straight away.
      */
     private function preloadHeroImage(string $head, string $body): string
     {
-        if (! preg_match('#background_slideshow_gallery&quot;:\[\{&quot;id&quot;:\d+,&quot;url&quot;:&quot;([^&]+)&quot;#', $body, $m)) {
+        if (! preg_match('#\sdata-slideshow="\[&quot;([^&]+)&quot;#', $body, $m)) {
             return $head;
         }
         $url = str_replace('\/', '/', $m[1]);
@@ -214,26 +165,5 @@ class PageSpeed
         }
 
         return $this->addEarly($head, '<link rel="preload" href="'.htmlspecialchars($url).'" as="image" fetchpriority="high">');
-    }
-
-    /**
-     * WordPress offers the 205px header logo in sizes up to 1743px; a 1.75x phone screen picks
-     * the 768px file. Offer the 1x and 2x files only.
-     */
-    private function trimLogoSrcset(string $body): string
-    {
-        $small = '/images/2026/07/cropped-glowth-logo-transparent-205x48.png';
-        $double = '/images/2026/07/cropped-glowth-logo-transparent-410x95.png';
-        if (! is_file(public_path($double))) {
-            return $body;
-        }
-
-        return preg_replace_callback(
-            '#<img\b[^>]*class="custom-logo"[^>]*>#i',
-            fn ($m) => str_contains($m[0], $small)
-                ? preg_replace('#\bsrcset="[^"]*"#', 'srcset="'.$small.' 205w, '.$double.' 410w"', $m[0])
-                : $m[0],
-            $body
-        ) ?? $body;
     }
 }

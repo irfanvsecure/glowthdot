@@ -1,0 +1,11 @@
+/* Styles of the widgets inside the page (calculators, mock-ups, tables) */
+.glx{--violet:#7C3AED;--pink:#FF2E7E;--grey:#5D5B66;--line:#E7E6EC;--disp:'Space Grotesk',sans-serif}
+.glx *{margin:0;padding:0;box-sizing:border-box}
+.glx a{color:inherit;text-decoration:none}
+.glx .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.glx .cov{padding:46px 0;text-align:center;border-top:1px solid var(--line)}
+.glx .cov p{font-family:var(--disp);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--grey);margin-bottom:18px}
+.glx .cov p+p{margin-top:30px}
+.glx .cov-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.glx .cov-links a{font-family:var(--disp);font-weight:700;font-size:14.5px;color:var(--violet);border:1.5px solid var(--line);padding:12px 24px;border-radius:999px;transition:all .2s}
+.glx .cov-links a:hover{border-color:var(--pink);color:var(--pink)}
