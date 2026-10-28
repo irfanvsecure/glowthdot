@@ -82,11 +82,35 @@
   }
 }
 
-/* Small laptops: the 8 menu items plus the CTA button fit on one row */
-@media (min-width: 922px) and (max-width: 1279px) {
+/* Header CTA: one line at every desktop width, never squeezed by the menu */
+@media (min-width: 922px) {
+  .h-header-button-1 {
+    flex-shrink: 0;
+  }
   .h-header-button-1 .h-custom-button {
     white-space: nowrap;
+    line-height: 1.2;
+    padding: 13px 22px;
+    font-size: 15px;
   }
+  .h-builder-menu-1 .main-header-menu {
+    flex-wrap: nowrap !important;
+  }
+  .h-builder-menu-1 .main-header-menu > .nav-item > .nav-link {
+    white-space: nowrap;
+  }
+}
+/* Logo, menu and button fit inside the 1200px row, so the button ends on the same line as the
+   content column: the same space left and right */
+@media (min-width: 1280px) {
+  .h-builder-menu-1 .main-header-menu > .nav-item > .nav-link {
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+  }
+}
+
+/* Small laptops: the 8 menu items plus the CTA button fit on one row */
+@media (min-width: 922px) and (max-width: 1279px) {
   .h-builder-menu-1 .main-header-menu {
     flex-wrap: nowrap !important;
   }
