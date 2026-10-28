@@ -1,5 +1,5 @@
 /* Service pages: components on top of location.css (tokens, buttons, heads, nav, FAQ, sticky bar).
-   Markup from resources/service-page/template.php */
+   Markup in resources/views/pages/ (the eight pages in the Services menu) */
 
 .lp-anchor { display: block; position: relative; top: calc(-1 * (var(--nav-h) + 12px)); visibility: hidden; height: 0; }
 .lp--service section[id] { scroll-margin-top: calc(var(--nav-h) + 12px); }
@@ -26,11 +26,11 @@
 .lp-checks--dark li { color: #D9D5E4; }
 .lp-checks--dark li::before { border-color: var(--lime); }
 
-/* Original Elementor markup kept inside the new layout */
+/* Original page markup kept inside the new layout */
 .lp-raw { width: 100%; }
-.lp-raw .e-con.e-parent { padding-top: 0; padding-bottom: 0; }
+.lp-raw .c-con.c-parent { padding-top: 0; padding-bottom: 0; }
 /* A kept block sized as a share of a row that is no longer around it fills its new slot instead */
-.lp-raw > .e-con { --width: 100%; width: 100%; max-width: 100%; }
+.lp-raw > .c-con { --width: 100%; width: 100%; max-width: 100%; }
 
 /* Highlights coloured lime for the old dark backgrounds use the brand gradient on light ones */
 .lp-section:not(.lp-section--dark) .lp-title span[style*="c6f432" i],
@@ -62,7 +62,7 @@
 .lp-chips b { display: block; font-family: var(--disp); font-size: 15px; line-height: 1.25; color: #fff; }
 .lp-chips li > span { display: block; margin-top: 4px; }
 .lp-hero__visual { min-width: 0; }
-.lp-hero__visual .lp-raw > .e-con { margin: 0 auto; }
+.lp-hero__visual .lp-raw > .c-con { margin: 0 auto; }
 
 /* ---------- CTA band (service variant) ---------- */
 .lp-band__sub { margin-top: 6px !important; font-size: 15px; color: rgba(255, 255, 255, .9); }
@@ -277,7 +277,7 @@
   color: var(--ink);
   box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .6);
 }
-.lp-formcta__form .e-con { --padding-top: 0px; --padding-bottom: 0px; --padding-left: 0px; --padding-right: 0px; background: none !important; box-shadow: none !important; border: 0 !important; }
+.lp-formcta__form .c-con { --padding-top: 0px; --padding-bottom: 0px; --padding-left: 0px; --padding-right: 0px; background: none !important; box-shadow: none !important; border: 0 !important; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
@@ -306,6 +306,6 @@
 
 /* Inner markup of a number keeps the number's size */
 .lp-bigstat b *, .lp-card__stat *, .lp-chips b * { font-size: inherit !important; line-height: inherit; }
-.lp-formcta__form .elementor-widget { width: 100%; max-width: 100%; }
-/* The form card supplies the padding; the kept Elementor container would double it */
-.lp-formcta__form .lp-raw .e-con { padding: 0 !important; }
+.lp-formcta__form .w { width: 100%; max-width: 100%; }
+/* The form card supplies the padding; the kept original container would double it */
+.lp-formcta__form .lp-raw .c-con { padding: 0 !important; }

@@ -6,7 +6,7 @@
   'use strict';
 
   window.GLOWTH_V2 = {
-    // Card grids by Elementor id; photo cards keep their image background
+    // Card grids by their data-id; photo cards keep their image background
     grids: {
       ba68542: 'photo', // Who we serve
       d3862d9: '',      // Industries

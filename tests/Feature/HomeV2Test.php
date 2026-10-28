@@ -21,7 +21,7 @@ class HomeV2Test extends TestCase
     {
         $html = $this->get('/')->getContent();
 
-        $this->assertSame(15, preg_match_all('#class="elementor-element elementor-element-[0-9a-f]{7} v2-sec v2-sec--(light|soft|dark) #', $html));
+        $this->assertSame(15, preg_match_all('#class="x-element k-[0-9a-f]{7} v2-sec v2-sec--(light|soft|dark) #', $html));
         $this->assertSame(preg_match_all('# v2-kicker"#', $html), preg_match_all('# v2-title"#', $html));
         $this->assertStringContainsString('data-v2-stage', $html);
         $this->assertSame(3, substr_count($html, 'class="gh-float gh-float--'));

@@ -10,17 +10,13 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
 /**
- * Receives the Elementor Pro forms of the mirrored pages. Their JavaScript still posts to
- * WordPress' /wp-admin/admin-ajax.php, so this answers there in the shape Elementor expects.
+ * Receives the website's enquiry forms (POST /api/enquiry, sent by public/js/site.js) and the
+ * audit funnel (POST /api/audit). Answers in the shape site.js shows under the form.
  */
 class LeadController extends Controller
 {
     public function store(Request $request): JsonResponse
     {
-        if ($request->input('action') !== 'elementor_pro_forms_send_form') {
-            return response()->json(['success' => false, 'data' => ['message' => 'Unknown action.']], 400);
-        }
-
         $fields = array_map(
             fn ($v) => is_string($v) ? trim(mb_substr($v, 0, 2000)) : '',
             (array) $request->input('form_fields', [])
@@ -96,7 +92,7 @@ class LeadController extends Controller
         ];
         $this->save($lead, $request);
 
-        // Same row layout the WordPress version sent to the Google Sheet
+        // The Google Sheet's column layout
         $sheet = array_combine(array_values($fields), array_values($named)) + [
             'ip' => (string) $request->ip(),
             'user_agent' => mb_substr((string) $request->userAgent(), 0, 300),
@@ -172,7 +168,7 @@ class LeadController extends Controller
     }
 
     /**
-     * Field labels ("Salon / clinic name") keyed by Elementor field id ("field_877ea9e"),
+     * Field labels ("Salon / clinic name") keyed by form field id ("field_877ea9e"),
      * read from the page the form was sent from.
      */
     private function labels(string $url): array
@@ -182,7 +178,7 @@ class LeadController extends Controller
         if (! preg_match('/^[a-z0-9-]+$/', $slug)) {
             return [];
         }
-        $file = storage_path('app/live-html/'.$slug.'.html');
+        $file = resource_path('views/pages/'.$slug.'.blade.php');
         if (! is_file($file)) {
             return [];
         }

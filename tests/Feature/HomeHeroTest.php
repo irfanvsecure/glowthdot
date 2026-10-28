@@ -10,7 +10,7 @@ class HomeHeroTest extends TestCase
     {
         $html = $this->get('/')->assertOk()->getContent();
 
-        $this->assertStringContainsString('class="elementor-element elementor-element-5bd9929 gh-hero ', $html);
+        $this->assertStringContainsString('class="x-element k-5bd9929 gh-hero ', $html);
         $this->assertSame(1, substr_count($html, 'class="gh-audit"'));
         $this->assertStringContainsString('<form class="gh-audit__form" action="/get-a-free-audit/" method="get">', $html);
         $this->assertStringContainsString('name="site"', $html);
@@ -27,9 +27,10 @@ class HomeHeroTest extends TestCase
 
     public function test_funnel_picks_up_the_website_from_the_hero(): void
     {
-        $html = $this->get('/get-a-free-audit/?site=myclinic.ae')->assertOk()->getContent();
+        $this->get('/get-a-free-audit/?site=myclinic.ae')->assertOk()->assertSee('/js/pages/get-a-free-audit.js');
+        $js = file_get_contents(public_path('js/pages/get-a-free-audit.js'));
 
-        $this->assertStringContainsString('const params = new URLSearchParams(location.search);', $html);
-        $this->assertStringContainsString("params.get('site')", $html);
+        $this->assertStringContainsString('const params = new URLSearchParams(location.search);', $js);
+        $this->assertStringContainsString("params.get('site')", $js);
     }
 }

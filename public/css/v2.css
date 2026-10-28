@@ -1,6 +1,6 @@
 /**
  * Glowth v2, site-wide: pill kickers, ink titles, card depth, 3D tilt + glare and a 3D reveal.
- * Hooks: SiteController (.v2-kicker / .v2-title on Elementor pages), public/js/v2.js (.v2-js,
+ * Hooks: the pages (.v2-kicker / .v2-title on section headings), public/js/v2.js (.v2-js,
  * .v2-card, .v2-tilt, .v2-mock, .v2-r, .v2-tone-*), and on the home page scripts/home-v2.php
  * (.v2-sec--*). Home-only pieces live in public/css/home-v2.css.
  */
@@ -75,20 +75,20 @@
 
 /* Light text on dark bands (home themes, or a dark section v2.js found on another page),
    except inside product mock-ups, which keep their own colours */
-:is(.v2-sec--dark, .v2-tone-dark) .elementor-heading-title:not(.v2-mock *),
+:is(.v2-sec--dark, .v2-tone-dark) .x-heading-title:not(.v2-mock *),
 :is(.v2-sec--dark, .v2-tone-dark) h2:not(.v2-mock *),
 :is(.v2-sec--dark, .v2-tone-dark) h3:not(.v2-mock *),
 :is(.v2-sec--dark, .v2-tone-dark) h4:not(.v2-mock *) {
   color: #fff !important;
 }
-:is(.v2-sec--dark, .v2-tone-dark) .elementor-widget-text-editor:not(.v2-mock *),
-:is(.v2-sec--dark, .v2-tone-dark) .elementor-widget-text-editor p:not(.v2-mock *) {
+:is(.v2-sec--dark, .v2-tone-dark) .w-text-editor:not(.v2-mock *),
+:is(.v2-sec--dark, .v2-tone-dark) .w-text-editor p:not(.v2-mock *) {
   color: rgba(255, 255, 255, 0.72) !important;
 }
-.v2-sec--dark .elementor-icon-list-text:not(.v2-mock *) {
+.v2-sec--dark .x-icon-list-text:not(.v2-mock *) {
   color: rgba(255, 255, 255, 0.86) !important;
 }
-:is(.v2-sec--light, .v2-sec--soft) .elementor-widget-text-editor {
+:is(.v2-sec--light, .v2-sec--soft) .w-text-editor {
   color: var(--v2-muted);
 }
 
@@ -187,7 +187,7 @@
   color: var(--v2-ink) !important;
 }
 /* Section headings without a kicker (e.g. the About page's long-form h2s) */
-.v2-tone-light h2.elementor-heading-title {
+.v2-tone-light h2.x-heading-title {
   color: var(--v2-ink) !important;
   letter-spacing: -0.03em !important;
 }
@@ -208,23 +208,23 @@
   border-color: #dcd6ec !important;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 30px 60px -20px rgba(32, 16, 64, 0.28) !important;
 }
-.v2-card .elementor-icon {
+.v2-card .x-icon {
   background: linear-gradient(135deg, var(--v2-pink), var(--v2-violet)) !important;
   box-shadow: 0 10px 22px -8px rgba(139, 61, 255, 0.55);
 }
-.v2-card .elementor-icon svg {
+.v2-card .x-icon svg {
   fill: #fff !important;
 }
-.v2-card .elementor-icon i {
+.v2-card .x-icon i {
   color: #fff !important;
 }
-.v2-card .elementor-icon-box-title,
-.v2-card .elementor-icon-box-title a {
+.v2-card .x-icon-box-title,
+.v2-card .x-icon-box-title a {
   font-weight: 700 !important;
   letter-spacing: -0.01em;
 }
-:is(.v2-sec--light, .v2-sec--soft, .v2-tone-light) .v2-card .elementor-icon-box-title,
-:is(.v2-sec--light, .v2-sec--soft, .v2-tone-light) .v2-card .elementor-icon-box-title a {
+:is(.v2-sec--light, .v2-sec--soft, .v2-tone-light) .v2-card .x-icon-box-title,
+:is(.v2-sec--light, .v2-sec--soft, .v2-tone-light) .v2-card .x-icon-box-title a {
   color: var(--v2-ink) !important;
 }
 /* Photo cards keep their own background */
@@ -244,12 +244,12 @@
   border-color: rgba(198, 244, 50, 0.35) !important;
   box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
-:is(.v2-sec--dark, .v2-tone-dark) .v2-card .elementor-icon-box-title,
-:is(.v2-sec--dark, .v2-tone-dark) .v2-card .elementor-icon-box-title a,
-:is(.v2-sec--dark, .v2-tone-dark) .v2-card .elementor-heading-title {
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card .x-icon-box-title,
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card .x-icon-box-title a,
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card .x-heading-title {
   color: #fff !important;
 }
-:is(.v2-sec--dark, .v2-tone-dark) .v2-card .elementor-icon-box-description,
+:is(.v2-sec--dark, .v2-tone-dark) .v2-card .x-icon-box-description,
 :is(.v2-sec--dark, .v2-tone-dark) .v2-card p {
   color: rgba(255, 255, 255, 0.6) !important;
 }

@@ -10,7 +10,7 @@ class HomeProblemPickerTest extends TestCase
     {
         $html = $this->get('/')->assertOk()->getContent();
 
-        $this->assertStringNotContainsString('elementor-element-5aea8b3', $html);
+        $this->assertStringNotContainsString('k-5aea8b3', $html);
         $this->assertStringNotContainsString('priced to your chair count', $html);
         $this->assertSame(1, substr_count($html, 'id="find-your-fix"'));
         $this->assertSame(1, preg_match('#<section class="gl-fix".*?</section>#s', $html, $section));
@@ -30,6 +30,6 @@ class HomeProblemPickerTest extends TestCase
         foreach ($m[1] as $goal) {
             $this->assertStringContainsString('data-v="'.rawurldecode($goal).'"', $funnel, "funnel has no \"$goal\" goal");
         }
-        $this->assertStringContainsString("params.get('goal')", $funnel);
+        $this->assertStringContainsString("params.get('goal')", file_get_contents(public_path('js/pages/get-a-free-audit.js')));
     }
 }

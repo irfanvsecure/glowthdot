@@ -1,0 +1,86 @@
+/**
+ * Glowth site-wide pieces that used to come from plugins: the hero background slideshow and the
+ * floating WhatsApp button (behaviour: public/js/site.js).
+ */
+
+/* ----- Emoji (App\Support\Emoji): one em square, like the emoji images the layout was made with ----- */
+.emoji {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0 0.07em;
+  font-size: inherit;
+  line-height: 1;
+  text-align: center;
+  vertical-align: -0.1em;
+  white-space: nowrap;
+}
+
+/* ----- Background slideshow (sections with data-slideshow) ----- */
+/* Under the section's colour overlay (its ::before / ::after) and its content */
+[data-slideshow] {
+  isolation: isolate;
+}
+.slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.slideshow__slide {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.slideshow__slide.is-on {
+  opacity: 1;
+}
+
+/* ----- Floating WhatsApp button ----- */
+/* Same size and place as the chat plugin's button it replaces */
+.wa-float {
+  position: fixed;
+  right: 20px;
+  bottom: 74px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 50px;
+  background: #25d366;
+  color: #fff !important;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+.wa-float:hover {
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+.wa-float__icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+.wa-float__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+@media (max-width: 767px) {
+  .wa-float {
+    right: 0;
+    bottom: 99px;
+  }
+}

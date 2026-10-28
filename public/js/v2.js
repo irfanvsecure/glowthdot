@@ -3,10 +3,10 @@
  * Styles: public/css/v2.css. Nothing here changes content; without JS every page is complete.
  *
  * Cards and mock-ups come from, in order:
- *  - window.GLOWTH_V2 = { grids: { elementorId: 'photo' | '' }, mocks: { elementorId: 'left surface ...' } }
+ *  - window.GLOWTH_V2 = { grids: { dataId: 'photo' | '' }, mocks: { dataId: 'left surface ...' } }
  *    (set by a page script that loads first, e.g. public/js/home-v2.js)
  *  - service and location pages: their .lp-* cards and hero visual
- *  - other Elementor pages: any row of bordered or shadowed boxes, found by their computed style
+ *  - other pages: any row of bordered or shadowed boxes, found by their computed style
  */
 (function () {
   'use strict';
@@ -16,17 +16,17 @@
   var config = window.GLOWTH_V2 || {};
 
   var LP_CARDS = '.lp-card:not(.lp-card--raw), .lp-service, .lp-rule, .lp-stat, .lp-review, .lp-glance, .lp-links__group, .lp-feature__visual';
-  var CONTENT = '.elementor[data-elementor-type="wp-page"], .elementor[data-elementor-type="wp-post"]';
+  var CONTENT = '.x-type-page, .x-type-post';
 
   function byId(id) {
     return document.querySelector('[data-id="' + id + '"]');
   }
 
   function childBoxes(el) {
-    var parent = el.querySelector(':scope > .e-con-inner') || el;
+    var parent = el.querySelector(':scope > .c-con-inner') || el;
     var out = [];
     for (var i = 0; i < parent.children.length; i++) {
-      if (parent.children[i].classList.contains('e-con')) out.push(parent.children[i]);
+      if (parent.children[i].classList.contains('c-con')) out.push(parent.children[i]);
     }
     return out;
   }
@@ -38,16 +38,16 @@
     return (0.2126 * m[0] + 0.7152 * m[1] + 0.0722 * m[2]) / 255 > 0.45;
   }
 
-  // Other Elementor pages: light or dark text for each top-level section, from its own background
+  // Other pages: light or dark text for each top-level section, from its own background
   function setTones() {
     document.querySelectorAll(CONTENT).forEach(function (page) {
       for (var i = 0; i < page.children.length; i++) {
         var sec = page.children[i];
-        if (!sec.classList.contains('e-con') || sec.classList.contains('v2-sec')) continue;
+        if (!sec.classList.contains('c-con') || sec.classList.contains('v2-sec')) continue;
         var cs = getComputedStyle(sec);
         var light = isLight(cs.backgroundColor);
         if (light === null && cs.backgroundImage !== 'none') {
-          // Photo or gradient: a dark Elementor overlay makes it a dark section, otherwise leave it
+          // Photo or gradient: a dark colour overlay makes it a dark section, otherwise leave it
           var overlay = getComputedStyle(sec, '::before');
           var alpha = (overlay.backgroundColor.match(/[\d.]+/g) || [])[3];
           var dim = isLight(overlay.backgroundColor) === false && (alpha === undefined || +alpha * (+overlay.opacity || 1) >= 0.3);
@@ -91,9 +91,9 @@
       return cards;
     }
 
-    // Elementor pages: a row of two or more boxes with a border or shadow and rounded corners
+    // Other pages: a row of two or more boxes with a border or shadow and rounded corners
     document.querySelectorAll(CONTENT).forEach(function (page) {
-      page.querySelectorAll('.e-con').forEach(function (row) {
+      page.querySelectorAll('.c-con').forEach(function (row) {
         if (row.closest('.v2-card')) return;
         var kids = childBoxes(row);
         if (kids.length < 2) return;
@@ -169,13 +169,13 @@
     var targets = [];
     var n = 0;
     document.querySelectorAll('.v2-kicker, .v2-title').forEach(function (h) {
-      var w = h.closest('.elementor-widget');
+      var w = h.closest('.w');
       if (!w || w.closest('#bg')) return;
       w.style.setProperty('--d', (n++ % 3) * 90 + 'ms');
       targets.push(w);
       // The intro right under a title rises with it
       var next = w.nextElementSibling;
-      if (h.classList.contains('v2-title') && next && next.classList.contains('elementor-widget-text-editor')) {
+      if (h.classList.contains('v2-title') && next && next.classList.contains('w-text-editor')) {
         next.style.setProperty('--d', (n++ % 3) * 90 + 'ms');
         targets.push(next);
       }

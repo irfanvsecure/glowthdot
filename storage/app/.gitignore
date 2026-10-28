@@ -2,11 +2,3 @@
 !private/
 !public/
 !.gitignore
-# The site pages are served from here, so they belong in version control
-!live-html/
-!live-html/*.html
-# Source content the service and location page builders render from
-!service-content/
-!service-content/*.json
-!location-content/
-!location-content/*

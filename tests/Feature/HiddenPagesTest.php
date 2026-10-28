@@ -20,7 +20,7 @@ class HiddenPagesTest extends TestCase
         $response->assertOk()->assertHeader('X-Robots-Tag', 'noindex, nofollow');
         $html = $response->getContent();
         $this->assertSame(1, preg_match_all('#<meta\s+name=["\']robots["\']#i', $html));
-        $this->assertStringContainsString('<meta name="robots" content="noindex, nofollow" />', $html);
+        $this->assertStringContainsString('<meta name="robots" content="noindex, nofollow">', $html);
     }
 
     public function test_no_page_links_to_a_hidden_page(): void
@@ -43,7 +43,7 @@ class HiddenPagesTest extends TestCase
 
         $this->assertGreaterThanOrEqual(10, substr_count($html, 'href="/get-a-free-audit/"'));
         // The footer "Industries" column stays, its links go to the audit too
-        $this->assertStringContainsString('elementor-element-25d4237', $html);
+        $this->assertStringContainsString('k-25d4237', $html);
         $this->assertStringNotContainsString('25d4237{display:none', $html);
     }
 

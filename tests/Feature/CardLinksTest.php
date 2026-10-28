@@ -26,7 +26,7 @@ class CardLinksTest extends TestCase
 
         foreach ($links[1] as $inner) {
             $this->assertSame(preg_match_all('#<div\b#i', $inner), preg_match_all('#</div>#i', $inner));
-            $this->assertMatchesRegularExpression('#elementor-icon-box-title">\s*\S#', $inner);
+            $this->assertMatchesRegularExpression('#x-icon-box-title">\s*\S#', $inner);
         }
     }
 }

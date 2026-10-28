@@ -26,7 +26,7 @@
     var hero = document.getElementById('bg');
     if (!hero || reduce) return;
     var nodes = hero.querySelectorAll(
-      '.elementor-widget-heading, .elementor-widget-text-editor, .elementor-widget-button, .elementor-widget-icon-list'
+      '.w-heading, .w-text-editor, .w-button, .w-icon-list'
     );
     var n = 0;
     for (var i = 0; i < nodes.length && n < 5; i++) {
@@ -43,7 +43,7 @@
   function setupReveals() {
     if (reduce || !('IntersectionObserver' in window)) return;
 
-    var lists = document.querySelectorAll('.elementor-widget-icon-list');
+    var lists = document.querySelectorAll('.w-icon-list');
     for (var i = 0; i < lists.length; i++) {
       if ((lists[i].textContent || '').indexOf('Google Ads Certified') !== -1) {
         lists[i].classList.add('gp-trust');
@@ -51,7 +51,7 @@
       }
     }
 
-    var parents = document.querySelectorAll('.elementor-8 > .e-con.e-parent, .elementor-8 .e-con.e-parent');
+    var parents = document.querySelectorAll('.x-8 > .c-con.c-parent, .x-8 .c-con.c-parent');
     var count = 0;
     parents.forEach(function (p) {
       if (p.id === 'bg' || p.classList.contains('bg')) return;
@@ -86,7 +86,7 @@
         var hs = document.querySelectorAll('h2,h3');
         for (var i = 0; i < hs.length; i++) {
           if (/Free Salon.*Growth Audit/i.test(hs[i].textContent || '')) {
-            (hs[i].closest('.elementor-element') || hs[i]).id = 'audit';
+            (hs[i].closest('.x-element') || hs[i]).id = 'audit';
             break;
           }
         }
@@ -99,7 +99,7 @@
         t.classList.remove('gp-pulse');
         setTimeout(function () {
           t.classList.add('gp-pulse');
-          var first = t.querySelector('.elementor-form input:not([type=hidden])');
+          var first = t.querySelector('.x-form input:not([type=hidden])');
           if (first && window.matchMedia('(min-width: 768px)').matches) first.focus({ preventScroll: true });
         }, reduce ? 0 : 700);
       }
@@ -116,7 +116,7 @@
 
     var audit = null;
     var wa = null;
-    finale.querySelectorAll('a.elementor-button').forEach(function (a) {
+    finale.querySelectorAll('a.x-button').forEach(function (a) {
       var href = a.getAttribute('href') || '';
       if (href.indexOf('get-a-free-audit') !== -1) audit = a;
       else if (href.indexOf('wa.me') !== -1) wa = a;
@@ -163,11 +163,11 @@
 
   // Phones: position dots under the sideways-swiping card rows
   function setupSwipeDots() {
-    ['.elementor-element-ba68542', '.elementor-element-d3862d9'].forEach(function (sel) {
+    ['.k-ba68542', '.k-d3862d9'].forEach(function (sel) {
       var row = document.querySelector(sel);
       if (!row) return;
       var cards = Array.prototype.filter.call(row.children, function (c) {
-        return c.classList.contains('e-con');
+        return c.classList.contains('c-con');
       });
       if (cards.length < 2) return;
       var dots = document.createElement('div');

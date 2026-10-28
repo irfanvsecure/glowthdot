@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use App\Support\DesignV2;
 use Tests\TestCase;
 
 class DesignV2Test extends TestCase
@@ -30,29 +29,12 @@ class DesignV2Test extends TestCase
         $this->assertLessThan(strpos($html, '/js/v2.js'), strpos($html, '/js/home-v2.js'));
     }
 
-    public function test_elementor_pages_get_kicker_and_title_hooks(): void
+    public function test_pages_carry_kicker_and_title_hooks(): void
     {
         $html = $this->get('/services/')->getContent();
 
         $this->assertStringContainsString('v2-kicker">Our Services', $html);
         $this->assertSame(1, preg_match('#v2-kicker">Our Services.*?v2-title">Beauty Marketing#s', $html));
         $this->assertStringNotContainsString('>- Our Services', $html);
-    }
-
-    public function test_marking_leaves_header_footer_and_marked_pages_alone(): void
-    {
-        $design = new DesignV2();
-        $page = '<header><span class="elementor-heading-title elementor-size-default">- Menu</span></header>'
-            .'<div data-elementor-type="wp-page"><p class="elementor-heading-title elementor-size-default">— FAQs</p>'
-            .'<h2 class="elementor-heading-title elementor-size-default">Questions</h2></div>'
-            .'<div data-elementor-type="footer"><span class="elementor-heading-title elementor-size-default">- Links</span></div>';
-
-        $out = $design->apply($page);
-
-        $this->assertStringContainsString('>- Menu<', $out);
-        $this->assertStringContainsString('>- Links<', $out);
-        $this->assertStringContainsString('v2-kicker">FAQs<', $out);
-        $this->assertStringContainsString('v2-title">Questions<', $out);
-        $this->assertSame($out, $design->apply($out));
     }
 }

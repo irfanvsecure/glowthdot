@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Support\DesignV2;
+use App\Support\Emoji;
 use App\Support\PageSpeed;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -27,83 +27,32 @@ class SiteController extends Controller
 
     private const HIDDEN_LINK_TARGET = '/get-a-free-audit/';
 
-    public function show(Request $request, PageSpeed $speed, DesignV2 $design, ?string $path = null): Response|RedirectResponse
+    /**
+     * A page of the site: resources/views/pages/{page}.blade.php, named by the route.
+     */
+    public function page(Request $request, PageSpeed $speed, Emoji $emoji, string $page): Response|RedirectResponse
     {
-        // When the domain serves the project folder, /public/... and /public/index.php also
-        // reach the app; send them to the one real address of the page.
-        if (preg_match('#^/public(/index\.php)?$#', $request->getBaseUrl())) {
-            $target = preg_replace('#^/index\.php(?=/|$)#', '', $request->getPathInfo()) ?: '/';
-            $query = $request->getQueryString();
-
-            return redirect()->away($request->getSchemeAndHttpHost().$target.($query ? '?'.$query : ''), 301);
+        if ($redirect = $this->publicPrefixRedirect($request)) {
+            return $redirect;
         }
 
-        $path = trim((string) $path, '/');
-        $path = str_replace('\\', '/', $path);
+        $hidden = in_array($page, self::HIDDEN_PAGES, true);
 
-        if ($path !== '' && (str_contains($path, '..') || str_contains($path, "\0"))) {
-            abort(404);
-        }
+        $html = view('pages.'.$page, ['noindex' => $hidden])->render();
 
-        $slug = $path === '' ? 'home' : str_replace('/', '-', $path);
-        $file = storage_path('app/live-html/'.$slug.'.html');
-
-        if (! is_file($file)) {
-            abort(404);
-        }
-
-        $base = str_replace('\\', '/', realpath(storage_path('app/live-html')) ?: '');
-        $real = str_replace('\\', '/', realpath($file) ?: '');
-
-        if ($base === '' || $real === '' || ! str_starts_with($real, $base)) {
-            abort(404);
-        }
-
-        $html = file_get_contents($real) ?: '';
-
-        $injectHead = '';
-        // Site-wide: align sections with header left/right gutters
-        if (! str_contains($html, 'site-align.css')) {
-            $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/site-align.css').'" />';
-        }
-        // Home only: richer UI polish (content unchanged)
-        if ($slug === 'home' && ! str_contains($html, 'home-polish.css')) {
-            $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/home-polish.css').'" />';
-            // v2 design layer: depth, section rhythm, 3D motion (after polish, so it wins ties)
-            $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/home-v2.css').'" />';
-        }
-        // Site-wide v2 design layer, after the page's own styles so it wins ties
-        if (! str_contains($html, '/css/v2.css')) {
-            $injectHead .= '<link rel="stylesheet" href="'.$this->asset('/css/v2.css').'" />';
-        }
-        $html = $design->apply($html);
-        $hidden = in_array($slug, self::HIDDEN_PAGES, true);
         if (self::HIDDEN_PAGES !== []) {
             $html = $this->hideLinksToHiddenPages($html);
         }
-        if ($hidden) {
-            $html = preg_replace('#<meta\s+name=["\']robots["\'][^>]*>\s*#i', '', $html) ?? $html;
-            $injectHead .= '<meta name="robots" content="noindex, nofollow" />';
-        }
-        if ($injectHead !== '') {
-            $html = preg_replace('/<\/head>/i', $injectHead.'</head>', $html, 1) ?? $html;
-        }
         $html = $this->absoluteSeoUrls($html);
+        $html = $emoji->wrap($html);
 
-        if ($slug === 'home' && ! str_contains($html, 'home-polish.js')) {
+        // Local visual-regression screenshots (?__shot=1): no motion, so before/after compare pixel for pixel
+        if (app()->isLocal() && $request->has('__shot')) {
             $html = preg_replace(
-                '/<\/body>/i',
-                '<script src="'.$this->asset('/js/home-polish.js').'" defer></script>'
-                .'<script src="'.$this->asset('/js/home-v2.js').'" defer></script></body>',
-                $html,
-                1
-            ) ?? $html;
-        }
-        // Site-wide v2 motion; on the home page it runs after home-v2.js, which configures it
-        if (! str_contains($html, '/js/v2.js')) {
-            $html = preg_replace(
-                '/<\/body>/i',
-                '<script src="'.$this->asset('/js/v2.js').'" defer></script></body>',
+                '/<\/head>/i',
+                '<style>*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}'
+                // Entrance states shown, so their content is compared too
+                .'.gp-hero-step,.v2-r,.x-invisible{opacity:1!important;visibility:visible!important;transform:none!important}</style></head>',
                 $html,
                 1
             ) ?? $html;
@@ -115,6 +64,29 @@ class SiteController extends Controller
             'Content-Type' => 'text/html; charset=UTF-8',
             'X-Robots-Tag' => $hidden ? 'noindex, nofollow' : null,
         ]));
+    }
+
+    /**
+     * No route matched.
+     */
+    public function notFound(Request $request): RedirectResponse
+    {
+        return $this->publicPrefixRedirect($request) ?? abort(404);
+    }
+
+    /**
+     * When the domain serves the project folder, /public/... and /public/index.php also reach
+     * the app; send them to the one real address of the page.
+     */
+    private function publicPrefixRedirect(Request $request): ?RedirectResponse
+    {
+        if (! preg_match('#^/public(/index\.php)?$#', $request->getBaseUrl())) {
+            return null;
+        }
+        $target = preg_replace('#^/index\.php(?=/|$)#', '', $request->getPathInfo()) ?: '/';
+        $query = $request->getQueryString();
+
+        return redirect()->away($request->getSchemeAndHttpHost().$target.($query ? '?'.$query : ''), 301);
     }
 
     /**
@@ -141,17 +113,7 @@ class SiteController extends Controller
     }
 
     /**
-     * Versioned URL, so the long browser cache in public/.htaccess never serves an old copy.
-     */
-    private function asset(string $path): string
-    {
-        $mtime = @filemtime(public_path($path));
-
-        return $mtime ? $path.'?v='.$mtime : $path;
-    }
-
-    /**
-     * Search engines and social previews need full URLs; the mirror stores them site-relative.
+     * Search engines and social previews need full URLs; the pages write them site-relative.
      */
     private function absoluteSeoUrls(string $html): string
     {
@@ -169,7 +131,7 @@ class SiteController extends Controller
 
         return preg_replace_callback(
             '#(<script type="application/ld\+json"[^>]*>)(.*?)(</script>)#s',
-            fn ($m) => $m[1].preg_replace('#"(\\\\/)(?!\\\\/)#', '"'.$jsonSite.'$1', $m[2]).$m[3],
+            fn ($m) => $m[1].preg_replace('#"(\\/)(?!\\/)#', '"'.$jsonSite.'$1', $m[2]).$m[3],
             $html
         ) ?? $html;
     }

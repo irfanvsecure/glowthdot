@@ -10,7 +10,7 @@
 }
 
 /* ----- Header: glass + depth after scroll ----- */
-body.gp-scrolled .ast-primary-header-bar {
+body.gp-scrolled .h-primary-header-bar {
   background-color: rgba(250, 250, 252, 0.92) !important;
   backdrop-filter: blur(14px) saturate(1.2);
   -webkit-backdrop-filter: blur(14px) saturate(1.2);
@@ -18,22 +18,22 @@ body.gp-scrolled .ast-primary-header-bar {
   transition: box-shadow 0.35s var(--gp-ease), background-color 0.35s var(--gp-ease);
 }
 
-.ast-header-button-1 .ast-custom-button {
+.h-header-button-1 .h-custom-button {
   transition: transform 0.25s var(--gp-ease), box-shadow 0.25s var(--gp-ease), filter 0.25s var(--gp-ease);
   box-shadow: 0 4px 14px rgba(255, 46, 126, 0.35);
 }
-.ast-header-button-1 .ast-custom-button:hover {
+.h-header-button-1 .h-custom-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(255, 46, 126, 0.45);
   filter: brightness(1.05);
 }
 
 /* ----- Hero: deeper atmosphere + readable type ----- */
-#bg.elementor-element-d2ed37a,
+#bg.k-d2ed37a,
 #bg.bg {
   position: relative;
 }
-#bg.elementor-element-d2ed37a::after {
+#bg.k-d2ed37a::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -44,38 +44,38 @@ body.gp-scrolled .ast-primary-header-bar {
     radial-gradient(ellipse 70% 50% at 15% 80%, rgba(198, 244, 50, 0.08), transparent 50%),
     linear-gradient(180deg, rgba(14, 13, 18, 0.35) 0%, rgba(14, 13, 18, 0.55) 45%, rgba(14, 13, 18, 0.75) 100%);
 }
-#bg > .e-con-inner {
+#bg > .c-con-inner {
   position: relative;
   z-index: 1;
 }
 
 /* Hero badge / heading pop */
-#bg .elementor-heading-title {
+#bg .x-heading-title {
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
   letter-spacing: -0.02em;
 }
-#bg .elementor-widget-text-editor,
-#bg .elementor-icon-list-text {
+#bg .w-text-editor,
+#bg .x-icon-list-text {
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* Hero CTAs */
-#bg .btn-lime .elementor-button,
-#bg .elementor-element-55fe249 .elementor-button {
+#bg .btn-lime .x-button,
+#bg .k-55fe249 .x-button {
   box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 12px 32px rgba(198, 244, 50, 0.25);
   transition: transform 0.25s var(--gp-ease), box-shadow 0.25s var(--gp-ease), filter 0.25s var(--gp-ease);
 }
-#bg .btn-lime .elementor-button:hover,
-#bg .elementor-element-55fe249 .elementor-button:hover {
+#bg .btn-lime .x-button:hover,
+#bg .k-55fe249 .x-button:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.18), 0 18px 40px rgba(198, 244, 50, 0.35);
   filter: brightness(1.04);
 }
-#bg .elementor-element-389b14c .elementor-button {
+#bg .k-389b14c .x-button {
   backdrop-filter: blur(6px);
   transition: transform 0.25s var(--gp-ease), background-color 0.25s var(--gp-ease), border-color 0.25s var(--gp-ease);
 }
-#bg .elementor-element-389b14c .elementor-button:hover {
+#bg .k-389b14c .x-button:hover {
   transform: translateY(-2px);
 }
 
@@ -98,28 +98,28 @@ body.gp-scrolled .ast-primary-header-bar {
 /* ----- Hero layout: copy left, free-audit card right (scripts/home-hero.php) ----- */
 
 /* Copy column */
-#bg .gh-hero .elementor-element-3df45d0 .elementor-icon-list-text {
+#bg .gh-hero .k-3df45d0 .x-icon-list-text {
   font-size: 12px !important;
   letter-spacing: 0.08em;
 }
-#bg .gh-hero .elementor-element-3df45d0 .elementor-icon-list-icon svg {
+#bg .gh-hero .k-3df45d0 .x-icon-list-icon svg {
   filter: drop-shadow(0 0 6px rgba(198, 244, 50, 0.8));
 }
-#bg .gh-hero .elementor-element-e10b9eb .elementor-heading-title {
+#bg .gh-hero .k-e10b9eb .x-heading-title {
   font-size: clamp(36px, 4.2vw, 62px) !important;
   line-height: 1.04 !important;
   letter-spacing: -0.03em;
 }
-#bg .gh-hero .elementor-element-e10b9eb .elementor-heading-title span {
+#bg .gh-hero .k-e10b9eb .x-heading-title span {
   display: block;
 }
-#bg .gh-hero .elementor-element-54e3c22,
-#bg .gh-hero .elementor-element-54e3c22 p {
+#bg .gh-hero .k-54e3c22,
+#bg .gh-hero .k-54e3c22 p {
   color: rgba(255, 255, 255, 0.78) !important;
   font-size: 17px !important;
   line-height: 1.6 !important;
 }
-#bg .gh-hero .elementor-element-55fe249 .elementor-button {
+#bg .gh-hero .k-55fe249 .x-button {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
@@ -130,11 +130,11 @@ body.gp-scrolled .ast-primary-header-bar {
   font-size: 16px !important;
   font-weight: 700 !important;
 }
-#bg .gh-hero .elementor-element-55fe249 .elementor-button-text::after {
+#bg .gh-hero .k-55fe249 .x-button-text::after {
   content: " →";
 }
 /* "How It Works" becomes a quiet text link, so the audit stays the one big action */
-#bg .gh-hero .elementor-element-389b14c .elementor-button {
+#bg .gh-hero .k-389b14c .x-button {
   display: inline-flex !important;
   align-items: center;
   min-height: 56px;
@@ -146,7 +146,7 @@ body.gp-scrolled .ast-primary-header-bar {
   font-size: 16px !important;
   font-weight: 600 !important;
 }
-#bg .gh-hero .elementor-element-389b14c .elementor-button-text {
+#bg .gh-hero .k-389b14c .x-button-text {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -154,7 +154,7 @@ body.gp-scrolled .ast-primary-header-bar {
   text-decoration-color: rgba(255, 255, 255, 0.35);
   text-underline-offset: 6px;
 }
-#bg .gh-hero .elementor-element-389b14c .elementor-button-text::before {
+#bg .gh-hero .k-389b14c .x-button-text::before {
   content: "";
   flex: 0 0 34px;
   width: 34px;
@@ -163,15 +163,15 @@ body.gp-scrolled .ast-primary-header-bar {
   border-radius: 50%;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M9 7.5v9l7.5-4.5z'/%3E%3C/svg%3E") center / 16px no-repeat;
 }
-#bg .gh-hero .elementor-element-389b14c .elementor-button:hover .elementor-button-text {
+#bg .gh-hero .k-389b14c .x-button:hover .x-button-text {
   color: var(--gp-lime);
   text-decoration-color: var(--gp-lime);
 }
-#bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-item {
+#bg .gh-hero .k-1eed134 .x-icon-list-item {
   padding-left: 26px !important;
   position: relative;
 }
-#bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-item::before {
+#bg .gh-hero .k-1eed134 .x-icon-list-item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -182,11 +182,11 @@ body.gp-scrolled .ast-primary-header-bar {
   border-radius: 50%;
   background: rgba(198, 244, 50, 0.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c6f432' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / 11px no-repeat;
 }
-#bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-text {
+#bg .gh-hero .k-1eed134 .x-icon-list-text {
   color: rgba(255, 255, 255, 0.82) !important;
   font-size: 15px !important;
 }
-#bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-text b {
+#bg .gh-hero .k-1eed134 .x-icon-list-text b {
   color: #fff;
 }
 
@@ -418,12 +418,12 @@ body.gp-scrolled .ast-primary-header-bar {
 
 @media (min-width: 1025px) {
   /* Darker on the copy side, the photo shows through behind the card */
-  #bg.elementor-element-d2ed37a::after {
+  #bg.k-d2ed37a::after {
     background:
       radial-gradient(ellipse 45% 70% at 80% 50%, rgba(255, 46, 126, 0.22), transparent 60%),
       linear-gradient(90deg, rgba(14, 13, 18, 0.94) 0%, rgba(14, 13, 18, 0.82) 42%, rgba(14, 13, 18, 0.45) 100%);
   }
-  #bg .gh-hero > .e-con-inner {
+  #bg .gh-hero > .c-con-inner {
     display: grid !important;
     grid-template-columns: minmax(0, 1.2fr) minmax(380px, 440px);
     gap: 64px;
@@ -431,31 +431,31 @@ body.gp-scrolled .ast-primary-header-bar {
     padding-top: 56px;
     padding-bottom: 56px;
   }
-  #bg .gh-hero .elementor-element-12923d8 {
+  #bg .gh-hero .k-12923d8 {
     align-items: flex-start !important;
     text-align: left;
     gap: 22px !important;
   }
-  #bg .gh-hero .elementor-element-12923d8 .elementor-heading-title,
-  #bg .gh-hero .elementor-element-12923d8 .elementor-widget-text-editor {
+  #bg .gh-hero .k-12923d8 .x-heading-title,
+  #bg .gh-hero .k-12923d8 .w-text-editor {
     text-align: left !important;
   }
-  #bg .gh-hero .elementor-element-54e3c22 {
+  #bg .gh-hero .k-54e3c22 {
     max-width: 540px;
   }
-  #bg .gh-hero .elementor-element-95d7350 {
+  #bg .gh-hero .k-95d7350 {
     justify-content: flex-start !important;
     gap: 18px !important;
   }
-  #bg .gh-hero .elementor-icon-list-items {
+  #bg .gh-hero .x-icon-list-items {
     justify-content: flex-start !important;
   }
-  #bg .gh-hero .elementor-widget-icon-list,
-  #bg .gh-hero .elementor-icon-list-item {
+  #bg .gh-hero .w-icon-list,
+  #bg .gh-hero .x-icon-list-item {
     text-align: left !important;
     justify-content: flex-start !important;
   }
-  #bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-items {
+  #bg .gh-hero .k-1eed134 .x-icon-list-items {
     gap: 10px 24px;
   }
   #bg .gh-audit {
@@ -463,7 +463,7 @@ body.gp-scrolled .ast-primary-header-bar {
   }
 }
 @media (max-width: 1024px) {
-  #bg .gh-hero > .e-con-inner {
+  #bg .gh-hero > .c-con-inner {
     flex-direction: column;
   }
   #bg .gh-audit {
@@ -482,18 +482,18 @@ body.gp-scrolled .ast-primary-header-bar {
     grid-template-columns: 1fr;
     gap: 9px;
   }
-  #bg .gh-hero .elementor-element-55fe249 .elementor-button {
+  #bg .gh-hero .k-55fe249 .x-button {
     width: 100% !important;
   }
-  #bg .gh-hero .elementor-element-389b14c .elementor-button {
+  #bg .gh-hero .k-389b14c .x-button {
     justify-content: center;
   }
-  #bg .gh-hero .elementor-element-3df45d0 .elementor-icon-list-text {
+  #bg .gh-hero .k-3df45d0 .x-icon-list-text {
     font-size: 10.5px !important;
     letter-spacing: 0.04em;
   }
   /* One tidy column of checks instead of a ragged centred stack */
-  #bg .gh-hero .elementor-element-1eed134 .elementor-icon-list-items {
+  #bg .gh-hero .k-1eed134 .x-icon-list-items {
     display: grid !important;
     justify-content: center;
     justify-items: start;
@@ -502,13 +502,13 @@ body.gp-scrolled .ast-primary-header-bar {
 }
 
 /* ----- Trust strip ----- */
-.gp-trust.is-visible .elementor-icon-list-item {
+.gp-trust.is-visible .x-icon-list-item {
   transition: transform 0.35s var(--gp-ease), opacity 0.35s var(--gp-ease);
 }
-.gp-trust .elementor-icon-list-icon svg {
+.gp-trust .x-icon-list-icon svg {
   transition: transform 0.35s var(--gp-ease), fill 0.35s var(--gp-ease);
 }
-.gp-trust .elementor-icon-list-item:hover .elementor-icon-list-icon svg {
+.gp-trust .x-icon-list-item:hover .x-icon-list-icon svg {
   transform: scale(1.12);
   fill: var(--gp-pink);
 }
@@ -533,7 +533,7 @@ body.gp-scrolled .ast-primary-header-bar {
 }
 
 /* ----- Section atmosphere ----- */
-.elementor-8 .e-con.e-parent:not(#bg):not(.bg) {
+.x-8 .c-con.c-parent:not(#bg):not(.bg) {
   position: relative;
 }
 
@@ -551,57 +551,57 @@ body.gp-scrolled .ast-primary-header-bar {
 
 /* Industry / icon cards */
 a.glowth-card-link,
-.elementor-8 .elementor-widget-icon-box {
+.x-8 .w-icon-box {
   transition: transform 0.35s var(--gp-ease);
 }
 a.glowth-card-link:hover {
   transform: translateY(-5px);
 }
-a.glowth-card-link:hover .elementor-icon-box-title {
+a.glowth-card-link:hover .x-icon-box-title {
   color: var(--gp-pink);
 }
-.elementor-8 .elementor-widget-icon-box .elementor-icon-box-wrapper {
+.x-8 .w-icon-box .x-icon-box-wrapper {
   border-radius: 8px;
   transition: background-color 0.35s var(--gp-ease), box-shadow 0.35s var(--gp-ease);
 }
-a.glowth-card-link:hover .elementor-icon-box-wrapper,
-.elementor-8 .elementor-widget-icon-box:hover .elementor-icon-box-wrapper {
+a.glowth-card-link:hover .x-icon-box-wrapper,
+.x-8 .w-icon-box:hover .x-icon-box-wrapper {
   background-color: rgba(255, 46, 126, 0.04);
   box-shadow: 0 12px 32px rgba(14, 13, 18, 0.06);
 }
 
 /* Service / content cards with images */
-.elementor-8 .elementor-widget-image img,
-.elementor-8 .elementor-widget-image picture {
+.x-8 .w-image img,
+.x-8 .w-image picture {
   transition: transform 0.55s var(--gp-ease), filter 0.55s var(--gp-ease);
 }
-.elementor-8 .elementor-widget-image:hover img {
+.x-8 .w-image:hover img {
   transform: scale(1.03);
   filter: contrast(1.04) saturate(1.06);
 }
 
 /* Buttons sitewide on home */
-.elementor-8 .elementor-button {
+.x-8 .x-button {
   transition: transform 0.25s var(--gp-ease), box-shadow 0.25s var(--gp-ease), filter 0.25s var(--gp-ease);
 }
-.elementor-8 .elementor-button:hover {
+.x-8 .x-button:hover {
   transform: translateY(-2px);
 }
 
 /* Comparison / tables feel sharper */
-.elementor-8 table {
+.x-8 table {
   box-shadow: 0 16px 48px rgba(14, 13, 18, 0.08);
   border-radius: 10px;
   overflow: hidden;
 }
 
 /* FAQ accordion hint */
-.elementor-8 .e-n-accordion-item,
-.elementor-8 .elementor-accordion-item {
+.x-8 .c-n-accordion-item,
+.x-8 .x-accordion-item {
   transition: box-shadow 0.3s var(--gp-ease), transform 0.3s var(--gp-ease);
 }
-.elementor-8 .e-n-accordion-item:hover,
-.elementor-8 .elementor-accordion-item:hover {
+.x-8 .c-n-accordion-item:hover,
+.x-8 .x-accordion-item:hover {
   box-shadow: 0 8px 28px rgba(14, 13, 18, 0.06);
 }
 
@@ -612,7 +612,7 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
 }
 
 /* Slightly richer body text contrast on light bg */
-.elementor-8 .elementor-widget-text-editor p {
+.x-8 .w-text-editor p {
   color: inherit;
 }
 
@@ -620,8 +620,8 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
   #bg.gp-hero-ready .gp-hero-step,
   .gp-reveal,
   a.glowth-card-link,
-  .elementor-8 .elementor-button,
-  .elementor-8 .elementor-widget-image img {
+  .x-8 .x-button,
+  .x-8 .w-image img {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
@@ -633,12 +633,12 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
  * UX / CRO pass: layout, rhythm and conversion paths (copy unchanged)
  * ===================================================================== */
 
-/* Content shows at once: the Elementor entrance animations kept whole
+/* Content shows at once: the entrance animations kept whole
    sections blank until they finished, on top of the reveal above */
-.elementor-8 .elementor-invisible {
+.x-8 .x-invisible {
   visibility: visible !important;
 }
-.elementor-8 .animated {
+.x-8 .animated {
   animation: none !important;
 }
 .gp-reveal {
@@ -647,12 +647,12 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
 }
 
 /* Even vertical rhythm: sections sat 160-240px apart */
-.elementor-8 > .e-con.e-parent:not(#bg):not([data-id="beef483"]):not([data-id="b76aac1"]):not([data-id="eeda67b"]) > .e-con-inner {
+.x-8 > .c-con.c-parent:not(#bg):not([data-id="beef483"]):not([data-id="b76aac1"]):not([data-id="eeda67b"]) > .c-con-inner {
   padding-top: 72px !important;
   padding-bottom: 72px !important;
 }
 @media (max-width: 767px) {
-  .elementor-8 > .e-con.e-parent:not(#bg):not([data-id="beef483"]):not([data-id="b76aac1"]):not([data-id="eeda67b"]) > .e-con-inner {
+  .x-8 > .c-con.c-parent:not(#bg):not([data-id="beef483"]):not([data-id="b76aac1"]):not([data-id="eeda67b"]) > .c-con-inner {
     padding-top: 52px !important;
     padding-bottom: 52px !important;
   }
@@ -665,8 +665,8 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
 }
 
 /* Keyboard users can see where they are */
-.elementor-8 a:focus-visible,
-.elementor-8 button:focus-visible,
+.x-8 a:focus-visible,
+.x-8 button:focus-visible,
 .gp-sticky-cta a:focus-visible {
   outline: 3px solid var(--gp-pink);
   outline-offset: 3px;
@@ -674,15 +674,15 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
 }
 
 /* ----- Industry cards: the whole card is the link, content starts at the top ----- */
-.elementor-element-d3862d9 > .e-con {
+.k-d3862d9 > .c-con {
   position: relative;
   justify-content: flex-start !important;
 }
-.elementor-element-d3862d9 .elementor-widget-icon-box,
-.elementor-element-d3862d9 .elementor-icon-box-wrapper {
+.k-d3862d9 .w-icon-box,
+.k-d3862d9 .x-icon-box-wrapper {
   position: static !important;
 }
-.elementor-element-d3862d9 a.glowth-card-link::after {
+.k-d3862d9 a.glowth-card-link::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -691,46 +691,46 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
 }
 
 /* ----- How it works: steps start on one line ----- */
-.elementor-element-a0e3781 {
+.k-a0e3781 {
   position: relative;
   align-items: stretch !important;
 }
-.elementor-element-a0e3781 > .e-con {
+.k-a0e3781 > .c-con {
   justify-content: flex-start !important;
   position: relative;
   z-index: 1;
   transition: transform 0.3s var(--gp-ease), box-shadow 0.3s var(--gp-ease), border-color 0.3s var(--gp-ease);
 }
-.elementor-element-a0e3781 > .e-con:hover {
+.k-a0e3781 > .c-con:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 36px rgba(14, 13, 18, 0.08);
   border-color: rgba(255, 46, 126, 0.35) !important;
 }
 
 /* ----- Comparison table: easier to scan ----- */
-.elementor-element-64ef0a0 table td,
-.elementor-element-64ef0a0 table th {
+.k-64ef0a0 table td,
+.k-64ef0a0 table th {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
   vertical-align: middle;
 }
-.elementor-element-64ef0a0 table tbody tr td:first-child {
+.k-64ef0a0 table tbody tr td:first-child {
   font-weight: 600;
   color: var(--gp-ink);
 }
-.elementor-element-64ef0a0 table tbody tr td:nth-child(2) {
+.k-64ef0a0 table tbody tr td:nth-child(2) {
   background: rgba(198, 244, 50, 0.1);
   font-weight: 700;
 }
-.elementor-element-64ef0a0 table tbody tr:hover td {
+.k-64ef0a0 table tbody tr:hover td {
   background-color: rgba(255, 46, 126, 0.04);
 }
 @media (max-width: 767px) {
-  .elementor-element-64ef0a0 table {
+  .k-64ef0a0 table {
     font-size: 13px;
   }
-  .elementor-element-64ef0a0 table td,
-  .elementor-element-64ef0a0 table th {
+  .k-64ef0a0 table td,
+  .k-64ef0a0 table th {
     padding: 12px 8px !important;
   }
 }
@@ -1110,37 +1110,37 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
 }
 
 /* ----- Audit form: bigger touch targets, clear focus ----- */
-#free-audit .elementor-field-group .elementor-field,
-#free-audit .elementor-field-group select {
+#free-audit .x-field-group .x-field,
+#free-audit .x-field-group select {
   min-height: 46px;
   border-radius: 10px !important;
   font-size: 15px !important;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-#free-audit .elementor-field-group .elementor-field:focus,
-#free-audit .elementor-field-group select:focus {
+#free-audit .x-field-group .x-field:focus,
+#free-audit .x-field-group select:focus {
   border-color: var(--gp-pink) !important;
   box-shadow: 0 0 0 4px rgba(255, 46, 126, 0.15);
   outline: none;
 }
-#free-audit .elementor-field-type-submit .elementor-button {
+#free-audit .x-field-type-submit .x-button {
   min-height: 50px;
   font-size: 16px !important;
   font-weight: 700;
   box-shadow: 0 10px 28px rgba(255, 46, 126, 0.35);
 }
-#free-audit .elementor-message {
+#free-audit .x-message {
   margin-top: 12px;
   padding: 12px 14px;
   border-radius: 10px;
   font-weight: 600;
 }
-#free-audit .elementor-message-success {
+#free-audit .x-message-success {
   background: rgba(198, 244, 50, 0.2);
   color: var(--gp-ink);
 }
 /* Arriving from a CTA: draw the eye to the form */
-#free-audit.gp-pulse .elementor-form {
+#free-audit.gp-pulse .x-form {
   border-radius: 12px;
   animation: gpPulse 1.4s var(--gp-ease) 1;
 }
@@ -1152,18 +1152,18 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
 /* ----- Phones ----- */
 @media (max-width: 767px) {
   /* Hero: full-width, thumb-friendly CTAs */
-  #bg .elementor-widget-button,
-  #bg .elementor-widget-button .elementor-button {
+  #bg .w-button,
+  #bg .w-button .x-button {
     width: 100%;
   }
-  #bg .elementor-widget-button .elementor-button {
+  #bg .w-button .x-button {
     justify-content: center;
     min-height: 50px;
   }
 
   /* "Who we serve" and industry cards swipe sideways instead of a very long stack */
-  .elementor-element-ba68542,
-  .elementor-element-d3862d9 {
+  .k-ba68542,
+  .k-d3862d9 {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
@@ -1174,12 +1174,12 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
     padding-bottom: 8px;
     scrollbar-width: none;
   }
-  .elementor-element-ba68542::-webkit-scrollbar,
-  .elementor-element-d3862d9::-webkit-scrollbar {
+  .k-ba68542::-webkit-scrollbar,
+  .k-d3862d9::-webkit-scrollbar {
     display: none;
   }
-  .elementor-element-ba68542 > .e-con,
-  .elementor-element-d3862d9 > .e-con {
+  .k-ba68542 > .c-con,
+  .k-d3862d9 > .c-con {
     flex: 0 0 78% !important;
     max-width: 78% !important;
     scroll-snap-align: start;
@@ -1206,11 +1206,11 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
   body.gp-has-sticky {
     padding-bottom: 76px;
   }
-  body.gp-has-sticky .ast-scroll-top {
+  body.gp-has-sticky .h-scroll-top {
     bottom: 88px !important;
   }
   /* The bar already offers WhatsApp; the floating bubble covered the hero and content */
-  body.gp-has-sticky .qlwapp__container {
+  body.gp-has-sticky .wa__container {
     opacity: 0;
     pointer-events: none;
   }
@@ -1273,11 +1273,11 @@ a.glowth-card-link:hover .elementor-icon-box-wrapper,
 
 @media (prefers-reduced-motion: reduce) {
   .gp-sticky-cta,
-  .elementor-element-a0e3781 > .e-con,
-  .elementor-element-9178254 > .e-con {
+  .k-a0e3781 > .c-con,
+  .k-9178254 > .c-con {
     transition: none !important;
   }
-  #free-audit.gp-pulse .elementor-form {
+  #free-audit.gp-pulse .x-form {
     animation: none !important;
   }
 }
