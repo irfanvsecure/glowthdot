@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\SiteRenderer;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -173,17 +174,14 @@ class LeadController extends Controller
      */
     private function labels(string $url): array
     {
-        $path = trim((string) parse_url($url, PHP_URL_PATH), '/');
-        $slug = $path === '' ? 'home' : str_replace('/', '-', $path);
-        if (! preg_match('/^[a-z0-9-]+$/', $slug)) {
-            return [];
-        }
-        $file = resource_path('views/pages/'.$slug.'.blade.php');
-        if (! is_file($file)) {
-            return [];
-        }
+        $found = SiteRenderer::resolve((string) parse_url($url, PHP_URL_PATH));
+        $html = match ($found[0] ?? null) {
+            'page' => $found[1]->sections->map->html()->implode("\n"),
+            'post' => $found[1]->content,
+            default => '',
+        };
 
-        preg_match_all('#<label for="form-field-([a-z0-9_]+)"[^>]*>(.*?)</label>#s', file_get_contents($file), $m, PREG_SET_ORDER);
+        preg_match_all('#<label for="form-field-([a-z0-9_]+)"[^>]*>(.*?)</label>#s', $html, $m, PREG_SET_ORDER);
         $labels = [];
         foreach ($m as [, $id, $text]) {
             $labels[$id] = trim(html_entity_decode(strip_tags($text), ENT_QUOTES | ENT_HTML5));

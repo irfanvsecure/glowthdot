@@ -2,30 +2,33 @@
 
 namespace Tests\Feature;
 
-use App\Http\Controllers\SiteController;
+use App\Models\Page;
 use Tests\TestCase;
 
 class HiddenPagesTest extends TestCase
 {
-    public static function hiddenPages(): array
+    /** The industry pages, hidden for now (status "hidden") */
+    private function hiddenSlugs(): array
     {
-        return array_map(fn ($slug) => [$slug], SiteController::HIDDEN_PAGES);
+        return Page::where('status', 'hidden')->pluck('slug')->all();
     }
 
-    /** @dataProvider hiddenPages */
-    public function test_hidden_page_is_still_served_but_noindex(string $slug): void
+    public function test_hidden_pages_are_still_served_but_noindex(): void
     {
-        $response = $this->get('/'.$slug.'/');
+        $this->assertCount(27, $this->hiddenSlugs());
+        foreach ($this->hiddenSlugs() as $slug) {
+            $response = $this->get('/'.$slug.'/');
 
-        $response->assertOk()->assertHeader('X-Robots-Tag', 'noindex, nofollow');
-        $html = $response->getContent();
-        $this->assertSame(1, preg_match_all('#<meta\s+name=["\']robots["\']#i', $html));
-        $this->assertStringContainsString('<meta name="robots" content="noindex, nofollow">', $html);
+            $response->assertOk()->assertHeader('X-Robots-Tag', 'noindex, nofollow');
+            $html = $response->getContent();
+            $this->assertSame(1, preg_match_all('#<meta\s+name=["\']robots["\']#i', $html), $slug);
+            $this->assertStringContainsString('<meta name="robots" content="noindex, nofollow">', $html);
+        }
     }
 
     public function test_no_page_links_to_a_hidden_page(): void
     {
-        $slugs = implode('|', SiteController::HIDDEN_PAGES);
+        $slugs = implode('|', $this->hiddenSlugs());
 
         foreach (['/', '/about-us/', '/dubai/', '/seo-for-beauty-salons-clinics/', '/industries/', '/beauty-salons/'] as $url) {
             $html = $this->get($url)->assertOk()->getContent();
@@ -57,9 +60,9 @@ class HiddenPagesTest extends TestCase
 
     public function test_hidden_pages_are_not_in_the_sitemap(): void
     {
-        $sitemap = file_get_contents(public_path('page-sitemap.xml'));
+        $sitemap = $this->get('/page-sitemap.xml')->assertOk()->getContent();
 
-        foreach (SiteController::HIDDEN_PAGES as $slug) {
+        foreach ($this->hiddenSlugs() as $slug) {
             $this->assertStringNotContainsString('https://glowthdot.com/'.$slug.'/<', $sitemap);
         }
         $this->assertStringContainsString('https://glowthdot.com/industries/<', $sitemap);
