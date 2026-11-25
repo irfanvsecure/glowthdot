@@ -93,11 +93,13 @@ class BlogToolsTest extends TestCase
         $this->assertSame([], $this->tool('list_stale_posts', ['days' => 3000])['posts']);
     }
 
-    public function test_category_archives_paginate(): void
+    public function test_category_archives_fit_on_one_page(): void
     {
-        $this->get('/category/salon-marketing/')->assertOk()->assertSee('/category/salon-marketing/page/2/', false);
-        $this->get('/category/salon-marketing/page/2/')->assertOk()->assertSee('Page 2 of 2');
-        $this->get('/category/salon-marketing/page/3/')->assertNotFound();
-        $this->get('/category/salon-marketing/page/1/')->assertNotFound();
+        // Category::PER_PAGE (30) holds every post of an archive today: no page/2/, and the old
+        // page addresses (page/1/, page/2/ …) send visitors back to the archive
+        $html = $this->get('/category/salon-marketing/')->assertOk()->getContent();
+        $this->assertStringNotContainsString('/category/salon-marketing/page/2/', $html);
+        $this->get('/category/salon-marketing/page/2/')->assertStatus(301)->assertRedirect('http://localhost/category/salon-marketing/');
+        $this->get('/category/salon-marketing/page/1/')->assertStatus(301);
     }
 }

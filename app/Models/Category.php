@@ -11,7 +11,7 @@ class Category extends Model
 {
     use HasSeo, SoftDeletes;
 
-    public const PER_PAGE = 12;
+    public const PER_PAGE = 30;
 
     protected $guarded = ['id'];
 

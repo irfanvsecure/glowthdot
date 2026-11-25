@@ -52,6 +52,14 @@ class SeoAuditFixesTest extends TestCase
         $this->assertSame("var a = 'x // not a comment';\nvar re = /\\/\\*[a-z]+/g;\nvar t = `line1\n   line2`;\nreturn a\n", $out);
     }
 
+    public function test_archive_pages_past_the_last_redirect_to_the_archive(): void
+    {
+        $slug = \App\Models\Category::firstOrFail()->slug;
+        $this->get('/category/'.$slug.'/')->assertOk();
+        $this->get('/category/'.$slug.'/page/9/')->assertStatus(301)->assertRedirect('http://localhost/category/'.$slug.'/');
+        $this->get('/category/no-such-category/page/2/')->assertNotFound();
+    }
+
     public function test_pages_have_no_indentation_runs(): void
     {
         $html = $this->get('/contact-us/')->assertOk()->getContent();

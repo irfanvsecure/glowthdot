@@ -20,6 +20,11 @@ class SiteController extends Controller
 
         $page = $renderer->render($request->getPathInfo(), app()->isLocal() && $request->has('__shot'));
         if ($page === null) {
+            // An archive page that no longer exists (fewer pages than before): back to the archive
+            if (preg_match('#^/category/([a-z0-9-]+)/page/\d+/?$#', $request->getPathInfo(), $m)
+                && \App\Models\Category::where('slug', $m[1])->exists()) {
+                return redirect()->away($request->getSchemeAndHttpHost().'/category/'.$m[1].'/', 301);
+            }
             abort(404);
         }
 
