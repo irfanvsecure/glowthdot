@@ -25,6 +25,8 @@ Route::withoutMiddleware([
     Route::post('/api/audit', [LeadController::class, 'audit'])->middleware('throttle:10,1');
 
     Route::get('/robots.txt', [SitemapController::class, 'robots']);
+    Route::get('/llms.txt', [SitemapController::class, 'llms']);
+    Route::get('/whatsapp/', [SitemapController::class, 'whatsapp']);
     Route::get('/{name}.xml', [SitemapController::class, 'show'])
         ->where('name', 'sitemap_index|sitemap|post-sitemap|page-sitemap|category-sitemap');
 

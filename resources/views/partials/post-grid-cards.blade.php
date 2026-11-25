@@ -12,6 +12,9 @@
 			<a href="{{ $post->url() }}" >
 				{{ $post->title }}			</a>
 		</h3>
+@if ($post->excerpt)
+		<p class="x-post__excerpt">{{ \Illuminate\Support\Str::limit(strip_tags(html_entity_decode($post->excerpt)), 220) }}</p>
+@endif
 
 		<a class="x-post__read-more" href="{{ $post->url() }}" aria-label="Read more about {{ $post->title }}" tabindex="-1" >
 			Read More »		</a>

@@ -27,7 +27,7 @@ class HomeHeroTest extends TestCase
 
     public function test_funnel_picks_up_the_website_from_the_hero(): void
     {
-        $this->get('/get-a-free-audit/?site=myclinic.ae')->assertOk()->assertSee('/js/pages/get-a-free-audit.js');
+        $this->get('/get-a-free-audit/?site=myclinic.ae')->assertOk()->assertSee('/js/min/pages/get-a-free-audit.');
         $js = file_get_contents(public_path('js/pages/get-a-free-audit.js'));
 
         $this->assertStringContainsString('const params = new URLSearchParams(location.search);', $js);

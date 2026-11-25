@@ -10,7 +10,7 @@ class HomeV2Test extends TestCase
     {
         $html = $this->get('/')->assertOk()->getContent();
 
-        $this->assertMatchesRegularExpression('#<script src="/js/home-v2\.js\?v=\d+" defer></script>#', $html);
+        $this->assertMatchesRegularExpression('#<script src="/js/min/home-v2\.[0-9a-f]{12}\.js" defer></script>#', $html);
         // home-v2.css ends up in the CSS bundle with the other head styles
         preg_match("~id='glowth-bundle-css' href='([^']+)'~", $html, $bundle);
         $this->assertNotEmpty($bundle);

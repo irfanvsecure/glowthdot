@@ -30,8 +30,11 @@
 @foreach ($assets['late_styles'] ?? [] as $file)
 <link rel="stylesheet" href="{{ versioned($file) }}">
 @endforeach
+<link rel="stylesheet" href="{{ versioned('/css/fixes.css') }}">
 </head>
 <body class="{{ $bodyClass }}">
+{{-- The menu and scroll-to-top arrow, drawn once and reused (<use href="#gl-arrow">) --}}
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="gl-arrow" viewBox="57 35.171 26 16.043"><path d="M57.5 38.193l12.5 12.5 12.5-12.5-2.5-2.5-10 10-10-10z"/></symbol></svg>
 {{-- Sets the desktop / mobile header classes before the header is drawn --}}
 <script src="{{ versioned('/js/header-breakpoint.js') }}"></script>
 <a class="skip-link screen-reader-text" href="#content">Skip to content</a>

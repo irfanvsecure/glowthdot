@@ -19,7 +19,7 @@ The Glowth website (glowthdot.com): a Laravel app whose pages, blog, images, SEO
 
 - **Page:** wrapper markup (`wrapper_open` … `wrapper_close`) around its sections, in order. A section's `content.html` is its exact markup; the design is in those classes and in the page's stylesheets (`assets`).
 - **posts_grid section:** shows the latest blog posts where its HTML has `<!--posts-->`.
-- **Blog post:** lives at `/{slug}/`; its archive at `/category/{slug}/`, 10 posts a page.
+- **Blog post:** lives at `/{slug}/`; its archive at `/category/{slug}/`, 12 posts a page.
 - **Header menu, footer columns, contact details, top bar:** settings.
 - **Hidden page** (`status` hidden): still served, but `noindex`, and links to it go to the free audit. The 27 industry pages are hidden for now.
 - **Caching:** rendered pages, sitemaps and settings are cached per content version. Every write through the MCP tools bumps the version, so changes show on the next request.

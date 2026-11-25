@@ -45,7 +45,7 @@ class LocationPagesTest extends TestCase
         $this->assertCount(substr_count($html, '<summary>'), $faq['mainEntity']);
 
         // The layout's stylesheet is bundled into the head and its script is loaded
-        $this->assertStringContainsString('/js/location.js?v=', $html);
+        $this->assertStringContainsString('/js/min/location.', $html);
         $bundle = preg_match("#href='(/css/bundle/[^']+)'#", $html, $m) ? file_get_contents(public_path($m[1])) : '';
         $this->assertStringContainsString('.lp-hero', $bundle);
     }

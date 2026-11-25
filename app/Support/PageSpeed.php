@@ -21,7 +21,64 @@ class PageSpeed
         $head = $this->bundleStyles($head);
         $head = $this->preloadHeroImage($head, $body);
 
-        return $head.$close.$body;
+        return $this->dropIndentation($this->minifyScripts($head.$close.$body));
+    }
+
+    /**
+     * Local scripts are served minified from /js/min/ (App\Support\JsMinifier): same code, no comments
+     * or indentation. The name holds the source's path and modification time, so an edit gets a new file.
+     */
+    private function minifyScripts(string $html): string
+    {
+        return preg_replace_callback(
+            "#(<script\b[^>]*\bsrc=)(['\"])(/js/(?!min/)[^'\"?]+\.js)(?:\?[^'\"]*)?\\2#i",
+            function ($m) {
+                $file = public_path($m[3]);
+                if (! is_file($file)) {
+                    return $m[0];
+                }
+                // /js/pages/home.js -> /js/min/pages/home.<hash>.js
+                $url = '/js/min/'.substr($m[3], 4, -3).'.'.substr(md5($m[3].'@'.filemtime($file)), 0, 12).'.js';
+                $target = public_path($url);
+                if (! is_file($target)) {
+                    $js = (new JsMinifier)->minify((string) file_get_contents($file));
+                    if (! is_dir(dirname($target)) && ! @mkdir(dirname($target), 0755, true) && ! is_dir(dirname($target))) {
+                        return $m[0];
+                    }
+                    $tmp = $target.'.'.getmypid().'.tmp';
+                    if (@file_put_contents($tmp, $js) === false || ! @rename($tmp, $target)) {
+                        return $m[0];
+                    }
+                }
+
+                return $m[1].$m[2].$url.$m[2];
+            },
+            $html
+        ) ?? $html;
+    }
+
+    /**
+     * Line breaks plus indentation between tags become a single line break: the page renders the same
+     * (a line break is white space, like the tabs were), with less markup. <pre>, <textarea>, <script>
+     * and <style> are left exactly as they are.
+     */
+    private function dropIndentation(string $html): string
+    {
+        $parts = preg_split('#(<(pre|textarea|script|style)\b.*?</\2>)#is', $html, -1, PREG_SPLIT_DELIM_CAPTURE);
+        if ($parts === false) {
+            return $html;
+        }
+        $out = '';
+        for ($i = 0, $n = count($parts); $i < $n; $i++) {
+            if ($i % 3 === 0) {
+                $out .= preg_replace('/[ \t]*\r?\n\s*/', "\n", $parts[$i]) ?? $parts[$i];
+            } elseif ($i % 3 === 1) {
+                $out .= $parts[$i];
+            }
+            // $i % 3 === 2 is the captured tag name, already part of the block above
+        }
+
+        return $out;
     }
 
     /**

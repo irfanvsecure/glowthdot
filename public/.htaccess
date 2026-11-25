@@ -66,8 +66,8 @@
     </FilesMatch>
     Header append Vary Accept env=REDIRECT_WEBP
 
-    # Stylesheet bundles are named by a hash of their content (App\Support\PageSpeed)
-    <FilesMatch "^[0-9a-f]{16}\.css$">
+    # Stylesheet bundles and minified scripts are named by a hash (App\Support\PageSpeed)
+    <FilesMatch "^([0-9a-f]{16}\.css|[\w-]+\.[0-9a-f]{12}\.js)$">
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
 </IfModule>

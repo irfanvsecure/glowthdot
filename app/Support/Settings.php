@@ -29,6 +29,7 @@ class Settings
         'google_site_verification' => 'Google Search Console verification code',
         'robots_default' => 'robots meta of every indexable page',
         'robots_txt' => 'Contents of /robots.txt',
+        'llms_txt' => 'Contents of /llms.txt (empty: built from the published pages and posts)',
         'og_locale' => 'og:locale',
         'twitter_card' => 'Default twitter:card',
         'default_author' => 'Author of new blog posts',

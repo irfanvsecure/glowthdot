@@ -23,9 +23,16 @@ class SiteController extends Controller
             abort(404);
         }
 
-        return response($page['html'], 200, array_filter([
+        // ?goal=… and other query variants of a page: same content as the page itself (their canonical
+        // says so); keep them out of the index so they are not counted as separate pages
+        $variant = ! $page['noindex'] && array_diff(array_keys($request->query()), ['__shot']) !== [];
+        $html = $variant
+            ? preg_replace('#<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*["\']#i', '<meta name="robots" content="noindex, follow"', $page['html'], 1)
+            : $page['html'];
+
+        return response($html, 200, array_filter([
             'Content-Type' => 'text/html; charset=UTF-8',
-            'X-Robots-Tag' => $page['noindex'] ? 'noindex, nofollow' : null,
+            'X-Robots-Tag' => $page['noindex'] ? 'noindex, nofollow' : ($variant ? 'noindex, follow' : null),
         ]));
     }
 

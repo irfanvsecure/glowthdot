@@ -47,7 +47,7 @@ class ServicePagesTest extends TestCase
         $this->assertCount(substr_count($main[0], '<summary>'), json_decode($schema[1] ?? '[]', true)['mainEntity'] ?? []);
 
         // Both stylesheets are bundled into the head and the page script is loaded
-        $this->assertStringContainsString('/js/location.js?v=', $html);
+        $this->assertStringContainsString('/js/min/location.', $html);
         $bundle = preg_match("#href='(/css/bundle/[^']+)'#", $html, $m) ? file_get_contents(public_path($m[1])) : '';
         $this->assertStringContainsString('.lp-hero', $bundle);
         $this->assertStringContainsString('.lp-formcta', $bundle);

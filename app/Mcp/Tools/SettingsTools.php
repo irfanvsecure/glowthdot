@@ -33,6 +33,7 @@ class SettingsTools
         'google_site_verification' => ['value' => 'present|nullable|string|max:200'],
         'robots_default' => ['value' => 'required|string|max:200'],
         'robots_txt' => ['value' => 'required|string|max:5000'],
+        'llms_txt' => ['value' => 'present|nullable|string|max:20000'],
         'og_locale' => ['value' => ['required', 'regex:/^[a-z]{2}_[A-Z]{2}$/']],
         'twitter_card' => ['value' => 'required|in:summary,summary_large_image'],
         'default_author' => ['value' => 'required|string|max:100'],
