@@ -100,24 +100,47 @@ details.c-n-accordion-item > .c-con {
   padding-right: 19px !important;
 }
 
-/* ---------- Eyebrow pills stay on one line ---------- */
+/* ---------- Eyebrow pills: one line where they fit, wrap on phones instead of overflowing ---------- */
 .v2-kicker {
   white-space: nowrap;
-}
-.x-widget__width-initial:has(> .v2-kicker),
-.x-widget__width-initial:has(.v2-kicker) {
   max-width: 100%;
 }
 @media (max-width: 544px) {
   .v2-kicker {
-    font-size: 11px !important;
+    white-space: normal;
+  }
+}
+.x-widget__width-initial:has(> .v2-kicker),
+.x-widget__width-initial:has(.v2-kicker) {
+  width: auto !important;
+  max-width: 100%;
+}
+@media (max-width: 544px) {
+  .v2-kicker {
+    font-size: 12px !important;
     letter-spacing: 0.06em !important;
   }
 }
 
-/* ---------- Small buttons / chips never break inside ---------- */
+/* ---------- Small buttons / chips: one line where there is room; on phones they wrap instead of overflowing ---------- */
+.x-button.x-size-sm {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
 .w-button .x-size-sm .x-button-text {
   white-space: nowrap;
+}
+@media (max-width: 544px) {
+  .w-button .x-size-sm .x-button-text {
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+  }
+  .w-button:not(.k-e7eaa2e):not(.k-8f6a341) .x-button.x-size-sm:not(.x-button-link) {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
 }
 
 /* ---------- Home: back-to-back dark sections share one gap ---------- */
@@ -252,8 +275,9 @@ details.c-n-accordion-item > .c-con {
   max-width: 100%;
   flex: 0 0 auto !important;
 }
-/* Stat box figures ("AED 6.20") stay on one line */
-.c-con:has(> .w-icon-box) .x-icon-box-title {
+/* Stat box figures ("AED 6.20", home paid ads) stay on one line; other card titles wrap */
+.k-fc525e6 .x-icon-box-title,
+.k-d306d40 .x-icon-box-title {
   white-space: nowrap;
 }
 /* Chip rows wrap instead of running out of their column */
@@ -314,4 +338,459 @@ details.c-n-accordion-item > .c-con {
   font-size: 15px;
   line-height: 1.6;
   opacity: 0.85;
+}
+
+/* =====================================================================
+ * Responsive audit (Nov 26, 2026): overflow, floats, tap targets, text
+ * ===================================================================== */
+
+/* ---------- Safety net: nothing can make the page scroll sideways ---------- */
+html {
+  overflow-x: clip;
+}
+
+/* ---------- Home: AI booking bot chat bubbles wrap like real messages ---------- */
+.k-e7eaa2e .x-button,
+.k-8f6a341 .x-button,
+.k-e7eaa2e .x-button-text,
+.k-8f6a341 .x-button-text {
+  white-space: normal !important;
+  text-align: left;
+  line-height: 1.45;
+}
+.k-e7eaa2e,
+.k-8f6a341 {
+  max-width: 100%;
+}
+
+/* ---------- WhatsApp + back to top: icon only on phones, out of the text's way ---------- */
+@media (max-width: 767px) {
+  .wa-float {
+    right: 16px !important;
+    bottom: 16px !important;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.35);
+  }
+  .wa-float__text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .wa-float__icon,
+  .wa-float__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+  #h-scroll-top {
+    right: 22px !important;
+    bottom: 80px !important;
+    left: auto !important;
+  }
+}
+
+/* ---------- Tap targets: links and small buttons at least 44px tall ---------- */
+.x-button-link.x-size-sm,
+.gh-audit__alt,
+.x-post__read-more,
+a.more-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.btn-lime .x-button-link.x-size-sm {
+  min-height: 48px;
+}
+
+/* ---------- Form fields: 16px text (no iPhone zoom), full width, 48px tall ---------- */
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):not([type="hidden"]),
+select,
+textarea {
+  font-size: 16px !important;
+}
+form input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):not([type="hidden"]),
+form select {
+  min-height: 48px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  form input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):not([type="hidden"]),
+  form select,
+  form textarea {
+    width: 100% !important;
+  }
+}
+
+/* ---------- Footer on tablets: two columns, contact details full width ---------- */
+@media (min-width: 768px) and (max-width: 921px) {
+  footer .k-d8e9641 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 24px;
+  }
+  footer .k-d8e9641 > .c-child {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0;
+  }
+  footer .k-d8e9641 > .k-4fb84de,
+  footer .k-d8e9641 > .k-d7eb704 {
+    grid-column: 1 / -1;
+  }
+}
+/* footer columns share one alignment */
+footer .k-d7eb704,
+footer .k-d7eb704 .x-heading-title,
+footer .k-d7eb704 .x-icon-box-content {
+  text-align: start !important;
+}
+
+/* ---------- Long headings on phones: smaller, looser ---------- */
+@media (max-width: 480px) {
+  .v2-title,
+  h2.x-heading-title,
+  h2.lp-title {
+    font-size: clamp(24px, 7vw, 28px) !important;
+    line-height: 1.2 !important;
+  }
+  h1.x-heading-title {
+    line-height: 1.15 !important;
+  }
+}
+
+/* ---------- Ticker: still when the visitor asks for less motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .ticker,
+  .ticker * {
+    animation: none !important;
+  }
+}
+
+/* ---------- Headings that matched their box's colour (marked by public/js/v2.js) ---------- */
+html.v2-js .v2-on-dark {
+  color: #fff !important;
+}
+html.v2-js .v2-on-light {
+  color: var(--v2-ink, #0e0d12) !important;
+}
+/* home: the black "Why Beauty Salons Choose Glowth" card, also without JS */
+.k-8fec5e0 .k-896b825 .v2-title {
+  color: #fff !important;
+}
+
+/* ---------- Industry pages: service explorer card fits a 360px phone ---------- */
+.x-tab-content [style*="min-width"] {
+  min-width: min(100%, 280px) !important;
+}
+.x-tab-content > div {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+/* card titles and chips wrap instead of running out of their card */
+.x-icon-box-title,
+.x-icon-box-title a,
+.x-tab-content b,
+.x-tab-content span {
+  overflow-wrap: break-word;
+}
+.x-icon-box-content {
+  min-width: 0;
+}
+.c-con .w-icon-box .x-icon-box-title {
+  white-space: normal;
+}
+.c-con.k-fc525e6 .w-icon-box .x-icon-box-title,
+.c-con.k-d306d40 .w-icon-box .x-icon-box-title {
+  white-space: nowrap;
+}
+
+/* ---------- Mock-up rows with inline one-line labels (day spas seasons etc.): wrap on phones ---------- */
+@media (max-width: 544px) {
+  .x-type-page [style*="display:flex"]:has(> span[style*="width:120px"]) > [style*="white-space:nowrap"] {
+    white-space: normal !important;
+    min-width: 0;
+  }
+  .x-type-page span[style*="width:120px"][style*="flex-shrink:0"] {
+    width: 56px !important;
+    margin: 0 8px !important;
+  }
+}
+
+/* ---------- SEO page: growth chart SVG (no size of its own) stays inside its column ---------- */
+.chart-container {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+.chart-container > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.w-html {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* ---------- Home comparison table: each row becomes a card on phones and small tablets ---------- */
+@media (max-width: 767px) {
+  .k-9ac8956 .table-wrapper {
+    overflow: visible !important;
+  }
+  .k-9ac8956 table,
+  .k-9ac8956 tbody,
+  .k-9ac8956 tr,
+  .k-9ac8956 td {
+    display: block;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+  .k-9ac8956 thead {
+    display: none;
+  }
+  .k-9ac8956 tr {
+    margin: 0 0 12px;
+    padding: 16px 18px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    background: #fff;
+  }
+  .k-9ac8956 td {
+    padding: 4px 0 !important;
+    border: 0 !important;
+    text-align: left !important;
+  }
+  .k-9ac8956 td:first-child {
+    padding: 0 0 8px !important;
+    font-weight: 600;
+  }
+  .k-9ac8956 td:nth-child(2)::before {
+    content: "Glowth: ";
+    font-weight: 600;
+  }
+  .k-9ac8956 td:nth-child(3)::before {
+    content: "Typical agency: ";
+    font-weight: 600;
+    color: #6b6876;
+  }
+}
+
+/* ---------- Lime CTAs in dark cards ("Unlock This Growth", "Get My Free ... Audit"): never cut ---------- */
+.btn-lime {
+  max-width: 100%;
+}
+.btn-lime .x-button {
+  max-width: 100%;
+  height: auto;
+  white-space: normal !important;
+  text-align: center;
+  box-sizing: border-box;
+}
+.btn-lime .x-button-text {
+  white-space: normal !important;
+}
+.k-a68374f,
+.k-6e9df62 {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .btn-lime .x-button {
+    width: 100%;
+    padding: 14px 16px !important;
+  }
+}
+
+/* ---------- Blog index: readable, tappable "Read More" ---------- */
+.x-post__read-more {
+  color: var(--v2-violet, #7c3aed) !important;
+  font-size: 15px !important;
+  font-weight: 600;
+}
+.x-post__read-more:hover {
+  color: var(--v2-pink, #ff2e7e) !important;
+}
+
+/* ---------- Refinements after the visual pass ---------- */
+/* long H2s on phones (beats the section tone rules in v2.css) */
+@media (max-width: 480px) {
+  .x-type-page .x-heading-title.v2-title,
+  .x-type-page h2.x-heading-title,
+  .x-type-page h2.lp-title {
+    font-size: clamp(24px, 7vw, 28px) !important;
+    line-height: 1.2 !important;
+  }
+}
+/* stacked comparison cells wrap */
+@media (max-width: 767px) {
+  .k-9ac8956 td {
+    white-space: normal !important;
+  }
+  .k-9ac8956 table {
+    min-width: 0 !important;
+  }
+}
+/* phones: home sections use only the header gutter (16px), not 20 + 16, so cards use the width */
+@media (max-width: 544px) {
+  .x .v2-sec.c-con-boxed.c-parent {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .k-41c6a45,
+  .k-896b825 {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  .k-849645f {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .v2-card:not(.v2-card--photo) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+/* footer: room under the last line for the WhatsApp button, inside the dark band */
+@media (max-width: 767px) {
+  footer.x-location-footer .k-4bf85f6 {
+    padding-bottom: 80px !important;
+  }
+  /* the home sticky bar already has a WhatsApp button */
+  body.gp-sticky-on .wa-float {
+    opacity: 0;
+    pointer-events: none;
+  }
+  body.gp-sticky-on #h-scroll-top {
+    bottom: 88px !important;
+  }
+}
+/* home swipe dots: bigger, tappable */
+@media (max-width: 767px) {
+  .gp-swipe-dots {
+    gap: 4px !important;
+    margin-top: 6px !important;
+  }
+  .gp-swipe-dots > span,
+  .gp-swipe-dots > button {
+    position: relative;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 7px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px !important;
+    cursor: pointer;
+    background: rgba(14, 13, 18, 0.22);
+  }
+  .gp-swipe-dots > span.is-on,
+  .gp-swipe-dots > button.is-on {
+    width: 26px !important;
+    background: var(--gp-pink, #ff2e7e);
+  }
+  .gp-swipe-dots > button::after {
+    content: "";
+    position: absolute;
+    inset: -7px;
+  }
+}
+/* labels under 12px */
+.gh-audit__badge,
+.x-type-page small,
+.x-post__excerpt + small {
+  font-size: 12px !important;
+}
+@media (max-width: 544px) {
+  .k-3df45d0 .x-icon-list-text {
+    font-size: 12px !important;
+    letter-spacing: 0.04em !important;
+    white-space: normal !important;
+    line-height: 1.35;
+  }
+}
+
+/* ---------- Blog posts: comfortable reading on phones, room under the title ---------- */
+.h-single-post .entry-content > p,
+.h-single-post .entry-content > ul li,
+.h-single-post .entry-content > ol li {
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+}
+@media (max-width: 544px) {
+  .h-single-post .entry-content > p,
+  .h-single-post .entry-content > ul li,
+  .h-single-post .entry-content > ol li {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+}
+.h-single-post .entry-header .entry-meta {
+  margin-top: 12px;
+}
+/* wide post tables: first column stays put while the rest scrolls */
+@media (max-width: 767px) {
+  .gd-table-wrap {
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+  .gd-table th:first-child,
+  .gd-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: inherit;
+  }
+  .gd-table td:first-child {
+    background: #fff;
+    min-width: 130px;
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.08);
+  }
+  .gd-table th,
+  .gd-table td {
+    min-width: 140px;
+  }
+}
+
+/* ---------- Maps mock-ups ("POSITION 1" badge): badge drops under the name on phones ---------- */
+@media (max-width: 544px) {
+  .x-type-page [style*="display:flex"]:has(> span[style*="margin-left:auto"][style*="white-space:nowrap"]) {
+    flex-wrap: wrap;
+  }
+  .x-type-page [style*="display:flex"] > span[style*="margin-left:auto"][style*="white-space:nowrap"] {
+    margin-left: 48px !important;
+  }
+}
+/* the hidden icon sprite (width="0") never takes a stylesheet's svg width */
+svg[width="0"][height="0"] {
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden;
+}
+/* the chart's wrapper fills its column (a flex item would shrink it to 300px) */
+.w-html:has(> .chart-container) {
+  width: 100%;
+  align-self: stretch;
+}
+
+/* ---------- Home phones: card sliders bleed to the screen edge from the 16px gutter ---------- */
+@media (max-width: 544px) {
+  .k-ba68542,
+  .k-d3862d9 {
+    width: calc(100% + 32px) !important;
+    margin-left: -16px !important;
+    margin-right: -16px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    scroll-padding-left: 16px;
+  }
 }

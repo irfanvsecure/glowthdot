@@ -119,7 +119,7 @@
     finale.querySelectorAll('a.x-button').forEach(function (a) {
       var href = a.getAttribute('href') || '';
       if (href.indexOf('get-a-free-audit') !== -1) audit = a;
-      else if (href.indexOf('wa.me') !== -1) wa = a;
+      else if (href.indexOf('wa.me') !== -1 || href.indexOf('/whatsapp/') !== -1) wa = a;
     });
     if (!audit || !wa) return;
 
@@ -172,10 +172,14 @@
       if (cards.length < 2) return;
       var dots = document.createElement('div');
       dots.className = 'gp-swipe-dots';
-      dots.setAttribute('aria-hidden', 'true');
-      cards.forEach(function (_, i) {
-        var d = document.createElement('span');
+      cards.forEach(function (card, i) {
+        var d = document.createElement('button');
+        d.type = 'button';
+        d.setAttribute('aria-label', 'Show card ' + (i + 1) + ' of ' + cards.length);
         if (i === 0) d.className = 'is-on';
+        d.addEventListener('click', function () {
+          row.scrollTo({ left: card.offsetLeft - cards[0].offsetLeft, behavior: 'smooth' });
+        });
         dots.appendChild(d);
       });
       row.parentNode.insertBefore(dots, row.nextSibling);

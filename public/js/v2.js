@@ -59,6 +59,59 @@
     });
   }
 
+  // Headings whose colour (often a section-wide tone rule) lands on a box of the same colour,
+  // e.g. a black card in a light section or a white form card in a dark one: flip them.
+  function rgbOf(c) {
+    var m = (c || '').match(/[\d.]+/g);
+    return m ? m.map(Number) : null;
+  }
+  function lum(c) {
+    var f = function (v) { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+    return 0.2126 * f(c[0]) + 0.7152 * f(c[1]) + 0.0722 * f(c[2]);
+  }
+  function backdrop(el) {
+    for (var p = el; p && p.nodeType === 1; p = p.parentElement) {
+      var cs = getComputedStyle(p);
+      if (cs.backgroundImage.indexOf('url(') !== -1) return null; // photo: leave it
+      var c = rgbOf(cs.backgroundColor);
+      if (c && (c.length < 4 || c[3] > 0.5)) return c;
+      if (cs.backgroundImage.indexOf('gradient') !== -1) {
+        var stop = cs.backgroundImage.match(/rgba?\([^)]*\)/);
+        if (stop) return rgbOf(stop[0]);
+      }
+    }
+    return [255, 255, 255];
+  }
+  function checkHeading(h) {
+    if (h.classList.contains('v2-on-dark') || h.classList.contains('v2-on-light')) return;
+    var bg = backdrop(h);
+    var fg = rgbOf(getComputedStyle(h).color);
+    if (!bg || !fg) return;
+    var a = lum(fg), b = lum(bg);
+    if ((Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05) < 1.6) {
+      h.classList.add(b < 0.4 ? 'v2-on-dark' : 'v2-on-light');
+    }
+  }
+  function fixHiddenHeadings() {
+    var heads = [];
+    document.querySelectorAll(CONTENT).forEach(function (page) {
+      page.querySelectorAll('h1, h2, h3, h4, .x-heading-title, .v2-title').forEach(function (h) {
+        if (h.textContent.trim()) heads.push(h);
+      });
+    });
+    heads.forEach(checkHeading);
+    // Lazy-loaded section backgrounds only appear on scroll: check again when each heading shows
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        io.unobserve(e.target);
+        setTimeout(function () { checkHeading(e.target); }, 150);
+      });
+    });
+    heads.forEach(function (h) { io.observe(h); });
+  }
+
   function mark(el, i, photo) {
     el.classList.add('v2-card', 'v2-tilt');
     if (photo) el.classList.add('v2-card--photo');
@@ -209,6 +262,7 @@
   function init() {
     document.documentElement.classList.add('v2-js');
     setTones();
+    fixHiddenHeadings();
     var cards = findCards();
     var mocks = findMocks();
     if (finePointer && !reduce) {
