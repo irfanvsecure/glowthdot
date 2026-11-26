@@ -794,3 +794,18 @@ svg[width="0"][height="0"] {
     scroll-padding-left: 16px;
   }
 }
+
+/* ---------- Home audit form: 16px fields (beats the #free-audit 15px rule) ---------- */
+#free-audit .x-field-group .x-field,
+#free-audit .x-field-group select {
+  font-size: 16px !important;
+}
+
+/* ---------- Industry and location H1s on phones: 6-13 lines at 40px+, now 28-32px ---------- */
+@media (max-width: 480px) {
+  .x-type-page h1.x-heading-title:not(#bg *),
+  .x-type-page .lp-hero h1 {
+    font-size: clamp(28px, 8.5vw, 32px) !important;
+    line-height: 1.15 !important;
+  }
+}
