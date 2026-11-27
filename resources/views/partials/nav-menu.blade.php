@@ -1,7 +1,7 @@
 {{-- One menu of the header: settings nav_menu. $mobile leaves out the items marked "mobile": false. --}}
 @php
 $arrow = <<<'SVG'
-<svg class="h-arrow-svg" viewBox="57 35.171 26 16.043" aria-hidden="true"><use href="#gl-arrow"/></svg>
+<svg class="h-arrow-svg" viewBox="0 0 26 16.043" aria-hidden="true"><use href="#gl-arrow"/></svg>
 SVG;
 @endphp
 @foreach ($items as $item)
