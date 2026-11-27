@@ -11,6 +11,7 @@ use App\Models\SectionRevision;
 use App\Models\SeoMeta;
 use App\Services\Activity;
 use App\Services\HtmlSanitizer;
+use App\Services\OgCards;
 use App\Services\Slugs;
 use App\Support\SiteRenderer;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
@@ -80,9 +81,10 @@ class PageTools
                         }
                         $page->seo()->create([
                             'title' => $in['title'].' | '.setting('site_name', 'Glowth'), 'description' => $in['meta_description'] ?? null,
-                            'canonical' => $page->path, 'og_type' => 'article', 'og_title' => $in['title'].' | '.setting('site_name', 'Glowth'),
+                            'canonical' => $page->path, 'og_type' => 'website', 'og_title' => $in['title'].' | '.setting('site_name', 'Glowth'),
                             'og_description' => $in['meta_description'] ?? null, 'og_url' => $page->path,
                         ]);
+                        app(OgCards::class)->make($page);
                         Activity::log('page.create', $page, null, $page->only(['slug', 'title', 'status']));
 
                         return ['created' => self::summary($page->fresh())];
@@ -119,6 +121,9 @@ class PageTools
                         }
                     }
                     $page->fill(array_filter(array_intersect_key($in, array_flip(['title', 'status', 'template', 'body_class'])), fn ($v) => $v !== null))->save();
+                    if ($page->title !== $before['title'] || $page->slug !== $before['slug']) {
+                        app(OgCards::class)->refreshIfCard($page);
+                    }
                     Activity::log('page.update', $page, $before, $page->only(array_keys($before)));
 
                     return ['updated' => self::summary($page)];

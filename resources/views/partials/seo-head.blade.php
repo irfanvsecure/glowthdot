@@ -11,7 +11,7 @@
 @endif
 @endforeach
 @foreach (['og_type' => 'og:type', 'og_title' => 'og:title', 'og_description' => 'og:description', 'og_url' => 'og:url', 'og_image' => 'og:image', 'og_image_width' => 'og:image:width', 'og_image_height' => 'og:image:height', 'og_image_type' => 'og:image:type', 'published_time' => 'article:published_time', 'modified_time' => 'article:modified_time'] as $field => $property)
-@if ($seo?->$field)
+@if ($seo?->$field && (! str_starts_with($property, 'article:') || $seo->og_type === 'article'))
 <meta property="{{ $property }}" content="{{ $seo->$field }}" />
 @endif
 @endforeach

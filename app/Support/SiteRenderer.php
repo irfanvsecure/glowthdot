@@ -206,7 +206,6 @@ class SiteRenderer
     private function finish(string $html, bool $shot): string
     {
         $html = $this->hideLinksToHiddenPages($html);
-        $html = $this->whatsappLinks($html);
         $html = $this->absoluteSeoUrls($html);
         $html = $this->emoji->wrap($html);
 
@@ -236,19 +235,6 @@ class SiteRenderer
         return preg_replace(
             '#(<a\b[^>]*?\bhref=)(["\'])(?:https?://(?:www\.)?glowthdot\.com)?/(?:'.$alternation.')/?(?:[?\#][^"\']*)?\2#i',
             '$1$2/get-a-free-audit/$2',
-            $html
-        ) ?? $html;
-    }
-
-    /**
-     * Links to wa.me go through /whatsapp/ (SitemapController::whatsapp), which robots.txt closes to
-     * crawlers: wa.me answers bots with 429, and site checkers report that as a broken link.
-     */
-    private function whatsappLinks(string $html): string
-    {
-        return preg_replace(
-            '#(<a\b[^>]*?\bhref=)(["\'])https?://(?:api\.)?wa\.me/\d+/?(\?[^"\']*)?\2#i',
-            '$1$2/whatsapp/$3$2',
             $html
         ) ?? $html;
     }

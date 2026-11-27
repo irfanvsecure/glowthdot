@@ -11,6 +11,7 @@ use App\Models\SeoMeta;
 use App\Models\Tag;
 use App\Services\Activity;
 use App\Services\HtmlSanitizer;
+use App\Services\OgCards;
 use App\Services\Slugs;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
 use Illuminate\Support\Carbon;
@@ -180,7 +181,8 @@ class BlogTools
                         'body_class' => $like?->body_class, 'assets' => $like?->assets]);
                     $title = $in['name'].' Archives - '.setting('site_name', 'Glowth');
                     $category->seo()->create(['title' => $title, 'description' => $in['description'] ?? null, 'canonical' => $category->url(),
-                        'og_type' => 'article', 'og_title' => $title, 'og_description' => $in['description'] ?? null, 'og_url' => $category->url()]);
+                        'og_type' => 'website', 'og_title' => $title, 'og_description' => $in['description'] ?? null, 'og_url' => $category->url()]);
+                    app(OgCards::class)->make($category);
                     Activity::log('category.create', $category, null, $category->only(['slug', 'name']));
 
                     return ['created' => self::category($category)];
@@ -202,6 +204,9 @@ class BlogTools
                         }
                     }
                     $category->fill(array_filter(['name' => $in['name'] ?? null, 'description' => $in['description'] ?? null], fn ($v) => $v !== null))->save();
+                    if ($category->name !== $before['name'] || $category->slug !== $before['slug']) {
+                        app(OgCards::class)->refreshIfCard($category);
+                    }
                     Activity::log('category.update', $category, $before, $category->only(array_keys($before)));
 
                     return ['updated' => self::category($category)];

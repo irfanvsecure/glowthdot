@@ -25,8 +25,7 @@ class SettingsOpsToolsTest extends TestCase
         $html = $this->get('/about-us/')->getContent();
         $this->assertStringContainsString('href="tel:+971501112233"', $html);
         $this->assertStringContainsString('mailto:hello@glowthdot.com', $html);
-        $this->assertStringContainsString('href="/whatsapp/"', $html);
-        $this->get('/whatsapp/')->assertRedirect('https://wa.me/971501112233');
+        $this->assertStringContainsString('href="https://wa.me/971501112233"', $html);
         $this->assertStringContainsString('<div class="h-custom-button">Book a Call</div>', $html);
         $this->assertSame(2, substr_count($html, '>Pricing</a>')); // desktop and mobile menus
         $this->assertStringContainsString('<div class="topbar"><b>New</b> offer </div>', $html);

@@ -172,6 +172,11 @@ class ImportSite extends Command
     private function attachSeo($model, string $head): void
     {
         [$seo, $schemas] = $this->parseHead($head);
+        if (! $model instanceof Post) {
+            // the old site called every page an article; only posts are
+            $seo['og_type'] = 'website';
+            unset($seo['published_time'], $seo['modified_time']);
+        }
         $model->seo()->create($seo);
         foreach ($schemas as $schema) {
             $model->schemaBlocks()->create($schema);

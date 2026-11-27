@@ -33,8 +33,8 @@ class SitemapController extends Controller
     }
 
     /**
-     * WhatsApp links on the pages go through /whatsapp/ (App\Support\SiteRenderer): robots.txt keeps
-     * crawlers off it, so site checkers stop reporting wa.me's rate limit (429) as a broken link.
+     * Pages link to wa.me directly. /whatsapp/ stays as a redirect for links that were shared
+     * while the pages still pointed here.
      */
     public function whatsapp(Request $request): RedirectResponse
     {

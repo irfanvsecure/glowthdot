@@ -27,12 +27,13 @@ class SeoAuditFixesTest extends TestCase
         $this->assertStringNotContainsString('content="noindex', $plain->getContent());
     }
 
-    public function test_whatsapp_links_go_through_the_redirect(): void
+    public function test_whatsapp_links_go_straight_to_wa_me(): void
     {
         $html = $this->get('/')->assertOk()->getContent();
-        $this->assertStringNotContainsString('href="https://wa.me/', $html);
-        $this->assertStringContainsString('href="/whatsapp/', $html);
+        $this->assertStringContainsString('href="https://wa.me/'.setting('whatsapp'), $html);
+        $this->assertStringNotContainsString('href="/whatsapp/', $html);
 
+        // kept for links shared while the pages pointed at it
         $this->get('/whatsapp/?text=Hi')->assertStatus(302)->assertRedirect('https://wa.me/'.setting('whatsapp').'?text=Hi');
     }
 
